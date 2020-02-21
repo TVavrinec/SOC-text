@@ -60,8 +60,8 @@ Projekt má za cíl vytvořit pomůcky pro seznámení s robotikou pro studenty 
 \section{SchoolBot}
 Robot je primárně navržen pro volnočasový vzdělávací kurz robotiky pořádaný na naší škole a je určen pro začátečníky, jako takový dává účastníkům možnosti, které má prakticky každý soutěžní robot, konkrétně pohon, pro pohyb na hřišti a klepeta pro manipulaci s herními prvky.
 
-\section{BlackBox}
-BlackBox je elektronicky ovládaný trezor, který je s vhodnou úpravou schopen i jezdit na vlastních kolech. Pro začátečníky má i čistě mechanickou variantu bez elektroniky, ta však muže sloužit jen jako trezor a nemá ostatní možnosti které má až elektronická varianta. Elektronická varianta má rozmanité senzory, díky kterým muže nabývat různých podob od trezor po hodiny.
+%\section{BlackBox}
+%BlackBox je elektronicky ovládaný trezor, který je s vhodnou úpravou schopen i jezdit na vlastních kolech. Pro začátečníky má i čistě mechanickou variantu bez elektroniky, ta však muže sloužit jen jako trezor a nemá ostatní možnosti které má až elektronická varianta. Elektronická varianta má rozmanité senzory, díky kterým muže nabývat různých podob od trezor po hodiny.
 
 
 \newpage
@@ -99,6 +99,360 @@ Microbit má zároveň matici ledek na které si uživatel muže zobrazovat co s
 \subsection{Shrnutí}
 Komerční systémy jsou většinou velmi drahé, nemají zrovna nadbytek senzoru, mívají měkkou nebo obtížně upravitelnou konstrukci a také nemají moc veky výkonu ani přesnost pohonu.
 Možná si říkáte proč mi záleží na tom aby robot pro začátečníky mel všechny tyto možnosti. Vždyť člověku, co nikdy robota nestavěl by to mělo být skoro jedno. Ano, vlastně by jste měli pravdu, ale já chci aby se na jejich prvním robotu dalo stavět dál aby bylo vidět že si z robota který toho moc neuměl sami postavili něco co by třeba mohlo jezdit na soutěže a vyhrávat.
+
+\chapter{SchoolBot}
+\section{Vývoj}
+SchoolBot jsem začal vyvíjet protože účastníci kurzu robotiky v minulých letech nestíhali vytvořit vlastní konstrukci a ještě jí naprogramovat. Přesto že elektroniku již vyřešenou měli, tak mechanika a především programování na ně bylo stále příliš. Proto začal koncem loňského školního roku, 2018/2019, vznikat robot který měl řešit jak elektroniku, tak většinu mechaniky. 
+První prototyp mechaniky byl hotoví již začátkem letních prázdnin, ale další vývoj pokračoval až o hodně později. První verze totiž vyžadovala jen velmi málo uprav a já měl na práci spoustu jiných věcí. V první řadě řídící desku, která již sice také měla první prototyp za sebou, ale vyžadovala daleko víc uprav. Již druhá verze desky byla plně provozu schopná a začátkem roku jsme jí začali stavět s účastníky kurzu. Ne všichni však chtěli použít mojí konstrukci. Někteří si jí chtěli navrhnout sami a někteří měli tak těžké doplňky, že by je tento robot neuvezl. SchoolBota tak využil jen jeden ze sedmi týmů.
+
+\chapter*{Závěr}
+
+\newpage
+\printbibliography[title=Literatura]
+\addcontentsline{toc}{section}{Literatura}
+
+\listoffigures
+\addcontentsline{toc}{section}{Seznam obrázků}
+
+\listoftables
+\addcontentsline{toc}{section}{Seznam tabulek}
+
+\listoflistedequation
+\addcontentsline{toc}{section}{Seznam rovnic}
+
+
+\newpage
+
+\part{přílohy}
+\part*{Technický list desky SchoolBoard}
+
+\chapter*{funkce desky}
+Deska má k dispozici
+\begin{itemize}
+\item třicetidvoubitový procesor ESP32 s taktovací frekvencí 240MHz a napájecím napětím 3,3 V 
+\item \item flash pamětí 4 MB (dělají se i verze s 8 a 16 MB), 520 KB SRAM, WI-Fi, Bluetooth, 28 vstupně výstupních piny, dva ADC převodníky (jeden s 6 piny a druhý s 10 piny), jedním DAC převodníkem s dvěma piny, tři UARTy, dvě SPI, tři I2C(jedno je použito interně pro flash) atd.
+\item Motorový driver DRV8833, který umožnuje řídit dva stejnosměrné nebo jeden krokový motor.
+\item Tři konektory na inteligentní serva LX-15D nebo LX-16A. Deska dokáže řídit až 254 těchto serv. Serva se totiž dokáží řetězit za sebe, ale pokud potřebují větší proud (když podávají větší kroutící moment), ubytek napětí na kabelech je už moc velký, aby serva mohla využít plný výkon. Proto jsou na desce konektory tři a ne jen jeden.
+\item Čtyři uživatelská tlačítka
+\item Tři uživatelské ledky a jedna ledky signalizující zapnutý stav
+\item Možnost měření baterie
+\item Hardwarové řešení startu a vypínání (dá se použít i jako nouzový vypínač). Tlačítka na zapínání a vypínání jsou jak přímo na desce, tak jsou i vyvedena na pinheady pro možnost připojení externího řízení.
+\item Konektor na připojení motorů s encoderem.
+\item Deska operuje na napětí 3,3V, ale aby byla schopná komunikovat i s periferiemi operujícími
+na napětí 5V, jsou čtyři piny opatřené převodníkem napěťových úrovní.
+Piny IO35, IO32, IO14 a IO12 jsou tedy schopny operovat jak na napětí 3,3V, tak na 5V.
+Piny jsou teoreticky schopné pracovat i na napětí vyšším, záleží na součástce IM3
+(step-down nebo stabilizátor 7805), která napájí převodník. Pokud bude IM3 dodávat jiné napětí, bude toto napětí i na 5V pinech (napětí nesmí klesnout pod 4,5V jinak procesor nedostane dost proudu).
+\item Vyvedení 5V napájení je na oddělené stabilizaci (součástka IM4) pro možnost napájení jiným napětím
+\item Deska má také vyvedeny všechny piny, které nejsou spojeny 
+s hlavní funkcí desky (řízení motorů) nebo je problematické se o ně starat při bootu ESP32.
+
+\end{itemize}
+	
+\chapter*{popis funkce jednotlivých součástek}
+
+\section*{Logická řídící část}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{img/logika.png}
+		\caption{schema logické části desky}
+	\end{figure}
+	
+	\newpage
+	
+	\subsection*{DEVKIT C:}
+	procesor ESP32 je v tomto případě osazený na devkitu C. Je to malá deska, která se stará o potřeby procesoru a dá se koupit jako celek. Zajišťuje jednoduché programování přes USB, zajištuje stabilizované napětí 3,3V pro ESP32 a 3,3V větev na desce a stará se o výchozí hodnoty na pinech u kterých je to potřeba.
+	Seznam důležitých pinů
+	\begin{itemize}
+	\item EN – reset pin, pokud je na něm logická 0, ESP32 se resetuje, v normálním stavu na něm má být logická 1, proto je zde pull-up rezistor, který zajištuje logickou 1.
+	
+	\item Piny s označením reserv AD1 jsou vyhrazené pro externí použití 
+	a nejsou tedy na desce nijak zapojené, jsou to piny, na které je připojený 
+	první AD převodník ESP32 (ADC1), ADC1 je plně k užití pro uživatele na rozdíl 
+	od ADC2, který je využíván Wi-Fi. ADC2 je tedy uživateli k dispozici, jen pokud jej zrovna nevyžaduje Wi-Fi.
+	
+	\item Piny s označením AD1 jsou také piny ADC1, ale jsou interně připojené na některé periferie, která však nemusí být použité
+	
+	\item \item IO34 – použitelná na měření napětí na baterii přes jumper JP2 přímo na desce
+	\item \item IO35 – pin řídící inteligentní serva
+	\item \item IO33, 32 jsou připojené na převodník napěťových úrovní pro možnost komunikovat na 5V. Analogové měření je ovlivněno pull-up rezistory na převodníku napěťových úrovní. Při potřebě užití těchto pinů jako analogových vstupů tedy doporučuji odebrat tyto pull-up rezistory. 
+	To znamená, že tyto piny budou potřebovat softwarové pull-upy při užití jako vstupní pin při 5V komunikace.
+	\item Piny s rudým označením THIS SIGNAL MUST BE HERE, jsou lehce problematické, protože ovlivňují boot ESP. Musí na nich tedy při bootu být správná logická hodnota, jinak by ESP mohlo třeba bootovat z jiné paměti nebo by třeba USB nemohlo zapisovat do paměti pro program. Piny IO0 a IO2 nejsou vyvedeny a je o ně interně postaráno, pin IO12 je ale vyveden a uživatel si tedy musí dát pozor, aby na něm neměl při bootu logickou 1. Pokud zůstane nepřipojen, deska se o něj postará.
+	
+	\subsection*{D2}
+	Dioda sloužící k zamezení napájení 5V větve z USB.
+	Ochrana před přetížením napájení z USB.
+	
+	\subsection*{RN3A, B, C, D:}
+	rezistorová síť, odpory k ledkám.
+	
+	\subsection*{RN2A, B, C, D:}
+	rezistorová síť, ochranné odpory ke tlačítkům, aby 
+	byl procesor chráněn při případné chybě 
+	v programu.
+	
+	\subsection*{SW0, 1, 2, 3:}
+	uživatelská tlačítka
+	
+	\subsection*{C3, 4, 5, 8:}
+	kondenzátory pro vyhlazení signálu z tlačítka při stisknutí
+	
+	\subsection*{JP4, 9:}
+	vyvedení tlačítek a ledek ven z desky pro možnost	
+	vyvedení dál od desky, např. deska muže být v útrobách robota, ale tlačítka a ledky mohou být 
+	pořád pohodlně dostupné, protože jsou vyvedené	
+	někam na povrch stroje.
+	
+	\subsection*{LED0, 1, 2:}
+	ledky pro možnost signalizace různých stavů programu
+	
+	\subsection*{Led3:}
+	powerled, signalizace, zda je deska zapnutá nebo vypnutá
+	
+	\subsection*{JP6, 12:}
+	konektor pro připojení motoru s encoderem
+	\item Vnější piny – napájení motoru
+	\item Piny vedle vnějších pinů – napájení encoderu
+	\item Vnitřní piny – signály encoderu
+	\item Konektor je primárně určen pro inkrementální magnetické encodery, s nimi i počítají programové knihovny
+	
+	\subsection*{JP5:}
+	vyvod 3.3V napájení
+	
+	\subsection*{JP8, 11:}
+	vyvedení některých pinů ESP, každý pin je vyveden alespoň dvakrát pro možnost připojení osciloskopu pro příjemnější hledání chyb programu.
+	
+	\subsection*{LEVEL SHIFTER:}
+	Neboli převodník napěťových úrovní zajištuje možnost digitální komunikace s 5V periferií pro čtyři piny ESP. Konkrétně pro piny IO32, IO33, IO14, IO12.
+	\item IO32 – jeden z pinů ADC1, podrobněji u DEVKIT C.
+	\item IO33 – jeden z pinů ADC1, podrobněji u DEVKIT C.
+	\item IO14 – jeden z pinů ADC2. ADC2 je využíván Wi-Fi. Jinak není použit.
+	\item IO12 – je nutno odstranit pull-up (na součástce převodníku). IO12 volí paměť,
+	ze které se bootuje a jestli do té správné jde nahrát program. Jinak není interně použit.
+	\item Všechny čtyři piny jsou jinak vyvedeny i ve variantě 3.3V.
+	\item Převodník napěťových úrovní převádí logickou 1 pomocí pull-upů, tím pádem periferie pomocí převodníku spojené musí mít vstup s vysokým odporem, protože pokud by piny těchto periferií neměly velký odpor, tak by výsledek po dělení děliče vzniklého z pull-upu a periferie, která signál měří, mohl být pod rozlišovací schopností dané periferie.
+	
+	\subsection*{JP1, 3, 7:}
+	vývody zpětivoltovaných pinu a jejich napájení
+	\item Napájení 5V nemusí být nutně 5V, tyto piny mají vlastní stabilizaci napájení (IM3), a tím pádem záleží na tom, jak je tato stabilizace nastavená. Deska je primárně navržená pro dva způsoby stabilizace: 
+	step-Down a stabilizátor řady 7805
+	\item \item Step-Down má výhodu většího proudu, a hlavně nastavitelného napětí na výstupu. Naopak nevýhoda je nutnost nastavit požadované napětí a konkrétně u mnou používaného exempláře poměrně velký rozkmit výstupního napětí při změně odběru proudu.
+	\item \item 7805 má výhodu napěťové stability naopak nevýhodu maximálního možného odebíraného proudu který závisí na vstupním napětí. Co se regulace napětí týče, v mnou použitém zapojení se napětí regulovat nedá.
+	
+	\subsection*{R5:}
+	Trimr sloužící jako dělič napětí baterie pro možnost měření jejího napětí. 
+	\textbf{Před použitím nutno nastavit na vhodnou dělící hodnotu vzhledem k použitým bateriím!} Na výstupu z děliče nesmí být při plně nabité baterii víc než 3,6V. Pokud se při daném použití desky nemá měnit maximální napětí na baterii (počet článků baterie nebo jejich druh), doporučuji nastavit trimr jednou a následně jej zalepit, aby se například vibracemi nemohl rozladit.
+	
+	\subsection*{JP2:}
+	jumper pro možnost odpojení měření baterie za účelem uvolnění analogového pinu IO34. Zároveň se dá použít na měření výstupu z děliče před jeho zapojením k ESP.
+	
+	\section*{Silová čás}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\textwidth]{img/silovka.png}
+		\caption{schéma výkonové části}
+	\end{figure}
+
+	\subsubsection*{Power manager:}
+	
+	\paragraph*{X4:}
+	Svorkovnice pro připojení zdroje s napětím 7-11V. X4-1 je záporný pól a X4-2 je pól kladný.
+	\paragraph*{Q5}
+	MOSFET tranzistor typu P na ochranu proti přepólování
+	
+	Můžete si všimnout, že ochranná dioda uvnitř tranzistoru směřuje po směru proudu, a ne proti směru, což by bylo normální zapojení MOSFET tranzistoru.
+	Tranzistor je zapojen takto právě z toho důvodu, že slouží jako ochrana proti náhodnému přepólování zdroje. Kdyby byl naopak, tak by sice při správné polaritě zdroje proud propustil a deska by byla napájena, ale v případě přepólování by proud propustil (skrz diodu) také, sice s ubytkem napětí na diodě, ale přes to by proud prošel a spálil by vše, co je citlivé na změnu polarity.
+	\paragraph*{Q2}
+	MOSFET tranzistor typu P, který umožnuje zapínání a vypínání desky
+	\paragraph*{R3}
+	Pull-up na bateriové napětí pro dráhu START~GATE1
+	\paragraph*{Q6}
+	MOSFET tranzistor typu N řídící tranzistor Q2
+	\paragraph{R2}
+	Pull-up na 3.3V pro dráhu OFF
+	\item V zapnutém stavu drží na dráze OFF 3.3V
+	(ne úplně čisté napětí ze stabilizátoru na ESP kvůli pull-downu R1) a tím otvírá tranzistor Q6, který zas drží otevřený tranzistor Q2.
+	
+	\paragraph*{R1}
+	Pull-down pro dráhu OFF
+	\item Tento rezistor je zde pro plné definování dráhy OFF,
+	a to i ve stavu, kdy ESP není zapojeno, tím pádem by dráha nebyla jasně určena.
+	
+	\paragraph*{SW5}
+	Tlačítko, které připíná dráhu OFF k zemi, a tím zavírá tranzistor Q6, čímž vypíná desku.
+	
+	\paragraph*{SW1}
+	Tlačítko připínající dráhu ON k zemi, čímž skrz kondenzátor C1 a tranzistor Q2 zapne stabilizátor na DEVKIT-C, který pomocí rezistoru R2 otevře tranzistor Q6, který otevře Q2. 
+	
+	\paragraph*{C1}
+	Kondenzátor, který se nabije při stisku tlačítka SW4, čímž na dobu nabíjení přivede na dráhu START~GATE zem a tím krátkodobě otevře tranzistor Q2. Přes Q2 projde proud, který pomocí stabilizátoru na DEVKIT-C vytvoří 3,3V, skrz pul-up R2 otevře tranzistor Q6 a ten trvale otevře tranzistor G2.Deska je v tu chvíli zapnutá.
+	
+	\paragraph*{R4}
+	Rezistor pro vybíjení kondenzátoru C1
+	
+	\paragraph*{JP6}
+	Konektor, pro možnost vyvedení vypínaní, zapínání, resetu 
+	a kontrolní powerledky na externí ovládání.
+	
+	\paragraph*{Obvod jako celek}
+	Po připojení zdroje s napětím mezi 7 až 11V se při špatné polaritě napětí nedostane skrz tranzistor Q5. Deska sice nejede, protože nemá napájení, ale je chráněna před zničením opačnou polaritou. Při správném připojení zdroje, napětí projde skrz Q5 a tím pádem je na drahách BAT~POL+, START~GATE1 a ON napětí zdroje, na VCC se napětí nedostane, protože tranzistor Q2 je zavřen. Při stisku tlačítka SW4 se na dráhu ON dostane zem, tím pádem se kondenzátor C1 nabije a při nabíjení krátkodobě otevře tranzistor Q2. V době, kdy je tranzistor Q2 otevřen, skrz kondenzátor C1, se pomocí stabilizátoru osazeném na DEVKITu-C vytvoří napětí 3.3V. Skrz pul-up R2 se dostanou 3.3V na dráhu OFF a tím pádem na Gate tranzistoru Q6, který se v tu chvíli otevře a trvale přivede zem na dráhu START~GATE1. V tuto chvíle je tranzistor Q2 trvale otevřen, až do doby, kdy se na dráhu OFF nepřivede zem, v tu chvíli se zavře tranzistor Q6 protože má na Gate stejné napětí jako na Source (oba piny je připojené k zem). Pokud je Q6 zavřený zbývá jen možnost připojení země odjinud, pokud uvažujeme tento obvod bez poškození nebo jakéhokoli doplnění. Skrz rezistor R3 je dráha START~GATE1 připojena na zdrojové napětí, tím pádem je tato dráha tahána ke kladnému pólu a na k pólu zápornému, což by bylo potřeba pro otevření tranzistoru Q2, tímto způsobem se tedy Q2 určitě neotevře.
+	START~GATE1 je dále připojen na rezistor R4 a kondenzátor C1 které jsou dále připojeny na přes tlačítko SW4 k zemi. Pokut je tedy tlačítko SW4 spojeno se zemí je zem i na dráze ON, v tuto chvíli je sice na dráhu 
+	STERT~GATE1 skrz R4 připojena zem, ale vzhledem
+	k tomu že R4 má desetkrát větší odpor než R3, který spojuje dráhu START~GATE s bateriovým napětím, na Gate tranzistoru Q2 pořád nebude dostatečně malé napětí, aby se Q2 otevřel. C1 propustí proud jen po dobu jeho nabíjeni a tím pádem se skrz nej nedá deska udržet trvale otevřená, dá se jím jen zapnout. To znamená že pokud procesor napíše na pin připojený na dráhu OFF, IO13, logickou nulu, deska se vypne, bez ohledu na to, jaké tlačítko člověk drží. Vypínání ne nutně platí pro 3.3V větev která je napájena jak z baterie tak z micro-USB na DEVKITu-C, takže pokud je procesor připojen k počítači pravděpodobně za účelem programování procesor a vše co je napájené z 3.3V je nadále funkční. Pokud USB není zapojeno, pak se při stisku SW5 nebo zápisu logické 0
+	na pin IO13 deska jednoduše kompletně vypne.
+	
+	\subsubsection*{IM10}
+	Motorový driver, DRV8833, na řízení dvou stejnosměrných motorů v napěťovém rozsahu 2,7 až 11V a maximálním proudem 1,5A. 
+	Driver je také schopný místo dvou stejnosměrných motorů řídit jeden krokový motor.
+	DRV8833 má pět vstupních řídících pinů: čtyři IN piny (dva pro každý motor) a sleep pin.  Podle IN pinů se řídí výstup - viz tabulka.
+	Sleep pin uvádí driver do sleep módu pokud je připojen k zemi. Sleep mód slouží uživateli k úspoře energie v době, kdy nepotřebuje ovládat motory (po dobu aktivního sleep modu zůstanou motory pochopitelně vypnuté).
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|l|l|l|l|l|}
+			\hline
+			xIN1 & xIN2 & xOUT1 & xOUT2 & FUNCTION \\ \hline
+			0 & 0 & Z & Z & Coast/fast decay \\ 
+			0 & 1 & L & H & Reverse \\ 
+			1 & 0 & H & L & Forward \\ 
+			1 & 1 & L & L & Brake/slow decay \\ 
+			\hline
+		\end{tabular}
+		\caption{}
+	\end{table}
+	\newpage
+	\subsubsection*{X1, X2}
+	Svorkovnice na silové vývody k motorům.
+	
+	\subsubsection*{IM3}
+	Step-down/stabilizátor pro 5V větev
+	\item 5V napájí ESP, tím pádem i celou 3.3V větev skrz DEVKIT C
+	\item Napětí, které je, zde je zároveň i napětí, na kterém komunikují 5V piny, proto doporučuji sem dát stabilizátor 7805, u kterého nemusíte hlídat napětí.
+	
+	\subsubsection*{IM4}
+	Step-down/stabilizátor pro napájení 5V pinů na 5V piništi.
+	
+	\subsubsection*{JP42, 47, 48}
+	Konektory pro připojení inteligentních serv.
+	\item Navrženo pro serva LX-16A a LX-15D
+	
+	\subsubsection*{C6}
+	Velký elektrolytický kondenzátor jako zásobárna proudu při náhlé změně odběru.
+		
+	\subsubsection*{D3}
+	Zpětná dioda pro případ napěťové špičky, která by krátkodobě převrátila polaritu. V takovém případě se dioda otevře a proud propustí skrz sebe místo, aby protekl jinudy a přitom něco zničil.
+	
+	\end{itemize}
+
+
+	\part*{Vysvětlení některých pojmu pro začátečníky}
+	
+	\chapter*{Důležité elektronické součástky}
+	\section*{Dioda}
+	Dioda je polovodičová součástka, která vede proud jenom jedním směrem. Dioda obsahuje PN přechod, který zajištuje její schopnost vest proud jen jednosměrně. Pokud nás zajímá, jak je dioda schopna vést proud můžeme se pro konkrétní diodu podívat na její voltampérovou charakteristiku. Pro všechny diody však budou platit několik bodu (s ohledem na napětí) kde se bude křivka zásadně měnit. Je to prahové napětí, a napětí průrazu. Prahové napětí je napětí, při kterém se dioda otevře, žádná dioda totiž není ideální a ani kladné napětí jí neprojde, pokud není dostatečně velké. Pro obyčejné diody většinou bývá menší než jeden volt (někdy se uvádí 0.6V, ale rozhodně to neplatí vždy). Ale například u LED diod je téměř vždy vyšší, konkrétně třeba u modře svítících bývá i přes dva a půl voltu.
+	Diody mají několik různých typů. Každý typ se hodí na jinou aplikaci. Například Zenerova dioda má výhodu vtom, že po průrazu není zničena a pokud napětí opět klesne, její funkce se obnoví. Její nevýhoda je však velká kapacita. Z podobných důvodů je každá dioda vhodná pro jinou aplikaci.
+	Zenerova dioda – Po průrazu není zničená, takže se dá využít třeba jako napěťová ochrana. Její nevýhodou většinou bývá velké kapacita.
+	Schottkyho dioda – Dokáže se velice rychle otevřít i zavřít (velmi rychle reaguje na změnu polarity) má však velký zpětný proud. Schottkyho dioda totiž není tak úplně dioda, nemá totiž žádní PN přechod.
+	Fotodioda – Dioda, která má velký PN přechod a má průsvitné pouzdro. PN přechod totiž nereaguje jen na elektřinu, ale je citlivý i na světlo (kromě fotodiod jsou proto diody v neprůsvitném pouzdře). Díky tomu se fotodioda dá využít jako detektor světla a aby se tento jev dal využít ještě lépe, 
+	je přechod oproti jiným diodám zvětšen.
+	\section*{MOSFET}
+	Zkratka vyjadřuje:
+	M (Metal) – elektroda G je tvořena kovem (hliníkem)
+	O (Oxide) – elektroda G je odizolována vrstvičkou oxidu křemičitého
+	S (Semiconductor) – oxid je vytvořen na polovodičové destičce
+	FET (Field effect transistor) – výsledkem je tranzistor řízený napětím UGS
+	MOSFET (Metal Oxide Semiconductor Field Effect Transistor)
+	MOSFET je druh tranzistorů, který je řízen elektrickým polem. Tranzistor je speciální tím, že má elektrodu G (Gate) od zbytku tranzistoru odizolovanou tenkou vrstvou oxidu křemičitého. To má za následek především to, že elektrodou G neteče teoreticky žádný proud. Na základě znalostí o bipolárních tranzistorech by si člověk mohl asi říct, že takovýto tranzistor přece nebude fungovat, protože přece proud bází určuje proud emitorem, takže pokud bází nepoteče nic tak emitorem taky ne. Ale MOSFETy jsou řízeny napětím. Napětím mezi G (Gate, vlastně báze akorát u MOSFETu se nazývá jinak) a S (Source, vlastně emitor), které se pak označuje jako UGS.
+	Elektroda G totiž vytváří elektrické pole, které vytváří vodivý kanál uvnitř tranzistoru. Vzniklé pole totiž odpuzuje/přitahuje kladné díry/záporné elektrony, čímž vytváří v jinak nevodivé oblasti nasycení na PN přechodu vodivou oblast.
+	Běžný MOSFET je MOSFET s indukovaným kanálem, to znamená že vodivá oblast (kanál) existuje jen pokud existuje dostatečně velké napětí UGS správné polarity (pro N MOSFET kladné a pro P MOSFET záporné).  Existují ale i MOSFETy s technologicky vytvořeným kanálem. Takové tranzistory mají vytvořený mezi elektrodami S a D vodivý kanál tvořený prostředím se stejným typem vodivosti. To pak umožnuje tranzistoru pracovat ve dvou režimech, režimu obohacení a režimu ochuzení. V režimu obohacení se vodivý kanál, díky elektrostatickému náboji tvořenému pomocí elektrody G, dále rozšiřuje a umožnuje tak protékat většímu proudu. V režimu ochuzení se však kanál naopak zužuje a omezuje tak průtok proudu.
+	Na všech obrázcích jsou MOSFET typu P, pokud si chcete představit MOSFET typ N, musíte si u všech obrázků představit opačné napětí UGS, aby platily pro typ N.
+	
+	
+	\chapter*{Důležité pojmy}
+	
+	\section*{Pin}
+	Pin je vývod elektrické součástky.
+	Pull-up
+	Pull-up je rezistor, který připojuje logickou dráhu k napájení. Pokud měříme napětí na takovéto dráze (když není nikam jinam připojena) pomocí měřidla s vysokým odporem (což bude každý pin nastavený jako vstupní) naměříme prakticky napájecí napětí. 
+	Toto se využívá například při čtení tlačítka, které je pak připojeno dvěma vodiči, z nichž jeden je připojen na zem a druhý je připojen zaprvé na pin procesoru a zadruhé přes pull-up k napájení. 
+	Pokud pak čteme tento pin, přečteme logickou jedničku, když tlačítko nebude stlačené a logickou nulu, když stlačené bude.
+	
+	\section*{Pull-down}
+	Pull-down je stejně jako pull-up rezistor, který určuje napětí na logické dráze, ale na rozdíl od
+	pull-upu připojuje dráhu k zemi.
+	Co je analogový a digitální signál
+	Digitální signál reprezentuje logické hodnoty, 0 nebo 1. Má tedy dva možné stavy. Analogový signál může naopak nabývat teoreticky nekonečně mnoha hodnot, protože je vyjádřen napětím, které může nabývat jakékoliv hodnoty v daném rozsahu. V praxi se většinou analogový signál převádí pomocí AD převodníku na digitální podobu, aby s takovýmto vstupem byl procesor schopen pracovat.
+	Technický list desky SchoolBoard
+	
+	\section*{Napěťový dělič}
+	Odvození vzájemného vztahu mezi napětím a odpory rezistoru.
+	\begin{listedequation}[h]
+		$$I=U{1}/R{1}$$
+		\caption{stejně tak}
+		$$I=U{2}/R{2}$$ 
+		\caption{z toho plyne}
+		$$U{1}/U{2} =R{1}/R{2}$$
+		\label{eq:hrnekeq}
+	\end{listedequation}
+	 		
+	Napětí na rezistorech se tedy dělí v poměru jejich odporu. V praxi v obvodu nebudou jen dva rezistory, ale aby dělič k něčemu byl, je na uzlu mezi rezistory měřeno referenční napětí. Pro výpočet se dá měřidlo nahradit dalším rezistorem zapojeným paralelně k R2. Tento další rezistor můžeme ve většině případů zanedbat, protože měřidla napětí budou většinou mít velký vnitřní odpor a tím pádem skrz ně nepoteče velký proud. Ale kdybychom měřidlo uvažovali, tak by platilo:
+	
+	\begin{listedequation}[h]
+		$$U{1}/U{2} =R{1}/R{2,3}$$
+		\caption{kde R{2,3}}
+		$$1/R{2,3} =1/R{2} +1/R{3}$$ 
+		\caption{Kde R3 je odpor měřidla (pravděpodobně bude v řádu megaohmu)}
+		\label{eq:hrnekeq}
+	\end{listedequation}
+	
+	\section*{Enkodér}
+	Enkodér je snímač polohy. Většinou se používá pro určení natočení motoru. Pomocí něj se dá počítat například úhlová rychlost motoru, nebo ve spojitosti s dalšími senzory třeba okamžitý výkon nebo kroutící moment. 
+	Enkodéry se dají rozdělit do dvou hlavních skupin, inkrementální a absolutní. 
+	Inkrementální enkodéry dávají informaci o velikosti posuvu a jeho směru.
+	Absolutní enkodéry udávají jeho reálnou pozici (jsou většinou daleko složitější než inkrementální).
+	
+	\subsection*{Inkrementální enkodéry}
+	Inkrementální enkodéry jsou, stejně jako ostatní druhy enkodérů, zdrojem informací o poloze, většinou motoru. Rozlišení je definováno počtem impulzů na otáčku, které enkodér při každé otáčce vytvoří. Aktuální pozice pak vlastně známá není, jen pokud se zjistí jiným snímačem. Enkodér vlastně říká, kterým směrem a o jaký úhel se rotor otočil. Takový enkodér má alespoň dvě sondy, na signálu posunuté o 90 stupňu (viz obrázek), které snímají pohyb rotoru. Snímání je pak zajištěno buď opticky, magneticky nebo u malých rychlostí i mechanicky. Mají velmi jednoduchou logiku vyhodnocování. Magnetická verze inkrementálního enkodéru má na rotoru, nebo jiném pohyblivém zařízení, umístěn magnet, jehož magnetické pole se snímá pomocí Hallových sond. Tento magnet pak určuje rozlišení enkodéru. Pokud má enkodér jen jeden magnet, má pak jen dvě hrany na otáčku sestupnou a vzestupnou, které jsou v případě ideálního magnetu stejně vzdálené. Stejná vzdálenost hrany na otáčku značí, že signál sondou vygenerovaný, bude o polovinu otáčky hight a polovinu low. Pokud tedy chceme větší rozlišení, musíme buď otáčky magnetu nějak z převodovat, což má nevýhodu vůlí, kterým je u převodovek těžké se vyhnout. Nebo musí být “magnet“ složen z většího počtu magnetů, aby měl výsledek větší počet pólů na otáčku.
+	
+	Optické inkrementální enkodéry jsou oproti magnetickým daleko běžnější. Používají se například ve většině počítačových myší. Nepotřebují magnety, ale jen nějakou clonu nebo odraznou plochu. Clona nebo odrazka pak umožní ve správném natočení, dostat se světlu do jeho snímače, většinou phototransistoru.
+	Disk na obrázku může být buď neprůsvitný a mýt v sobě otvory, nebo může být transparentní a mít na sobě jen nakreslené neprůsvitné nebo přímo odrazné plošky. Při odrazné možnosti je pak možné snímat natočení ze stejné strany, na které je umístěn zdroj světla. Podobný způsob může využívat například různé odraznosti barev, například na disku mohou být natištěny různě barevné plochy, které budou různě pohlcovat světlo a tedy se do snímače dostane různé množství světla. 
+	Mechanické enkodéry mechanicky připínají výstupy k dané dráze, stejně jako u tlačítek je touto dráhou většinou zem. Proč zrovna zem? Protože logická nula je ve většině případů právě zem a pokud musíme jednu ze stavů definovat, je lepší určit ten, který nám umožní větší flexibilitu. Signál pak připojíme přes pull-up k logickému napájení, který si už ale můžeme téměř libovolně zvolit. 
+	Co se vzhledu rotačního disku týče, přirovnal bych je k enkodéru optickému. Vlastně se dá říci, že místo světla se zde pohybuje elektřina (i když to není tak úplně přesné).
+	
+	\subsection*{Absolutní enkodéry}
+	Absolutní enkodéry udávají na rozdíl od inkrementálních reálnou polohu rotoru. Dávají nám tedy informaci o aktuálním natočení, nikoli o posunu jako ty inkrementální. Rozlišení se pak tedy neodvíjí od množství hran na otáčku, ale od schopnosti rozlišit úhel natočení (rozvedeno níže). Stejně jako enkodéry inkrementální mohou být i absolutní magnetické i optické a mohou být i mechanické (ty se téměř nepoužívají). Za mechanické absolutní enkodéry by se dali v jistém smyslu považovat potenciometry. Ty se ale málokdy dělají tak, aby s nimi bylo možné točit dokola při zachování informace o poloze. Magnetické absolutní enkodéry využívají opět Hallova jevu, ale na rozdíl od inkrementálního enkodéru nepřevádí výstupní signál na digitální, ale ženou jej na AD převodník. Díky tomu mají oproti inkrementálním enkodérům daleko přesnější informaci, ale zase obtížněji zpracovatelnou. Magnetické pole snímaného magnetu totiž sice může být velmi stálé, ale je téměř nemožné jej dokonale odstínit. Signál tak bude obsahovat všelijaké rušení (například běžící motor), které je třeba nějak odfiltrovat, jinak bude podstatně snižovat přesnost enkodéru. Jeho rozlišení pak vyplývá z přesnosti AD převodníku a ze schopnosti odstínit nebo vyfiltrovat měřený signál. Optické absolutní enkodéry mají oproti inkrementálnímu daleko složitější disk. Přesnost takovéhoto enkodéru pak určuje množství bitů, na kterých poskytuje informaci o natočení disku. Dalo by se říci, že pokud je enkodér řekněme osmibitový (viz obrázek) skládá se z osmi různých inkrementálních enkodérů s různou přesností, které na sebe jedinečným způsobem navazují.	Když se podíváte na obrázek A, můžete si všimnout, že od středu disku narůstá počet hran na otáčku. Dále si můžete všimnout, že kombinace pruhu je pro každý úhel jedinečná - v případě tohoto obrázku s přesností na 360 stupňu lomeno 256 (256 protože enkodér umožnuje rozlišení na osm bitech). Právě díky jedinečnosti informace pro každý úhel je enkodér absolutní, protože když při libovolném natočení, přečteme výstup, dokážeme určit, jak je zrovna enkodér natočen.
+	
+	\section*{PWM}
+	Pulse Width Modulation (Pulzní šířková modulace) je obdélníkový signál s proměnlivým poměrem vysokého a nízkého stavu. Tento poměr se pak nazývá procento PWM. Pokud je signál stále v poloze nízké, je nula procentní, a pokud je naopak stále vysoko, je sto procentní.
+	PWM se využívá například při řízení svítivosti ledek. Ledka vlastně velmi rychle bliká, ale lidskému oku se zdá, že svítí méně intenzivně. 
+	Větší využití má PWM v silové elektronice konkrétně při řízení stejnosměrných motoru. Pomocí PWM se totiž dá jednoduše řídit výkon motoru, motor je vlastně stejně jako ledka střevě zapnutý a vypnutý. To se však děje tak rychle, že se motor nestihne zastavit ani dosáhnout plného výkonu.
+	
+	\section*{Převodník napěťových úrovní}
+	Převodník napěťových úrovní slouží k možnosti převádět digitální signál mezi dvěma různými systémy, které normálně komunikují na odlišném napětí.
+	
+	\subsection*{Funkce}
+	
+	\paragraph*{Komunikace z nízkého na vyšší napětí}
+	Pokud napíše, řekněme procesor (provozován na napětí LV), na stranu napětí LV (low voltage) logickou nulu, tedy ji připojí na zem. Bude napětí GS rovno LV (napájecí napětí procesoru), protože G Q1 je připojena
+	k LV a na S je v tu chvíli napsaná nula (zem). Tím pádem je Q1 otevřen a zem projde skrz Q1. Pokud však procesor napíše místo nuly jedničku, bude napětí GS 0V. V tu chvíli je Q1 zavřen a dráha s vyšším napětím je tažena pull-up rezistorem R9 k HV (hight voltage) => na dráze je logická jedna.
+	
+	\paragraph*{Komunikace z vyššího napětí na nižší}
+	Pokud napíše, řekněme periferie napájena napětím HV, nulu. Signál projde skrz diodu uvnitř Q1, tím sníží napětí na S Q1 a plně Q1 otevře. Protože napětí GS je v tu chilli rovno LV. Pokud napíše periferie logickou jedna, napětí neprojde skrz Q1 a dráha LV-S je tažena pull-up rezistorem R8 k napětí LV.
+	
+	
+
+\end{document}
+
+
+
+odkladiště 
+
+
+
+
+rady jak psát atd.
 
 
 \chapter{Jak psát}
@@ -249,12 +603,12 @@ I~v~sekci Prohlášení zkuste držet svého kreativního ducha na uzdě, abyste
 Struktura textu by měla být zhruba následující:
 
 \begin{enumerate}
-\item[$\bullet$] úvod
-\item teorie
-\item metodika
-\item výsledky
-\item diskuze
-\item[$\bullet$] závěr
+	\item[$\bullet$] úvod
+	\item teorie
+	\item metodika
+	\item výsledky
+	\item diskuze
+	\item[$\bullet$] závěr
 \end{enumerate}
 nicméně není pevně daná a spoustě prací sluší i tematičtější způsoby dělení informací.
 
@@ -263,27 +617,35 @@ Všechna čest Microsoftu za postupnou konverzi Wordu z~textového procesoru v~s
 Jedna z~mnoha vlastností nových verzí je možnost přidání titulku k~plovoucímu objektu, jako bývá obrázek či tabulka.
 
 \begin{figure}[h]
-  	\centering
- 	\includegraphics[width=200px]{img/final_doc.png}
- 	\caption{Vás to nejspíše čeká taky.}
+	\centering
+	\includegraphics[width=200px]{img/final_doc.png}
+	\caption{Vás to nejspíše čeká taky.}
 \end{figure}
 
-\begin{table}[h]
-  \centering
-    \begin{tabular}{|l|l|}
-    \hline
-    Jednoduchá & tabulka \\ \hline
-    o~& ničem \\
-    \hline
-    \end{tabular}
-  \caption{Jak vidno, čísluje se separátně}
-\end{table}
+
 
 \begin{listedequation}[h]
-$$L = - \frac{1}{4}F_{{\mu}v}F^{{\mu}v} + i \overline{\psi} \psi + \psi_i y_i \psi_j \phi + hc + |D_\mu\phi|^2 - V(\phi)$$
-\caption{To je ale rovnice!}
-\label{eq:hrnekeq}
+	$$L = - \frac{1}{4}F_{{\mu}v}F^{{\mu}v} + i \overline{\psi} \psi + \psi_i y_i \psi_j \phi + hc + |D_\mu\phi|^2 - V(\phi)$$
+	\caption{To je ale rovnice!}
+	\label{eq:hrnekeq}
 \end{listedequation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Vkládání popisků k~obrázkům a tabulkám lze zařídit poměrně snadno a intuitivně tlačítkem „Vložit titulek“ na kartě \It{Reference}.
 U~rovnic se bohužel tento způsob uplatňuje jen velmi těžko, klasické vpravo zarovnané (1.1) lze pouze vykouzlit.
@@ -298,10 +660,10 @@ Co se dá naopak použít skvěle, jsou křížové odkazy.
 Klepnutím na tlačítko „Křížový odkaz“ na kartě \It{Reference} mi umožní v~textu odkazovat na právě nějaký z~plovoucích objektů (či kapitolu, sekci, …) Proto nemám potíž zde uvést, že rovnice \autoref{eq:hrnekeq} odpovídá rovnici vyobrazené na hrnku na \autoref{fig:hrnek}, jen s~tím rozdílem, že na hrnku není formulována zcela správně.
 
 \begin{figure}[h]
-  	\centering
- 	\includegraphics[width=\textwidth]{img/hrnek.jpg}
- 	\caption{Hrneček ze Švýcarska}
- 	\label{fig:hrnek}
+	\centering
+	\includegraphics[width=\textwidth]{img/hrnek.jpg}
+	\caption{Hrneček ze Švýcarska}
+	\label{fig:hrnek}
 \end{figure}
 
 \section{Bibliografie}
@@ -324,7 +686,7 @@ Tak proč vynalézat kolo?
 
 \subsection{Užitečné odkazy}
 \begin{itemize}
-    \item \url{http://www.citace.com}, \url{http://www.mzk.cz/}
+	\item \url{http://www.citace.com}, \url{http://www.mzk.cz/}
 	\item \url{http://www.boldis.cz/citace/citace1.pdf}
 	\item \url{http://www.boldis.cz/citace/citace2.pdf}
 	\item \url{https://sites.google.com/site/novaiso690/}
@@ -333,7 +695,7 @@ Tak proč vynalézat kolo?
 \section{Symboly, zkratky, slovníček}
 Zkratky vysvětlujeme již při první zmínce v~textu, při jejich častějším výskytu může být praktické uvést ucelený seznam.
 Totéž pak platí pro pojmy, které vysvětlujeme v~poznámce pod čarou\footnote{Poznámku pod čarou vložíme opět z~karty \It{Reference} tlačítkem \It{Vložit pozn.
-pod čarou.}}: pokud jich je mnoho, vysázíme je i samostatně jako slovníček pojmů.
+		pod čarou.}}: pokud jich je mnoho, vysázíme je i samostatně jako slovníček pojmů.
 
 \section{Moudra závěrem}
 Uvědomte si, že hlavním výstupem vaší roční činnosti nejsou data nebo zařízení, nýbrž právě odborný text, který má komisi SOČ ukázat, jak jste studované problematice porozuměli, jaký je váš vlastní přínos, jestli dokážete verbálně vystihnout vše podstatné a důležité.
@@ -344,9 +706,9 @@ Bohužel víc, než jsem původně zamýšlel, protože sázení ve Wordu stále
 Všem počítačově zdatným jedincům pak doporučuji naučit se sazbu v~LaTeXu, je to dovednost, která se vám nikdy neztratí.
 
 \begin{figure}[h]
-  	\centering
- 	\includegraphics[width=\textwidth]{img/pulp.jpg}
- 	\caption{Nejste v~tom sami.}
+	\centering
+	\includegraphics[width=\textwidth]{img/pulp.jpg}
+	\caption{Nejste v~tom sami.}
 \end{figure}
 
 Na závěr vám už poradím jen jedno: hledejte inspiraci.
@@ -439,155 +801,3 @@ Za podněty a reakce budeme všichni tři rádi.
 
 Závěrečná kapitola obsahuje zhodnocení dosažených výsledků se zvlášť vyznačeným vlastním přínosem studenta.
 Povinně se zde objeví i zhodnocení z~pohledu dalšího vývoje projektu, student uvede náměty vycházející ze zkušeností s~řešeným projektem a uvede rovněž návaznosti na právě dokončené projekty.
-
-\newpage
-\printbibliography[title=Literatura]
-\addcontentsline{toc}{section}{Literatura}
-
-\listoffigures
-\addcontentsline{toc}{section}{Seznam obrázků}
-
-\listoftables
-\addcontentsline{toc}{section}{Seznam tabulek}
-
-\listoflistedequation
-\addcontentsline{toc}{section}{Seznam rovnic}
-
-
-\newpage
-
-\part*{Technický list desky SchoolBoard}
-
-\chapter*{funkce desky}
-Deska má k dispozici
-\begin{itemize}
-\item třicetidvoubitový procesor ESP32 s taktovací frekvencí 240MHz a napájecím napětím 3,3 V 
-\item \item flash pamětí 4 MB (dělají se i verze s 8 a 16 MB), 520 KB SRAM, WI-Fi, Bluetooth, 28 vstupně výstupních piny, dva ADC převodníky (jeden s 6 piny a druhý s 10 piny), jedním DAC převodníkem s dvěma piny, tři UARTy, dvě SPI, tři I2C(jedno je použito interně pro flash) atd.
-\item Motorový driver DRV8833, který umožnuje řídit dva stejnosměrné nebo jeden krokový motor.
-\item Tři konektory na inteligentní serva LX-15D nebo LX-16A. Deska dokáže řídit až 254 těchto serv. Serva se totiž dokáží řetězit za sebe, ale pokud potřebují větší proud (když podávají větší kroutící moment), ubytek napětí na kabelech je už moc velký, aby serva mohla využít plný výkon. Proto jsou na desce konektory tři a ne jen jeden.
-\item Čtyři uživatelská tlačítka
-\item Tři uživatelské ledky a jedna ledky signalizující zapnutý stav
-\item Možnost měření baterie
-\item Hardwarové řešení startu a vypínání (dá se použít i jako nouzový vypínač). Tlačítka na zapínání a vypínání jsou jak přímo na desce, tak jsou i vyvedena na pinheady pro možnost připojení externího řízení.
-\item Konektor na připojení motorů s encoderem.
-\item Deska operuje na napětí 3,3V, ale aby byla schopná komunikovat i s periferiemi operujícími
-na napětí 5V, jsou čtyři piny opatřené převodníkem napěťových úrovní.
-Piny IO35, IO32, IO14 a IO12 jsou tedy schopny operovat jak na napětí 3,3V, tak na 5V.
-Piny jsou teoreticky schopné pracovat i na napětí vyšším, záleží na součástce IM3
-(step-down nebo stabilizátor 7805), která napájí převodník. Pokud bude IM3 dodávat jiné napětí, bude toto napětí i na 5V pinech (napětí nesmí klesnout pod 4,5V jinak procesor nedostane dost proudu).
-\item Vyvedení 5V napájení je na oddělené stabilizaci (součástka IM4) pro možnost napájení jiným napětím
-\item Deska má také vyvedeny všechny piny, které nejsou spojeny 
-s hlavní funkcí desky (řízení motorů) nebo je problematické se o ně starat při bootu ESP32.
-
-\end{itemize}
-	
-\chapter*{Detailní popis desky}
-
-\section{Logická řídící část}
-
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=\textwidth]{img/logika.png}
-		\caption{Nejste v~tom sami.}
-	\end{figure}
-	
-	\newpage
-	
-	\subsection{DEVKIT C:}
-	procesor ESP32 je v tomto případě osazený na devkitu C. Je to malá deska, která se stará o potřeby procesoru a dá se koupit jako celek. Zajišťuje jednoduché programování přes USB, zajištuje stabilizované napětí 3,3V pro ESP32 a 3,3V větev na desce a stará se o výchozí hodnoty na pinech u kterých je to potřeba.
-	Seznam důležitých pinů
-	\begin{itemize}
-	\item EN – reset pin, pokud je na něm logická 0, ESP32 se resetuje, v normálním stavu na něm má být logická 1, proto je zde pull-up rezistor, který zajištuje logickou 1.
-	
-	\item Piny s označením reserv AD1 jsou vyhrazené pro externí použití 
-	a nejsou tedy na desce nijak zapojené, jsou to piny, na které je připojený 
-	první AD převodník ESP32 (ADC1), ADC1 je plně k užití pro uživatele na rozdíl 
-	od ADC2, který využíván Wi-Fi. ADC2 je tedy uživateli k dispozici, jen pokud jej zrovna nevyžaduje Wi-Fi.
-	
-	\item Piny s označením AD1 jsou také piny ADC1, ale jsou interně připojené na některé periferie, která však nemusí být použité
-	
-	\item \item IO34 – použitelná na měření napětí na baterii přes jumper JP2 přímo na desce
-	\item \item IO35 – pin řídící inteligentní serva
-	\item \item IO33, 32 jsou připojené na převodník napěťových úrovní pro možnost komunikovat na 5V. Analogové měření je ovlivněno pull-up rezistory na převodníku napěťových úrovní. Při potřebě užití těchto pinů jako analogových vstupů tedy doporučuji odebrat tyto pull-up rezistory. 
-	To znamená, že tyto piny budou potřebovat softwarové pull-upy při užití jako vstupní pin při 5V komunikace.
-	\item Piny s rudým označením THIS SIGNAL MUST BE HERE, jsou lehce problematické, protože ovlivňují boot ESP. Musí na nich tedy při bootu být správná logická hodnota, jinak by ESP mohlo třeba bootovat z jiné paměti nebo by třeba USB nemohlo zapisovat do paměti pro program. Piny IO0 a IO2 nejsou vyvedeny a je o ně interně postaráno, pin IO12 je ale vyveden a uživatel si tedy musí dát pozor, aby na něm neměl při bootu logickou 1. Pokud zůstane nepřipojen, deska se o něj postará.
-	
-	\subsection{D2}
-	Dioda sloužící k zamezení napájení 5V větve z USB.
-	Ochrana před přetížením napájení z USB.
-	
-	\subsection{RN3A, B, C, D:}
-	rezistorová síť, odpory k ledkám.
-	
-	\subsection{RN2A, B, C, D:}
-	rezistorová síť, ochranné odpory ke tlačítkům, aby 
-	byl procesor chráněn při případné chybě 
-	v programu.
-	
-	\subsection{SW0, 1, 2, 3:}
-	uživatelská tlačítka
-	
-	\subsection{C3, 4, 5, 8:}
-	kondenzátory pro vyhlazení signálu z tlačítka při stisknutí
-	
-	\subsection{JP4, 9:}
-	vyvedení tlačítek a ledek ven z desky pro možnost	
-	vyvedení dál od desky, např. deska muže být v útrobách robota, ale tlačítka a ledky mohou být 
-	pořád pohodlně dostupné, protože jsou vyvedené	
-	někam na povrch stroje.
-	
-	\subsection{LED0, 1, 2:}
-	ledky pro možnost signalizace různých stavů programu
-	
-	\subsection{Led3:}
-	powerled, signalizace, zda je deska zapnutá nebo vypnutá
-	
-	\subsection{JP6, 12:}
-	konektor pro připojení motoru s encoderem
-	\item Vnější piny – napájení motoru
-	\item Piny vedle vnějších pinů – napájení encoderu
-	\item Vnitřní piny – signály encoderu
-	\item Konektor je primárně určen pro inkrementální magnetické encodery, s nimi i počítají programové knihovny
-	
-	\subsection{JP5:}
-	vyvod 3.3V napájení
-	
-	\subsection{JP8, 11:}
-	vyvedení některých pinů ESP, každý pin je vyveden alespoň dvakrát pro možnost připojení osciloskopu pro příjemnější hledání chyb programu.
-	
-	\subsection{LEVEL SHIFTER:}
-	Neboli převodník napěťových úrovní zajištuje možnost digitální komunikace s 5V periferií pro čtyři piny ESP. Konkrétně pro piny IO32, IO33, IO14, IO12.
-	\item IO32 – jeden z pinů ADC1, podrobněji u DEVKIT C.
-	\item IO33 – jeden z pinů ADC1, podrobněji u DEVKIT C.
-	\item IO14 – jeden z pinů ADC2. ADC2 je využíván Wi-Fi. Jinak není použit.
-	\item IO12 – je nutno odstranit pull-up (na součástce převodníku). IO12 volí paměť,
-	ze které se bootuje a jestli do té správné jde nahrát program. Jinak není interně použit.
-	\item Všechny čtyři piny jsou jinak vyvedeny i ve variantě 3.3V.
-	\item Převodník napěťových úrovní převádí logickou 1 pomocí pull-upů, tím pádem periferie pomocí převodníku spojené musí mít vstup s vysokým odporem, protože pokud by piny těchto periferií neměly velký odpor, tak by výsledek po dělení děliče vzniklého z pull-upu a periferie, která signál měří, mohl být pod rozlišovací schopností dané periferie.
-	
-	\subsection{JP1, 3, 7:}
-	vývody zpětivoltovaných pinu a jejich napájení
-	\item Napájení 5V nemusí být nutně 5V, tyto piny mají vlastní stabilizaci napájení (IM3), a tím pádem záleží na tom, jak je tato stabilizace nastavená. Deska je primárně navržená pro dva způsoby stabilizace: 
-	step-Down a stabilizátor řady 7805
-	\item \item Step-Down má výhodu většího proudu, a hlavně nastavitelného napětí na výstupu. Naopak nevýhoda je nutnost nastavit požadované napětí a konkrétně u mnou používaného exempláře poměrně velký rozkmit výstupního napětí při změně odběru proudu.
-	\item \item 7805 má výhodu napěťové stability naopak nevýhodu maximálního možného odebíraného proudu který závisí na vstupním napětí. Co se regulace napětí týče, v mnou použitém zapojení se napětí regulovat nedá.
-	
-	\subsection{R5:}
-	Trimr sloužící jako dělič napětí baterie pro možnost měření jejího napětí. 
-	\textbf{Před použitím nutno nastavit na vhodnou dělící hodnotu vzhledem k použitým bateriím!} Na výstupu z děliče nesmí být při plně nabité baterii víc než 3,6V. Pokud se při daném použití desky nemá měnit maximální napětí na baterii (počet článků baterie nebo jejich druh), doporučuji nastavit trimr jednou a následně jej zalepit, aby se například vibracemi nemohl rozladit.
-	
-	\subsection{JP2:}
-	jumper pro možnost odpojení měření baterie za účelem uvolnění analogového pinu IO34. Zároveň se dá použít na měření výstupu z děliče před jeho zapojením k ESP.
-	
-	\section{Silová a napájecí čás}
-	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=\textwidth]{img/silovka.png}
-		\caption{Nejste v~tom sami.}
-	\end{figure}
-	
-	
-	\end{itemize}
-
-\end{document}
