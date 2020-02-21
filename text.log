@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.1)  11 FEB 2020 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.1)  21 FEB 2020 12:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**text.tex
+**c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.tex
 (c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.tex
 LaTeX2e <2019-10-01> patch level 3
 (c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/template/socthesis.cls
@@ -642,13 +642,14 @@ Package biblatex Info: Data encoding 'utf8' specified.
 \openout3 = `text-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'text.bbl' found.
- (c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.bbl)
+Package biblatex Info: ... file 'text.bbl' not found.
+
+No file text.bbl.
 Package biblatex Info: Reference section=0 on input line 21.
 Package biblatex Info: Reference segment=0 on input line 21.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- [1
+[1
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (18.87473pt too wide) in alignment at lines 23--23
@@ -661,216 +662,294 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--23
  []
 
 [2]
+Overfull \hbox (10.8364pt too wide) in paragraph at lines 25--25
+\OT1/cmr/m/n/12 co-val/a sa-mo-statn^^Te pod ve-den^^S^^Pm doc. PhDr. Jany Nov^^Sakov^^Se, Ph.D. a s pou^^Tzit^^S^^Pm
+ []
+
+
 Overfull \hbox (1.85843pt too wide) in paragraph at lines 25--25
 \OT1/cmr/m/n/12 a nem^^Sam z^^Sava^^Tzn^^Sy d^^Wuvod proti zp^^Tr^^S^^Pstup^^Tnov^^San^^S^^P t^^Seto pr^^Sace v sou-ladu se z^^Sakonem
  []
 
 [3]
-<template/jmk.png, id=126, 633.86812pt x 334.24875pt>
+<template/jmk.png, id=242, 633.86812pt x 334.24875pt>
 File: template/jmk.png Graphic file (type png)
 <use template/jmk.png>
 Package pdftex.def Info: template/jmk.png  used on input line 27.
 (pdftex.def)             Requested size: 156.0006pt x 82.26141pt.
-<template/jcmm.png, id=127, 853.1875pt x 258.9675pt>
+<template/jcmm.png, id=243, 853.1875pt x 258.9675pt>
 File: template/jcmm.png Graphic file (type png)
 <use template/jcmm.png>
 Package pdftex.def Info: template/jcmm.png  used on input line 27.
 (pdftex.def)             Requested size: 156.0006pt x 47.35106pt.
  [4 <c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/template/jmk.png> <c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/template/jcmm.png>] [5] (c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.toc [6
 
-])
+] [7])
 \tf@toc=\write5
 \openout5 = `text.toc'.
 
- [7] [8
+ [8]
+Overfull \hbox (4.82646pt too wide) in paragraph at lines 61--62
+\OT1/cmr/m/n/12 Robot je prim^^Sarn^^Te navr^^Tzen pro volno^^Tcasov^^Sy vzd^^Tel^^Savac^^S^^P kurz ro-bo-tiky po^^Tr^^Sadan^^Sy
+ []
+
+
+Overfull \hbox (8.45273pt too wide) in paragraph at lines 61--62
+\OT1/cmr/m/n/12 na na^^Ts^^S^^P ^^Tskole a je ur^^Tcen pro za^^Tc^^Sate^^Tcn^^S^^Pky, jako ta-kov^^Sy d^^Sav^^Sa ^^Su^^Tcastn^^S^^Pk^^Wum mo^^Tznosti,
+ []
+
+[9
 
 ]
 Kapitola 1.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 65.
+[10
+
+]
+Overfull \hbox (14.43pt too wide) in paragraph at lines 82--84
+\OT1/cmr/m/n/12 strukci v^^Syrazn^^Te upra-vo-vat. Ro-bota je ale v^^Tet^^Tsinou t^^Treba p^^Trizp^^Wusobit konkr^^Setn^^S^^Pmu
+ []
+
+[11] [12] [13]
+Kapitola 2.
+
+LaTeX Warning: Citation 'vut-zkousky' on page 14 undefined on input line 105.
+
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 107.
 (c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
- [9
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
+ [14
 
 ]
-Overfull \hbox (6.40091pt too wide) in paragraph at lines 93--97
+Overfull \hbox (6.40091pt too wide) in paragraph at lines 135--139
 \OT1/cmr/m/n/12 m^^Wu^^Tzeme za^^Tc^^S^^Pt ps^^Sat. P^^Tri psan^^S^^P prvn^^S^^Pho kon-ceptu se sna^^Tz^^S^^Pme za-zna-me-nat v^^Tsechny
  []
 
-[10]
-Kapitola 2.
+[15]
+Kapitola 3.
 
-Overfull \hbox (18.41408pt too wide) in paragraph at lines 100--112
+Overfull \hbox (18.41408pt too wide) in paragraph at lines 142--154
 \OT1/cmr/m/n/12 pou^^Tz^^S^^Pv^^San^^S^^Pm mal^^Seho v^^Syb^^Teru slov a t^^S^^Pm, ^^Tze n^^Tekter^^Sa zvl^^Sa^^Tst[] obl^^S^^Pben^^Sa slova pou^^Tz^^S^^Pv^^Same
  []
 
 
-Overfull \hbox (12.96411pt too wide) in paragraph at lines 100--112
+Overfull \hbox (12.96411pt too wide) in paragraph at lines 142--154
 \OT1/cmr/m/n/12 Nap^^Tr^^S^^Pklad ob-ratu dok^^Sazalo se, ^^Tze... z^^Sasadn^^Te ne-pou^^Tz^^S^^Pv^^Same. Nen^^S^^P ^^Tspatn^^Se pou^^Tz^^S^^Pvat
  []
 
 
-Overfull \hbox (14.19974pt too wide) in paragraph at lines 100--112
+Overfull \hbox (14.19974pt too wide) in paragraph at lines 142--154
 \OT1/cmr/m/n/12 au-torsk^^Seho my, t^^S^^Pm p^^Tredpokl^^Sad^^Same, ^^Tze n^^Teco ^^Tre^^Ts^^S^^Pme, nebo nap^^Tr^^S^^Pklad zo-bec^^Tnujeme
  []
 
 
-Overfull \hbox (5.12592pt too wide) in paragraph at lines 100--112
+Overfull \hbox (5.12592pt too wide) in paragraph at lines 142--154
 \OT1/cmr/m/n/12 spolu se ^^Tcten^^Sa^^Trem. V kva-li-fika^^Tcn^^S^^Pch prac^^S^^Pch pou^^Tzijeme au-torsk^^Seho j^^Sa (nap^^Tr^^S^^Pklad
  []
 
-[11
+[16
 
 ]
-Overfull \hbox (9.29585pt too wide) in paragraph at lines 128--132
+Overfull \hbox (9.29585pt too wide) in paragraph at lines 170--174
 []\OT1/cmr/m/n/12 Nikdy nepl^^Sytv^^Same ^^Tcten^^Sa^^Trov^^Sym ^^Tcasem v^^Sykladem trivi^^Saln^^S^^Pch a ne-pod-statn^^Sych
  []
 
-[12]
-Kapitola 3.
-[13
-
-]
+[17]
 Kapitola 4.
-[14
+[18
 
 ]
-Overfull \hbox (0.1012pt too wide) in paragraph at lines 177--181
+Kapitola 5.
+[19
+
+]
+Overfull \hbox (0.1012pt too wide) in paragraph at lines 219--223
 [][]\OT1/cmr/m/n/12 Clenic^^S^^P (in-ter-punk^^Tcn^^S^^P) znam^^Senka te^^Tcka, ^^Tc^^Sarka, st^^Tredn^^S^^Pk, dvojte^^Tcka, otazn^^S^^Pk
  []
 
 
-Overfull \hbox (11.19437pt too wide) in paragraph at lines 177--181
+Overfull \hbox (11.19437pt too wide) in paragraph at lines 219--223
 \OT1/cmr/m/n/12 a vyk^^Tri^^Tcn^^S^^Pk, jako^^Tz i uzav^^S^^Prac^^S^^P z^^Savorky a uvo-zovky se p^^Trimykaj^^S^^P k p^^Tredch^^Sazej^^S^^Pc^^S^^Pmu
  []
 
-[15]
-Overfull \hbox (8.46184pt too wide) in paragraph at lines 194--199
+[20]
+Overfull \hbox (8.46184pt too wide) in paragraph at lines 236--241
 \OT1/cmr/m/n/12 pouze text uve-den^^Sy v j^^Sadru pr^^Sace. []C^^Sasti jako abs-trakt, kl^^S^^P^^Tcov^^Sa slova, prohl^^Sa^^Tsen^^S^^P,
  []
 
-[16]
-Kapitola 5.
-[17
+[21]
+Kapitola 6.
+[22
 
 ]
-<img/final_doc.png, id=229, 602.25pt x 803.0pt>
+<img/final_doc.png, id=393, 602.25pt x 803.0pt>
 File: img/final_doc.png Graphic file (type png)
 <use img/final_doc.png>
-Package pdftex.def Info: img/final_doc.png  used on input line 225.
+Package pdftex.def Info: img/final_doc.png  used on input line 267.
 (pdftex.def)             Requested size: 200.75073pt x 267.66193pt.
-Package hyperref Info: bookmark level for unknown listedequation defaults to 0 on input line 242.
+Package hyperref Info: bookmark level for unknown listedequation defaults to 0 on input line 284.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/final_doc.png>]
-<img/hrnek.jpg, id=239, 602.25pt x 422.57875pt>
+[23 <c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/final_doc.png>]
+<img/hrnek.jpg, id=403, 602.25pt x 422.57875pt>
 File: img/hrnek.jpg Graphic file (type jpg)
 <use img/hrnek.jpg>
-Package pdftex.def Info: img/hrnek.jpg  used on input line 260.
+Package pdftex.def Info: img/hrnek.jpg  used on input line 302.
 (pdftex.def)             Requested size: 390.0pt x 273.66058pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19]
-Overfull \hbox (9.42772pt too wide) in paragraph at lines 279--282
+
+LaTeX Warning: Citation 'citovani' on page 24 undefined on input line 309.
+
+[24]
+Overfull \hbox (9.42772pt too wide) in paragraph at lines 321--324
 []\OT1/cmr/m/n/12 Nicm^^Sen^^Te mo^^Tznosti ne-kon^^Tc^^S^^P Ci-ta-cemi.com, exis-tuje cel^^Sa ^^Trada dal^^Ts^^S^^Pch n^^Sastroj^^Wu
  []
 
-[20 <c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/hrnek.jpg>]
-Overfull \hbox (0.29309pt too wide) in paragraph at lines 292--295
+[25 <c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/hrnek.jpg>]
+Overfull \hbox (0.29309pt too wide) in paragraph at lines 334--337
 \OT1/cmr/m/n/12 Zkratky vysv^^Tetlujeme ji^^Tz p^^Tri prvn^^S^^P zm^^S^^Pnce v textu, p^^Tri je-jich ^^Tcast^^Tej^^Ts^^S^^Pm v^^Syskytu
  []
 
-<img/pulp.jpg, id=263, 530.98375pt x 368.37625pt>
+<img/pulp.jpg, id=425, 530.98375pt x 368.37625pt>
 File: img/pulp.jpg Graphic file (type jpg)
 <use img/pulp.jpg>
-Package pdftex.def Info: img/pulp.jpg  used on input line 306.
+Package pdftex.def Info: img/pulp.jpg  used on input line 348.
 (pdftex.def)             Requested size: 390.0pt x 270.5706pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21] [22 <c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/pulp.jpg>]
-Kapitola 6.
+[26] [27 <c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/pulp.jpg>]
+Kapitola 7.
 
-Overfull \hbox (12.11604pt too wide) in paragraph at lines 328--330
+Overfull \hbox (12.11604pt too wide) in paragraph at lines 370--372
 \OT1/cmr/m/n/12 nejsou data nebo za^^Tr^^S^^Pzen^^S^^P, n^^Sybr^^Tz pr^^Sav^^Te od-born^^Sy text. Ov^^Tsem z vlastn^^S^^P zku^^Tsenosti
  []
 
-[23
+[28
 
 ]
-Overfull \hbox (4.27863pt too wide) in paragraph at lines 352--354
+Overfull \hbox (4.27863pt too wide) in paragraph at lines 394--396
 \OT1/cmr/m/n/12 mnoho ^^Tcasu, proto^^Tze v^^Sam pravd^^Tepodobn^^Te sch^^Saz^^S^^P je^^Tst^^Te pod-statn^^Tej^^Ts^^S^^P v^^Teci. A tak^^Se
  []
 
-[24]
-Overfull \hbox (7.89449pt too wide) in paragraph at lines 364--367
+[29]
+Overfull \hbox (7.89449pt too wide) in paragraph at lines 406--409
 []\OT1/cmr/m/n/12 Proto je podle m^^Te d^^Wule^^Tzit^^Se v^^Tenovat mi-nim^^Saln^^Te stejn^^Se mno^^Tzstv^^S^^P ^^Tcasu p^^Tr^^S^^Pprav^^Te
  []
 
-[25]
-Kapitola 7.
-[26
+[30]
+Kapitola 8.
+[31
 
-] [27
+] [32
 
 ]
 
-Package biblatex Warning: Name format 'last-first' deprecated.
-(biblatex)                Please use 'family-given' instead.
-(biblatex)                Using 'family-given' now.
+LaTeX Warning: Empty bibliography on input line 444.
 
-[28
-
-] (c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.lof)
+(c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.lof)
 \tf@lof=\write6
 \openout6 = `text.lof'.
 
- [29
+ [33
 
 ] (c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.lot)
 \tf@lot=\write7
 \openout7 = `text.lot'.
 
- [30
+ [34
 
 ] (c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.lolistedequation)
 \tf@lolistedequation=\write8
 \openout8 = `text.lolistedequation'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 414.
- [31
+ [35
+
+] [36
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 414.
+Overfull \hbox (22.34296pt too wide) in paragraph at lines 464--465
+[]\OT1/cmr/m/n/12 t^^Tricetidvoubitov^^Sy pro-ce-sor ESP32 s tak-to-vac^^S^^P frek-venc^^S^^P 240MHz a nap^^Sajec^^S^^Pm
+ []
+
+
+Overfull \hbox (0.13913pt too wide) in paragraph at lines 467--468
+[]\OT1/cmr/m/n/12 T^^Tri ko-nek-tory na in-te-li-gentn^^S^^P serva LX-15D nebo LX-16A. Deska dok^^Sa^^Tze
+ []
+
+[37
+
+]
+Overfull \hbox (1.72371pt too wide) in paragraph at lines 473--478
+\OT1/cmr/m/n/12 ri-fe-ri-emi ope-ruj^^S^^Pc^^S^^Pmi na nap^^Tet^^S^^P 5V, jsou ^^Tcty^^Tri piny opat^^Tren^^Se p^^Trevodn^^S^^Pkem
+ []
+
+[38]
+<img/logika.png, id=504, 1105.36964pt x 744.01965pt>
+File: img/logika.png Graphic file (type png)
+<use img/logika.png>
+Package pdftex.def Info: img/logika.png  used on input line 490.
+(pdftex.def)             Requested size: 390.0pt x 262.51105pt.
+ [39
+
+ <c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/logika.png (PNG copy)>] [40] [41] [42] [43]
+Overfull \hbox (1.79315pt too wide) in paragraph at lines 576--578
+\OT1/cmr/m/n/12 Trimr slou^^Tz^^S^^Pc^^S^^P jako d^^Teli^^Tc nap^^Tet^^S^^P ba-te-rie pro mo^^Tznost m^^Te^^Tren^^S^^P jej^^S^^Pho nap^^Tet^^S^^P.
+ []
+
+
+Overfull \hbox (5.10248pt too wide) in paragraph at lines 576--578
+\OT1/cmr/bx/n/12 P^^Tred pou^^Tzit^^S^^Pm nutno na-sta-vit na vhod-nou d^^Tel^^S^^Pc^^S^^P hod-notu vzhle-
+ []
+
+<img/silovka.png, id=527, 1105.731pt x 744.381pt>
+File: img/silovka.png Graphic file (type png)
+<use img/silovka.png>
+Package pdftex.def Info: img/silovka.png  used on input line 586.
+(pdftex.def)             Requested size: 390.0pt x 262.54767pt.
+[44]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 593.
+ [45 <c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/silovka.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 593.
  (c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 414.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 414.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 593.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 593.
 Package rerunfilecheck Info: File `text.out' has not changed.
-(rerunfilecheck)             Checksum: B972D3B256D865032D373FC3BC012867;4041.
+(rerunfilecheck)             Checksum: CAC1F458C15BAE06486A00764F3FEB0C;7357.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                text
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'text.run.xml'.
 \openout1 = `text.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 414.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 593.
  ) 
 Here is how much of TeX's memory you used:
- 19625 strings out of 492162
- 319672 string characters out of 6129063
- 616986 words of memory out of 5000000
- 23669 multiletter control sequences out of 15000+600000
+ 19685 strings out of 492162
+ 320181 string characters out of 6129063
+ 616730 words of memory out of 5000000
+ 23684 multiletter control sequences out of 15000+600000
  11096 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,11n,46p,1149b,2532s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,11n,46p,1199b,1807s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.pdf (31 pages, 476350 bytes).
+Output written on c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.pdf (45 pages, 649512 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 331 compressed objects within 4 object streams
- 82 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 606 PDF objects out of 1000 (max. 8388607)
+ 532 compressed objects within 6 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 476 words of extra memory for PDF output out of 10000 (max. 10000000)
 

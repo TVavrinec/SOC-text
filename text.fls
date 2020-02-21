@@ -182,9 +182,6 @@ INPUT c:/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/czech.lbx
 INPUT c:/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/czech.lbx
 INPUT c:/texlive/2019/texmf-dist/tex/latex/biblatex-iso690/czech-iso.lbx
 OUTPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text-blx.bib
-INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.bbl
-INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.bbl
-INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.bbl
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
@@ -232,8 +229,6 @@ INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/pulp.jpg
 INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/pulp.jpg
 INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/pulp.jpg
-INPUT c:/texlive/2019/texmf-dist/tex/latex/biblatex-iso690/czech-iso.lbx
-INPUT c:/texlive/2019/texmf-dist/tex/latex/biblatex-iso690/czech-iso.lbx
 INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.lof
 INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.lof
 INPUT c:/texlive/2019/texmf-dist/tex/latex/biblatex-iso690/czech-iso.lbx
@@ -245,6 +240,12 @@ OUTPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.lot
 INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.lolistedequation
 INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.lolistedequation
 OUTPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.lolistedequation
+INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/logika.png
+INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/logika.png
+INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/logika.png
+INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/silovka.png
+INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/silovka.png
+INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/img/silovka.png
 INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.aux
 INPUT c:/texlive/2019/texmf-dist/tex/latex/biblatex-iso690/czech-iso.lbx
 INPUT c:/Users/Tomas_Vavrinec/Documents/GitHub/SOC-text/text.out
