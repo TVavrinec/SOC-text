@@ -3,6 +3,20 @@
 \usepackage{subcaption}
 \usepackage{amsmath}
 \usepackage{enumitem}
+\usepackage{hyperref} % balíček pro hypertextové odkazy
+
+\usepackage{color} % balíček pro obarvování textů
+% \color{blue}
+\usepackage{xcolor}  % zapne možnost používání barev, mj. pro \definecolor
+\definecolor{mygreen}{RGB}{0,150,0} % nastavení barev odkazů 
+\definecolor{myblue}{RGB}{0,0,200} 
+\definecolor{commentgreen}{RGB}{0,100,0} % nastavení barev pro příklady z C++
+\definecolor{deepblue}{rgb}{0,0,0.7}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\hypersetup{colorlinks=true, linkcolor=myblue, urlcolor=mygreen, citecolor=blue, anchorcolor = magenta,
+	linktocpage = true, frenchlinks } % nastavení barvy odkazů 
 
 \addbibresource{text.bib}
 
@@ -17,6 +31,8 @@
 % Změňte, pokud se liší
 %\region{Jihomoravský}
 %\placefooter{Brno 2017}
+
+
 
 \begin{document}
 
@@ -82,7 +98,7 @@ Lego má své vlastní programovací prostředí, které je většinou pro zač�
 Mbot je oproti legu daleko levnější (cena se pohybuje kolem osmnácti set korun za kus) ale trpí stejným, nebo i větším, nedostatkem sensoru. Co se konstrukce týče, problémy s pevností u Mbota není ale zase se nedá snadno upravit. Konstrukce je totiž hliníková, což je v pořádku, pokud není potřeba konstrukci výrazně upravovat. Robota je ale většinou třeba přizpůsobit konkrétnímu užití, ze zkušenosti se nejvíce osvědčilo dřevo, které se dá jednoduše upravovat bez větší námahy a zároveň není problém z něj udělat dostatečně tuhou konstrukci. Hliník se však tak lehce ručně upravovat nedá.
 Mbot je založen na procesoru ATmega328 což je stejný procesor jaký se používá i u velice známého arduina. To znamená že některé programy, které jsou napsané pro arduino je možné spustit i zde.
 
-\subsection{Edison}
+\subsection{Edison V2.0}
 Edison je velmi podobný legu a mí i podobné problémy. Opět nedisponuje velkým počtem senzoru ale oproti legu je daleko levnější. Stejně jako lego má i Edison vlastní grafické programovací prostředí, bohužel jsem jej nikdy nepoužíval, ale vypadá velmi podobně jako prostředí lega. Myslím si proto, že stejně jako prostředí lega bude i toto velice dobré na malé prográmky pro děti, ale nevhodné pro obsáhlé programy.
 Všechny senzory má Edison uvnitř sebe a nedají se proto dovést na místo kde je uživatel nejvíc potřebuje. Uživatel se proto musí přizpůsobit rozložení senzoru na řídící jednotce, stejně tak se nedá vyvést ani nic jiného. Jediné, co se dá, je vyměňovat kola (například za nějaké ozubení) a pomocí toho si pak dovést náhon z motoru na potřebné místo.
 
@@ -100,26 +116,24 @@ Microbit má zároveň matici ledek na které si uživatel muže zobrazovat co s
 Komerční systémy jsou většinou velmi drahé, nemají zrovna nadbytek senzoru, mívají měkkou nebo obtížně upravitelnou konstrukci a také nemají moc veky výkonu ani přesnost pohonu.
 Možná si říkáte proč mi záleží na tom aby robot pro začátečníky mel všechny tyto možnosti. Vždyť člověku, co nikdy robota nestavěl by to mělo být skoro jedno. Ano, vlastně by jste měli pravdu, ale já chci aby se na jejich prvním robotu dalo stavět dál aby bylo vidět že si z robota který toho moc neuměl sami postavili něco co by třeba mohlo jezdit na soutěže a vyhrávat.
 
-\chapter{SchoolBot}
-
-\section{porovnani}
-
 \begin{table}[h]
 	\centering
 	\begin{tabular}{|l|l|l|l|l|l|l|}
 		\hline
-		robot 			& modulární senzorika 	& rozšiřitelnost 	& bezdrátové řízení & tuhá konstrukce 	& nízká cena 	& programovatelnost z C++ \\ \hline
-		SchoolBot 		& 1 					& 1 				& 1 				& 1 				& 1 			& 1		\\ 
-		Mbot 			& 0 					& 0 				& 0 				& 1 				& 0				& 0		\\ 
-		LEGO Mindstor 	& 1/2 					& 1 				& 1 				& 0 				& 0				& 1		\\ 
-		Edison 			& 0 					& 0 				& 1/2 				& 1/2 				& 1				& 0		\\ 
-		Ozobot			& 0						& 0					& 0 				& 1					& 0				& 0		\\
-		Asuro			& 0						& 0					& 0 				& 0					& 0				& 1		\\
-		Ozobot			& 0						& 1					& 1 				& 1					& 0				& 0		\\
+		robot 			& modulární senzorika & rozšiřitelnost & bezdrátové řízení & tuhá konstrukce & nízká cena & programovatelnost z C++\\ \hline
+		SchoolBot 		& 1 				& 1 			& 1 			& 1 			& 1 		& 1	\\ 
+		Mbot 			& 0 				& 0 			& 0 			& 1 			& 0			& 0	\\ 
+		LEGO Mindstor 	& 1/2 				& 1 			& 1 			& 0 			& 0			& 1/2	\\ 
+		Edison 			& 0 				& 0 			& 1/2 			& 1/2 			& 1			& 0	\\ 
+		OZOBOT			& 0					& 0				& 1 			& 1				& 0			& 0	\\
+		Asuro			& 0					& 0				& 0 			& 0				& 0			& 1	\\
+		Microbit		& 0					& 1				& 1 			& 1				& 0			& 0	\\
 		\hline
 	\end{tabular}
 	\caption{}
 \end{table}
+
+\chapter{SchoolBot}
 
 \section{funkce desky}
 
@@ -143,7 +157,7 @@ Deska má k dispozici
 	\item Vyvedení 5V napájení je na oddělené stabilizaci (součástka IM4) pro možnost napájení jiným napětím
 	\item Deska má také vyvedeny všechny piny, které nejsou spojeny 
 	s hlavní funkcí desky (řízení motorů) nebo je problematické se o ně starat při bootu ESP32.
-	
+	\end{itemize}
 \section{Vývoj}
 
 SchoolBot jsem začal vyvíjet protože účastníci kurzu robotiky v minulých letech nestíhali vytvořit vlastní konstrukci a ještě jí naprogramovat. Přesto že elektroniku již vyřešenou měli, tak mechanika a především programování na ně bylo stále příliš. Proto začal koncem loňského školního roku, 2018/2019, vznikat robot který měl řešit jak elektroniku, tak většinu mechaniky. 
@@ -152,8 +166,8 @@ První prototyp mechaniky byl hotoví již začátkem letních prázdnin, ale da
 \chapter*{Závěr}
 
 \newpage
-\printbibliography[title=Literatura]
-\addcontentsline{toc}{section}{Literatura}
+%\printbibliography[title=Literatura]
+%\addcontentsline{toc}{section}{Literatura}
 
 \listoffigures
 \addcontentsline{toc}{section}{Seznam obrázků}
@@ -161,11 +175,121 @@ První prototyp mechaniky byl hotoví již začátkem letních prázdnin, ale da
 \listoftables
 \addcontentsline{toc}{section}{Seznam tabulek}
 
-\listoflistedequation
-\addcontentsline{toc}{section}{Seznam rovnic}
-
 
 \newpage
+
+\chapter*{Zdroje}
+\begin{thebibliography}{1}
+	
+	\section{LEGO Mindstorm}
+	
+	\bibitem{LEGO Mindstorm} 
+	\textit{porovnání cen LEGa} [online]  [cit. 2020-02-22] Dostupné z: \\ 
+	\url{https://lego.heureka.cz/lego-mindstorms-31313-ev3/#o=2}
+	{\footnotesize Pozn: Roboty a CNC stroje}
+	
+	
+	\section{Mbot}
+	\bibitem{Mbot} 
+	\textit{Mbot} [online] https://www.makeblock.com/mbot [cit. 2020-02-22] Dostupné z: \url{https://www.makeblock.com/mbot}
+	
+	
+	\section{Edison V2.0}
+	\bibitem{Edison V2.0} 
+	\textit{Meet Edison. Wiltronics | Science and Technology product specialists} [online] [cit. 2020-02-22] Dostupné z: \url{https://www.wiltronics.com.au/MeetEdison/}
+	
+	\bibitem{Edison V2.0}
+	\textit{Introducing Edison V2.0 - the newest version of the Edison robot. Edison Programmable Robot - Ideal for school classroom education} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://meetedison.com/meet-edison-v2-0/}
+	 
+	\bibitem{Edison V2.0}
+	\textit{příklad ceny} [online] [cit. 2020-02-22] Dostupné z: \\ 
+	\url{https://www.robotshop.com/ca/en/edison-programmable-v20-robot.html?gclid=Cj0KCQiA4sjyBRC5ARIsAEHsELHtKqVNJOl95kMUC8iBngIkgc3gCZU9KOTwuXWEo4hU4Qs1B-2wASkaAh9CEALw_wcB}
+	
+	\section{OZOBOT}
+	
+	\bibitem{OZOBOT} 
+	\textit{OZOBOT} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://www.youtube.com/watch?v=lqR3zDWAQ1o}
+	
+	\bibitem{OZOBOT}
+	\textit{OZOBOT} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://www.youtube.com/watch?v=Cw30OdlczRo}
+	
+	\section{Asuro}
+	
+	\bibitem{Asuro} 
+	\textit{Asuro} [online] [cit. 2020-02-22] Dostupné z:
+	\url{ http://www.arexx.com/downloads/asuro/asuro_manual_en.pdf}
+	
+	\bibitem{Asuro}
+	\textit{Programovatelný robot ASURO ARX-3 USB - Vyhledávání na Heureka.cz. Heureka.cz - Porovnání cen a srovnání produktů z internetových obchodů } [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://www.heureka.cz/?h[fraze]=Programovateln%C3%BD+robot+ASURO+ARX-3+USB}
+		
+	\bibitem{Asuro}
+	\textit{2012 Kurz zakladni robotiky - robot ASURO - talentovaní.cz. Talentovaní.cz - talentovaní.cz} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://vtp.talentovani.cz//2012 kurz-zakladni-robotiky-robot-asuro}
+	
+	\section{Microbit}
+	
+	\bibitem{Microbit} 
+	\textit{Micro:bit Educational Foundation | micro:bit. Micro:bit Educational Foundation | micro:bit} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://microbit.org/}
+	
+	\bibitem{Microbit}
+	\textit{Cutebot - Micro:bit chytré auto - HW Kitchen. Ochutnejte s námi bastlení! | HWKitchen.cz} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://www.heureka.cz/?h[fraze]=Programovateln%C3%BD+robot+ASURO+ARX-3+USB}
+	
+	\section{použité součástky}
+	
+	\subsection{součásti desky SchoolBoard}
+	
+	\subsubsection{ESP32}
+	
+	\bibitem{WROOM}
+	\textit{Espressif Systems - Wi-Fi and Bluetooth chipsets and solutions } [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf}
+	
+	\bibitem{ESP32}
+	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://cdn.sparkfun.com/datasheets/IoT/esp32_datasheet_en.pdf}
+	
+	\bibitem{ESP32}
+	\textit{Apache Tomcat/6.0.29 - Error report.} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://pdf1.alldatasheet.com/datasheet-pdf/view/1148023/ESPRESSIF/ESP32.html}
+	
+	\subsubsection{DRV8833 (motoroví driver)}
+	
+	\bibitem{DRV8833}
+	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
+	\url{http://www.ti.com/lit/ds/symlink/drv8833.pdf}
+	
+	\subsubsection{7805}
+	
+	\bibitem{7805}
+	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://www.st.com/resource/en/datasheet/l78.pdf}
+	
+	\subsubsection{Step-down}
+	
+	\bibitem{Step-down}
+	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://arduino-shop.cz/docs/produkty/0/698/1502185417.pdf}
+	
+	\subsubsection{Mikrospínač}
+	
+	\bibitem{Mikrospínač}
+	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://www.gme.cz/data/attachments/dsh.630-019.1.pdf}
+	
+	\subsection{inteligentní serva LX15D}
+	
+	\bibitem{inteligentní serva LX15D}
+	\textit{inteligentní serva LX15D} [online] [cit. 2020-02-22] Dostupné z:
+	\url{http://www.lewansoul.com/product/detail-7.html}
+	
+\end{thebibliography}
+
 
 \part{přílohy}
 \part*{Technický list desky SchoolBoard}
@@ -501,12 +625,12 @@ rady jak psát atd.
 
 \chapter{Jak psát}
 Abychom mohli napsat odborný text jasně a srozumitelně, musíme splnit několik základních předpokladů\cite{vut-zkousky}:
-\begin{itemize}
-	\item musíme mít co říci,
-	\item musíme vědět, komu to chceme říci,
-	\item musíme si dokonale promyslet obsah,
-	\item musíme psát strukturovaně.
-\end{itemize}
+%\begin{itemize}
+%	\item musíme mít co říci,
+%	\item musíme vědět, komu to chceme říci,
+%	\item musíme si dokonale promyslet obsah,
+%	\item musíme psát strukturovaně.
+%\end{itemize}
 
 \section{Musíme mít co říci}
 Nejdůležitějším předpokladem dobrého odborného textu je myšlenka.

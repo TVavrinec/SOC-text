@@ -1,44 +1,66 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {czech}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Úvod}{7}{chapter*.10}%
+\contentsline {chapter}{Úvod}{8}{chapter*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {0.1}SchoolBot}{7}{section.0.1}%
+\contentsline {section}{\numberline {0.1}SchoolBot}{8}{section.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Proč vytvářet vlastní roboty?}{8}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Proč vytvářet vlastní roboty?}{9}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Konkurence}{8}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Konkurence}{9}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}LEGO Mindstorms EV3}{8}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}LEGO Mindstorms EV3}{9}{subsection.1.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.2}Mbot}{9}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.2}Mbot}{10}{subsection.1.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.3}Edison}{9}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.3}Edison V2.0}{10}{subsection.1.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.4}OZOBOT}{10}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.4}OZOBOT}{11}{subsection.1.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.5}Asuro}{10}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.5}Asuro}{11}{subsection.1.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.6}Microbit}{10}{subsection.1.1.6}%
+\contentsline {subsection}{\numberline {1.1.6}Microbit}{11}{subsection.1.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.7}Shrnutí}{11}{subsection.1.1.7}%
+\contentsline {subsection}{\numberline {1.1.7}Shrnutí}{12}{subsection.1.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}SchoolBot}{12}{chapter.2}%
+\contentsline {chapter}{\numberline {2}SchoolBot}{13}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}porovnani}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.1}funkce desky}{13}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}funkce desky}{12}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Vývoj}{14}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Vývoj}{14}{section.2.3}%
+\contentsline {section}{Seznam obrázků}{17}{chapter*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatura}{16}{chapter*.12}%
+\contentsline {section}{Seznam tabulek}{18}{chapter*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam obrázků}{16}{chapter*.13}%
+\contentsline {section}{\numberline {2.3}LEGO Mindstorm}{20}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam tabulek}{17}{chapter*.14}%
+\contentsline {section}{\numberline {2.4}Mbot}{20}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam rovnic}{18}{chapter*.15}%
+\contentsline {section}{\numberline {2.5}Edison V2.0}{20}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{I\hspace {1em}přílohy}{19}{part.1}%
+\contentsline {section}{\numberline {2.6}OZOBOT}{21}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{R2}{30}{section*.45}%
+\contentsline {section}{\numberline {2.7}Asuro}{21}{section.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.8}Microbit}{21}{section.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.9}použité součástky}{22}{section.2.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.1}součásti desky SchoolBoard}{22}{subsection.2.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{ESP32}{22}{section*.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{DRV8833 (motoroví driver)}{22}{section*.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{7805}{22}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Step-down}{23}{section*.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Mikrospínač}{23}{section*.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.9.2}inteligentní serva LX15D}{23}{subsection.2.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{I\hspace {1em}přílohy}{24}{part.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{R2}{35}{section*.51}%
