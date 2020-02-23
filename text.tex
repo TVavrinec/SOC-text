@@ -101,7 +101,51 @@ Komerční systémy jsou většinou velmi drahé, nemají zrovna nadbytek senzor
 Možná si říkáte proč mi záleží na tom aby robot pro začátečníky mel všechny tyto možnosti. Vždyť člověku, co nikdy robota nestavěl by to mělo být skoro jedno. Ano, vlastně by jste měli pravdu, ale já chci aby se na jejich prvním robotu dalo stavět dál aby bylo vidět že si z robota který toho moc neuměl sami postavili něco co by třeba mohlo jezdit na soutěže a vyhrávat.
 
 \chapter{SchoolBot}
+
+\section{porovnani}
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|l|l|l|l|l|l|}
+		\hline
+		robot 			& modulární senzorika 	& rozšiřitelnost 	& bezdrátové řízení & tuhá konstrukce 	& nízká cena 	& programovatelnost z C++ \\ \hline
+		SchoolBot 		& 1 					& 1 				& 1 				& 1 				& 1 			& 1		\\ 
+		Mbot 			& 0 					& 0 				& 0 				& 1 				& 0				& 0		\\ 
+		LEGO Mindstor 	& 1/2 					& 1 				& 1 				& 0 				& 0				& 1		\\ 
+		Edison 			& 0 					& 0 				& 1/2 				& 1/2 				& 1				& 0		\\ 
+		Ozobot			& 0						& 0					& 0 				& 1					& 0				& 0		\\
+		Asuro			& 0						& 0					& 0 				& 0					& 0				& 1		\\
+		Ozobot			& 0						& 1					& 1 				& 1					& 0				& 0		\\
+		\hline
+	\end{tabular}
+	\caption{}
+\end{table}
+
+\section{funkce desky}
+
+Deska má k dispozici
+
+\begin{itemize}
+	\item třicetidvoubitový procesor ESP32 s taktovací frekvencí 240MHz a napájecím napětím 3,3 V 
+	\item \item flash pamětí 4 MB (dělají se i verze s 8 a 16 MB), 520 KB SRAM, WI-Fi, Bluetooth, 28 vstupně výstupních piny, dva ADC převodníky (jeden s 6 piny a druhý s 10 piny), jedním DAC převodníkem s dvěma piny, tři UARTy, dvě SPI, tři I2C(jedno je použito interně pro flash) atd.
+	\item Motorový driver DRV8833, který umožnuje řídit dva stejnosměrné nebo jeden krokový motor.
+	\item Tři konektory na inteligentní serva LX-15D nebo LX-16A. Deska dokáže řídit až 254 těchto serv. Serva se totiž dokáží řetězit za sebe, ale pokud potřebují větší proud (když podávají větší kroutící moment), ubytek napětí na kabelech je už moc velký, aby serva mohla využít plný výkon. Proto jsou na desce konektory tři a ne jen jeden.
+	\item Čtyři uživatelská tlačítka
+	\item Tři uživatelské ledky a jedna ledky signalizující zapnutý stav
+	\item Možnost měření baterie
+	\item Hardwarové řešení startu a vypínání (dá se použít i jako nouzový vypínač). Tlačítka na zapínání a vypínání jsou jak přímo na desce, tak jsou i vyvedena na pinheady pro možnost připojení externího řízení.
+	\item Konektor na připojení motorů s encoderem.
+	\item Deska operuje na napětí 3,3V, ale aby byla schopná komunikovat i s periferiemi operujícími
+	na napětí 5V, jsou čtyři piny opatřené převodníkem napěťových úrovní.
+	Piny IO35, IO32, IO14 a IO12 jsou tedy schopny operovat jak na napětí 3,3V, tak na 5V.
+	Piny jsou teoreticky schopné pracovat i na napětí vyšším, záleží na součástce IM3
+	(step-down nebo stabilizátor 7805), která napájí převodník. Pokud bude IM3 dodávat jiné napětí, bude toto napětí i na 5V pinech (napětí nesmí klesnout pod 4,5V jinak procesor nedostane dost proudu).
+	\item Vyvedení 5V napájení je na oddělené stabilizaci (součástka IM4) pro možnost napájení jiným napětím
+	\item Deska má také vyvedeny všechny piny, které nejsou spojeny 
+	s hlavní funkcí desky (řízení motorů) nebo je problematické se o ně starat při bootu ESP32.
+	
 \section{Vývoj}
+
 SchoolBot jsem začal vyvíjet protože účastníci kurzu robotiky v minulých letech nestíhali vytvořit vlastní konstrukci a ještě jí naprogramovat. Přesto že elektroniku již vyřešenou měli, tak mechanika a především programování na ně bylo stále příliš. Proto začal koncem loňského školního roku, 2018/2019, vznikat robot který měl řešit jak elektroniku, tak většinu mechaniky. 
 První prototyp mechaniky byl hotoví již začátkem letních prázdnin, ale další vývoj pokračoval až o hodně později. První verze totiž vyžadovala jen velmi málo uprav a já měl na práci spoustu jiných věcí. V první řadě řídící desku, která již sice také měla první prototyp za sebou, ale vyžadovala daleko víc uprav. Již druhá verze desky byla plně provozu schopná a začátkem roku jsme jí začali stavět s účastníky kurzu. Ne všichni však chtěli použít mojí konstrukci. Někteří si jí chtěli navrhnout sami a někteří měli tak těžké doplňky, že by je tento robot neuvezl. SchoolBota tak využil jen jeden ze sedmi týmů.
 

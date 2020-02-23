@@ -25,16 +25,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}SchoolBot}{12}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Vývoj}{12}{section.2.1}%
+\contentsline {section}{\numberline {2.1}porovnani}{12}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatura}{14}{chapter*.11}%
+\contentsline {section}{\numberline {2.2}funkce desky}{12}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam obrázků}{14}{chapter*.12}%
+\contentsline {section}{\numberline {2.3}Vývoj}{14}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam tabulek}{15}{chapter*.13}%
+\contentsline {section}{Literatura}{16}{chapter*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam rovnic}{16}{chapter*.14}%
+\contentsline {section}{Seznam obrázků}{16}{chapter*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{I\hspace {1em}přílohy}{17}{part.1}%
+\contentsline {section}{Seznam tabulek}{17}{chapter*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{R2}{28}{section*.44}%
+\contentsline {section}{Seznam rovnic}{18}{chapter*.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{I\hspace {1em}přílohy}{19}{part.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{R2}{30}{section*.45}%
