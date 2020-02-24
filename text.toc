@@ -43,13 +43,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Popis desky}{17}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Vývoj}{18}{section.3.2}%
+\contentsline {subsection}{\numberline {3.1.1}Možné periferie}{18}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Kde se deska používá}{19}{section.3.3}%
+\contentsline {subsubsection}{Příklady možných senzoru}{19}{section*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Možná senzorika}{20}{section.3.4}%
+\contentsline {subsubsection}{Příklady jiných periferii}{19}{section*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Přílohy}{21}{chapter*.15}%
+\contentsline {section}{\numberline {3.2}Vývoj}{20}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Kde se deska používá}{20}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Přílohy}{21}{chapter*.17}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Řídící část}{22}{appendix.A}%
 \defcounter {refsection}{0}\relax 
@@ -63,12 +67,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {B.0.1}Power manager:}{28}{subsection.B.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{R2}{29}{section*.34}%
+\contentsline {paragraph}{R2}{29}{section*.36}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {C}Obrazová příloha}{33}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatura}{36}{figure.caption.51}%
+\contentsline {section}{Literatura}{36}{figure.caption.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam obrázků}{36}{appendix*.52}%
+\contentsline {section}{Seznam obrázků}{36}{appendix*.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam tabulek}{37}{appendix*.53}%
+\contentsline {section}{Seznam tabulek}{37}{appendix*.55}%

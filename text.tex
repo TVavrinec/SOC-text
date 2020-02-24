@@ -266,6 +266,39 @@ Deska má k dispozici
 	s hlavní funkcí desky (řízení motorů) a není problematické se o ně starat při bootu ESP32.
 	
 	\end{itemize}
+\subsection{Možné periferie}
+Vzhledem k tomu že je deska řízena procesorem ESP32, který umožnuje komunikaci po řadě sběrnic a disponuje i svým vlastním AD převodníkem (přesto že ne úplně perfektním). Je schopna pracovat s velmi rozsáhlou řadou periferii. Díky převodníku napěťových úrovní navíc umožnuje komunikaci ne jen na 3.3V (pracovní napětí procesoru) ale i na napětí 5V (při jiném nastavení jisté součástky[viz přílohy] i jiném napětí vyšším než 3.3V). 
+\subsubsection{Příklady možných senzoru}
+\begin{itemize}
+	\item Kamera
+	\item Ultrazvukoví dálkoměr
+	\item Infračervený dálkoměr
+	\item Laseroví dálkoměr
+	\item Senzory na sledování čáry
+	\item Senzory barev
+	\item Gyroskop
+	\item Akcelerometr
+	\item Kompas
+	\item Hodiny reálného času
+	\item Teplotoměr
+	\item Barometr
+	\item Senzor osvětlení
+	\item Vlhkoměr
+	\item A mnoho dalších
+\end{itemize}
+
+\subsubsection{Příklady jiných periferii}
+
+\begin{itemize}
+	\item Inteligentní serva (např. LX15D nebo LX16A)
+	\item Inteligentní ledky (např. WS2812)
+	\item Modelářská serva
+	\item Stejnosměrné motory (s rozsahem napětí od 6 do 11V a proudem do 1A [při použití silnější verze stejného driver do 1,5A])
+	\item Krokoví motor
+	\item Obyčejné ledky
+	\item Elektromagnetické ventily
+\end{itemize}
+
 \section{Vývoj}
 
 SchoolBot jsem začal vyvíjet, protože účastníci kurzu robotiky v minulých letech nestíhali za jeden školní rok vytvořit vlastní konstrukci a ještě ji naprogramovat. Přesto, že elektroniku již vyřešenou měli, tak mechanika a především programování na ně bylo stále příliš. Přitom robotické soutěže jsou \uv{zlatým hřebem} každého školního roku. Proto jsem začal koncem loňského školního roku 2018/2019, vyvíjet robota, který měl řešit jak elektroniku, tak většinu mechaniky. 
@@ -279,26 +312,6 @@ SchoolBota tak letos využil jen jeden ze sedmi týmů.
 Deska se používá ve dvou volnočasových kurzech robotiky a při výuce elektrotechniky a automatizace.
 
 \newpage
-
-\section{Možná senzorika}
-\begin{itemize}
-\item Kamera
-\item Ultrazvukoví dálkoměr
-\item Infračervený dálkoměr
-\item Laseroví dálkoměr
-\item Senzory na sledování čáry
-\item Senzory barev
-\item Gyroskop
-\item Akcelerometr
-\item Kompas
-\item Hodiny reálného času
-\item Teplotoměr
-\item Barometr
-\item Senzor osvětlení
-\item Vlhkoměr
-\item A mnoho dalších
-\end{itemize}
-
 
 
 \chapter*{Závěr} %todo závěr 
