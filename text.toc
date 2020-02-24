@@ -39,40 +39,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Uložení kol a motoru}{16}{section*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}SchoolBoard}{17}{chapter.3}%
+\contentsline {subsubsection}{Klepeta}{17}{section*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Popis desky}{17}{section.3.1}%
+\contentsline {chapter}{\numberline {3}SchoolBoard}{18}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Možné periferie}{18}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.1}Popis desky}{18}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Příklady možných senzoru}{19}{section*.15}%
+\contentsline {subsection}{\numberline {3.1.1}Možné periferie}{19}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Příklady jiných periferii}{19}{section*.16}%
+\contentsline {subsubsection}{Příklady možných senzoru}{20}{section*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Vývoj}{20}{section.3.2}%
+\contentsline {subsubsection}{Příklady jiných periferii}{20}{section*.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Kde se deska používá}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.2}Vývoj}{21}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Přílohy}{21}{chapter*.17}%
+\contentsline {section}{\numberline {3.3}Kde se deska používá}{21}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Řídící část}{22}{appendix.A}%
+\contentsline {chapter}{Přílohy}{22}{chapter*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}DEVKIT C:}{22}{section.A.1}%
+\contentsline {chapter}{\numberline {A}Řídící část}{23}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}D2}{23}{subsection.A.1.1}%
+\contentsline {section}{\numberline {A.1}DEVKIT C:}{23}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}RN3A, B, C, D:}{23}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.1}D2}{24}{subsection.A.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Silová část}{28}{appendix.B}%
+\contentsline {subsection}{\numberline {A.1.2}RN3A, B, C, D:}{24}{subsection.A.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.0.1}Power manager:}{28}{subsection.B.0.1}%
+\contentsline {chapter}{\numberline {B}Silová část}{29}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{R2}{29}{section*.36}%
+\contentsline {subsection}{\numberline {B.0.1}Power manager:}{29}{subsection.B.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Obrazová příloha}{33}{appendix.C}%
+\contentsline {paragraph}{R2}{30}{section*.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatura}{36}{figure.caption.53}%
+\contentsline {chapter}{\numberline {C}Obrazová příloha}{34}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam obrázků}{36}{appendix*.54}%
+\contentsline {section}{Literatura}{37}{figure.caption.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam tabulek}{37}{appendix*.55}%
+\contentsline {section}{Seznam obrázků}{37}{appendix*.55}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Seznam tabulek}{38}{appendix*.56}%
