@@ -49,38 +49,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Seznam tabulek}{21}{chapter*.17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}LEGO Mindstorm}{22}{section.2.5}% 
+\contentsline {section}{\numberline {2.5}Mbot}{22}{section.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Mbot}{22}{section.2.6}% 
+\contentsline {section}{\numberline {2.6}Edison V2.0}{22}{section.2.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Edison V2.0}{22}{section.2.7}% 
+\contentsline {section}{\numberline {2.7}OZOBOT}{23}{section.2.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}OZOBOT}{23}{section.2.8}% 
+\contentsline {section}{\numberline {2.8}Asuro}{23}{section.2.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Asuro}{23}{section.2.9}% 
+\contentsline {section}{\numberline {2.9}Microbit}{23}{section.2.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.10}Microbit}{23}{section.2.10}% 
+\contentsline {section}{\numberline {2.10}pou\IeC {\v z}it\IeC {\'e} sou\IeC {\v c}\IeC {\'a}stky}{24}{section.2.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.11}pou\IeC {\v z}it\IeC {\'e} sou\IeC {\v c}\IeC {\'a}stky}{24}{section.2.11}% 
+\contentsline {subsection}{\numberline {2.10.1}sou\IeC {\v c}\IeC {\'a}sti desky SchoolBoard}{24}{subsection.2.10.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.11.1}sou\IeC {\v c}\IeC {\'a}sti desky SchoolBoard}{24}{subsection.2.11.1}% 
+\contentsline {subsubsection}{ESP32}{24}{section*.20}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{ESP32}{24}{section*.19}% 
+\contentsline {subsubsection}{DRV8833 (motorov\IeC {\'\i } driver)}{24}{section*.21}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{DRV8833 (motorov\IeC {\'\i } driver)}{24}{section*.20}% 
+\contentsline {subsubsection}{IRF4905}{24}{section*.22}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{IRF4905}{24}{section*.21}% 
+\contentsline {subsubsection}{BS170}{25}{section*.23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{BS170}{25}{section*.22}% 
+\contentsline {subsubsection}{7805}{25}{section*.24}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{7805}{25}{section*.23}% 
+\contentsline {subsubsection}{Step-down}{25}{section*.25}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Step-down}{25}{section*.24}% 
+\contentsline {subsubsection}{Mikrosp\IeC {\'\i }na\IeC {\v c}}{25}{section*.26}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Mikrosp\IeC {\'\i }na\IeC {\v c}}{25}{section*.25}% 
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.11.2}inteligentn\IeC {\'\i } serva LX15D}{25}{subsection.2.11.2}% 
+\contentsline {subsection}{\numberline {2.10.2}inteligentn\IeC {\'\i } serva LX15D}{25}{subsection.2.10.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{I\hspace {1em}p\IeC {\v r}\IeC {\'\i }lohy}{26}{part.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{R2}{37}{section*.55}% 
+\contentsline {paragraph}{R2}{37}{section*.56}% 

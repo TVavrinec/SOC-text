@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.21)  24 FEB 2020 15:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.21)  24 FEB 2020 15:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -900,6 +900,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.Edison\0
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.267 	
+       pdfTeX warning (ext4): destination with the same identifier (name{cite.E
+dison\040V2.0}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.267 	
        ]
 Underfull \hbox (badness 4291) in paragraph at lines 299--301
 []\OT1/cmr/m/it/12 Cutebot - Micro:bit chytr^^Se auto - HW Kit-chen. Ochut-nejt
@@ -912,14 +918,8 @@ Underfull \hbox (badness 7030) in paragraph at lines 299--301
 ine] [cit. 2020-02-22] Do-
  []
 
-[23pdfTeX warning (ext4): destination with the same identifier (name{cite.Ediso
-n\040V2.0}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.301 	
-       pdfTeX warning (ext4): destination with the same identifier (name{cite.O
-ZOBOT}) has been already used, duplicate ignored
+[23pdfTeX warning (ext4): destination with the same identifier (name{cite.OZOBO
+T}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -990,7 +990,7 @@ Overfull \hbox (1.72371pt too wide) in paragraph at lines 379--384
  []
 
 [29]
-<img/logika.png, id=383, 1105.36964pt x 744.01965pt>
+<img/logika.png, id=388, 1105.36964pt x 744.01965pt>
 File: img/logika.png Graphic file (type png)
 <use img/logika.png>
 Package pdftex.def Info: img/logika.png  used on input line 396.
@@ -1009,7 +1009,7 @@ Overfull \hbox (5.10248pt too wide) in paragraph at lines 482--484
 S^^Pc^^S^^P hod-notu vzhle-
  []
 
-<img/silovka.png, id=421, 1105.731pt x 744.381pt>
+<img/silovka.png, id=427, 1105.731pt x 744.381pt>
 File: img/silovka.png Graphic file (type png)
 <use img/silovka.png>
 Package pdftex.def Info: img/silovka.png  used on input line 492.
@@ -1052,9 +1052,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 685.
  (./text.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 685.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 685.
-Package rerunfilecheck Info: File `text.out' has not changed.
-(rerunfilecheck)             Checksum: DC64F6659A884E5796C4BC7961872FDD;3715.
 
+
+Package rerunfilecheck Warning: File `text.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `text.out':
+(rerunfilecheck)             Before: DC64F6659A884E5796C4BC7961872FDD;3715
+(rerunfilecheck)             After:  09F31D03683E4C8B3BED24869366297B;3587.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1064,24 +1070,42 @@ Package logreq Info: Writing requests to 'text.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 685.
  ) 
 Here is how much of TeX's memory you used:
- 19351 strings out of 492616
- 305393 string characters out of 6132768
+ 19357 strings out of 492616
+ 305488 string characters out of 6132768
  614286 words of memory out of 5000000
  22897 multiletter control sequences out of 15000+600000
  10296 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,11n,40p,2350b,1811s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmtt12.pfb>
-Output written on text.pdf (51 pages, 464702 bytes).
+pdfTeX warning (dest): name{table.caption.64} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.48} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.30} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.11.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.11.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.11} has been referenced but does not exis
+t, replaced by a fixed one
+
+<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmti12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmtt12.pfb>
+Output written on text.pdf (51 pages, 464806 bytes).
 PDF statistics:
- 605 PDF objects out of 1000 (max. 8388607)
- 533 compressed objects within 6 object streams
- 183 named destinations out of 1000 (max. 500000)
+ 614 PDF objects out of 1000 (max. 8388607)
+ 542 compressed objects within 6 object streams
+ 189 named destinations out of 1000 (max. 500000)
  269 words of extra memory for PDF output out of 10000 (max. 10000000)
 
