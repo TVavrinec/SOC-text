@@ -1,44 +1,45 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {czech}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\IeC {\'U}vod}{8}{chapter*.10}% 
+\contentsline {chapter}{Úvod}{8}{chapter*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Pro\IeC {\v c} vytv\IeC {\'a}\IeC {\v r}et vlastn\IeC {\'\i } roboty?}{9}{chapter.1}% 
+\contentsline {chapter}{\numberline {1}Proč vytvářet vlastní roboty?}{9}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Konkurence}{9}{section.1.1}% 
+\contentsline {section}{\numberline {1.1}Konkurence}{9}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}LEGO Mindstorms EV3}{9}{subsection.1.1.1}% 
+\contentsline {subsection}{\numberline {1.1.1}LEGO Mindstorms EV3}{9}{subsection.1.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.2}Mbot}{10}{subsection.1.1.2}% 
+\contentsline {subsection}{\numberline {1.1.2}Mbot}{10}{subsection.1.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.3}Edison V2.0}{10}{subsection.1.1.3}% 
+\contentsline {subsection}{\numberline {1.1.3}Edison V2.0}{10}{subsection.1.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.4}Mbot}{11}{subsection.1.1.4}% 
+\contentsline {subsection}{\numberline {1.1.4}Mbot}{11}{subsection.1.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.5}Edison V2.0}{11}{subsection.1.1.5}% 
+\contentsline {subsection}{\numberline {1.1.5}Edison V2.0}{11}{subsection.1.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.6}OZOBOT}{12}{subsection.1.1.6}% 
+\contentsline {subsection}{\numberline {1.1.6}OZOBOT}{12}{subsection.1.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.7}Asuro}{12}{subsection.1.1.7}% 
+\contentsline {subsection}{\numberline {1.1.7}Asuro}{12}{subsection.1.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.8}Microbit}{12}{subsection.1.1.8}% 
+\contentsline {subsection}{\numberline {1.1.8}Microbit}{12}{subsection.1.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.9}Shrnut\IeC {\'\i }}{13}{subsection.1.1.9}% 
+\contentsline {subsection}{\numberline {1.1.9}Shrnutí}{13}{subsection.1.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}SchoolBot}{14}{chapter.2}% 
+\contentsline {chapter}{\numberline {2}SchoolBot}{14}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Z \IeC {\v c}eho se SchoolBot skl\IeC {\'a}d\IeC {\'a}?}{14}{section.2.1}% 
+\contentsline {section}{\numberline {2.1}Z čeho se SchoolBot skládá?}{14}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Elektronika}{14}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Elektronika}{14}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{battery pack}{14}{section*.12}% 
+\contentsline {subsubsection}{battery pack}{14}{section*.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{motory s enkod\IeC {\'e}ry}{15}{section*.13}% 
+\contentsline {subsubsection}{motory s enkodéry}{15}{section*.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Mechanika}{15}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.2}Mechanika}{15}{subsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Ulo\IeC {\v z}en\IeC {\'\i } kol a motoru}{15}{section*.14}% 
+\contentsline {subsubsection}{Uložení kol a motoru}{15}{section*.14}%
 \defcounter {refsection}{0}\relax 
+<<<<<<< HEAD
 \contentsline {chapter}{\numberline {3}SchoolBoard}{16}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Popis desky}{16}{section.3.1}% 
@@ -46,11 +47,19 @@
 \contentsline {section}{\numberline {3.2}V\IeC {\'y}voj}{17}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Kde se deska opravdu pou\IeC {\v z}\IeC {\'\i }v\IeC {\'a}}{18}{section.3.3}% 
+=======
+\contentsline {section}{\numberline {2.2}SchoolBoard}{16}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam obr\IeC {\'a}zk\IeC {\r u}}{20}{chapter*.16}% 
+\contentsline {section}{\numberline {2.3}Vývoj}{17}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam tabulek}{21}{chapter*.17}% 
+\contentsline {section}{\numberline {2.4}Kde se deska opravdu používá}{18}{section.2.4}%
+>>>>>>> 4e582274d18191926f5b0da81f47a96ec13c2fd9
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{Seznam obrázků}{20}{chapter*.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Seznam tabulek}{21}{chapter*.17}%
+\defcounter {refsection}{0}\relax 
+<<<<<<< HEAD
 \contentsline {section}{\numberline {3.4}Mbot}{22}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}Edison V2.0}{22}{section.3.5}% 
@@ -84,3 +93,10 @@
 \contentsline {part}{I\hspace {1em}p\IeC {\v r}\IeC {\'\i }lohy}{26}{part.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{R2}{37}{section*.56}% 
+=======
+\contentsline {subsubsection}{inteligentní serva LX15D}{25}{section*.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{I\hspace {1em}přílohy}{26}{part.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{R2}{37}{section*.64}%
+>>>>>>> 4e582274d18191926f5b0da81f47a96ec13c2fd9
