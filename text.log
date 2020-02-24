@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.1)  23 FEB 2020 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.1)  24 FEB 2020 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -802,12 +802,12 @@ ov^^San^^S^^P t^^Seto pr^^Sace v sou-ladu se z^^Sakonem
  []
 
 [3]
-<template/jmk.png, id=126, 633.86812pt x 334.24875pt>
+<template/jmk.png, id=138, 633.86812pt x 334.24875pt>
 File: template/jmk.png Graphic file (type png)
 <use template/jmk.png>
 Package pdftex.def Info: template/jmk.png  used on input line 43.
 (pdftex.def)             Requested size: 156.0006pt x 82.26141pt.
-<template/jcmm.png, id=127, 853.1875pt x 258.9675pt>
+<template/jcmm.png, id=139, 853.1875pt x 258.9675pt>
 File: template/jcmm.png Graphic file (type png)
 <use template/jcmm.png>
 Package pdftex.def Info: template/jcmm.png  used on input line 43.
@@ -838,248 +838,252 @@ Kapitola 1.
 [9
 
 ]
-Overfull \hbox (14.43pt too wide) in paragraph at lines 98--100
+Overfull \hbox (14.43pt too wide) in paragraph at lines 94--95
 \OT1/cmr/m/n/12 strukci v^^Syrazn^^Te upra-vo-vat. Ro-bota je ale v^^Tet^^Tsino
 u t^^Treba p^^Trizp^^Wusobit konkr^^Setn^^S^^Pmu
  []
 
 [10] [11]
-Overfull \hbox (309.3104pt too wide) in paragraph at lines 121--133
+Overfull \hbox (309.3104pt too wide) in paragraph at lines 115--127
  [][] 
  []
 
 [12]
 Kapitola 2.
+[13
+
+] [14]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-43.
-(c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+64.
+ (c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 164.
 
-Overfull \hbox (22.34296pt too wide) in paragraph at lines 143--144
+Overfull \hbox (22.34296pt too wide) in paragraph at lines 164--165
 []\OT1/cmr/m/n/12 t^^Tricetidvoubitov^^Sy pro-ce-sor ESP32 s tak-to-vac^^S^^P f
 rek-venc^^S^^P 240MHz a nap^^Sajec^^S^^Pm
  []
 
 
-Overfull \hbox (0.13913pt too wide) in paragraph at lines 146--147
+Overfull \hbox (0.13913pt too wide) in paragraph at lines 167--168
 []\OT1/cmr/m/n/12 T^^Tri ko-nek-tory na in-te-li-gentn^^S^^P serva LX-15D nebo 
 LX-16A. Deska dok^^Sa^^Tze
  []
 
-[13
 
-]
-Overfull \hbox (1.72371pt too wide) in paragraph at lines 152--157
+Overfull \hbox (1.72371pt too wide) in paragraph at lines 173--178
 \OT1/cmr/m/n/12 ri-fe-ri-emi ope-ruj^^S^^Pc^^S^^Pmi na nap^^Tet^^S^^P 5V, jsou 
 ^^Tcty^^Tri piny opat^^Tren^^Se p^^Trevodn^^S^^Pkem
  []
 
-[14] [15] [16
+[15] [16] [17] [18
 
 ] (./text.lof)
 \tf@lof=\write6
 \openout6 = `text.lof'.
 
- [17
+ [19
 
 ] (./text.lot)
 \tf@lot=\write7
 \openout7 = `text.lot'.
 
- [18
-
-] [19
+ [20
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 187--190
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
 [][]$\OT1/cmtt/m/n/12 https : / / lego . heureka . cz / lego-[]mindstorms-[]313
 13-[]ev3 / #o = 2$[][] \OT1/cmr/m/n/10 Pozn:
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 202--204
+Underfull \hbox (badness 1867) in paragraph at lines 222--224
 []\OT1/cmr/m/it/12 Introducing Edison V2.0 - the newest ver-sion of the Edison 
 ro-
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 202--204
+Underfull \hbox (badness 1024) in paragraph at lines 222--224
 \OT1/cmr/m/it/12 bot. Edison Pro-gra-m-ma-ble Ro-bot - Ideal for school clas-sr
 oom edu-
  []
 
 
-Overfull \hbox (12.62778pt too wide) in paragraph at lines 206--208
+Overfull \hbox (12.62778pt too wide) in paragraph at lines 226--228
 [][]$\OT1/cmtt/m/n/12 https : / / www . robotshop . com / ca / en / edison-[]pr
 ogrammable-[]v20-[]robot .
  []
 
 
-Overfull \hbox (246.2779pt too wide) in paragraph at lines 206--208
+Overfull \hbox (246.2779pt too wide) in paragraph at lines 226--228
 \OT1/cmtt/m/n/12 html ? gclid = Cj0KCQiA4sjyBRC5ARIsAEHsELHtKqVNJOl95kMUC8iBngI
 kgc3gCZU9KOTwuXWEo4hU4Qs1B-[]2wASkaAh9CEALw _
  []
 
-[20
+[21
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Edison\0
 40V2.0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.208 	
+l.228 	
        ]
-Underfull \hbox (badness 4291) in paragraph at lines 240--242
+Underfull \hbox (badness 4291) in paragraph at lines 260--262
 []\OT1/cmr/m/it/12 Cutebot - Micro:bit chytr^^Se auto - HW Kit-chen. Ochut-nejt
 e s
  []
 
 
-Underfull \hbox (badness 7030) in paragraph at lines 240--242
+Underfull \hbox (badness 7030) in paragraph at lines 260--262
 \OT1/cmr/m/it/12 n^^Sami bast-len^^S^^P! | HW-Kit-chen.cz \OT1/cmr/m/n/12 [on-l
 ine] [cit. 2020-02-22] Do-
  []
 
-[21pdfTeX warning (ext4): destination with the same identifier (name{cite.Ediso
+[22pdfTeX warning (ext4): destination with the same identifier (name{cite.Ediso
 n\040V2.0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.242 	
+l.262 	
        pdfTeX warning (ext4): destination with the same identifier (name{cite.O
 ZOBOT}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.242 	
+l.262 	
        pdfTeX warning (ext4): destination with the same identifier (name{cite.A
 suro}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.242 	
+l.262 	
        pdfTeX warning (ext4): destination with the same identifier (name{cite.A
 suro}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.242 	
+l.262 	
        ]
-Underfull \hbox (badness 3930) in paragraph at lines 258--260
+Underfull \hbox (badness 3930) in paragraph at lines 278--280
 []\OT1/cmr/m/it/12 Apache Tom-cat/6.0.29 - Error re-port. \OT1/cmr/m/n/12 [on-l
 ine] [cit. 2020-02-22]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--278
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 []\OT1/cmr/m/it/12 datasheet \OT1/cmr/m/n/12 [on-line] [cit. 2020-02-22] Do-stu
 pn^^Se z: [][]$\OT1/cmtt/m/n/12 https :
  []
 
-[22pdfTeX warning (ext4): destination with the same identifier (name{cite.Micro
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
+\OT1/cmtt/m/n/12 / / www . infineon . com / dgdl / irf4905pbf . pdf ? fileId =
+ []
+
+[23pdfTeX warning (ext4): destination with the same identifier (name{cite.Micro
 bit}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.279 	\subsubsection
-                     {Mikrospínač}pdfTeX warning (ext4): destination with the
- same identifier (name{cite.ESP32}) has been already used, duplicate ignored
+l.299 	\subsubsection
+                     {7805}pdfTeX warning (ext4): destination with the same ide
+ntifier (name{cite.ESP32}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.279 	\subsubsection
-                     {Mikrospínač}] [23] [24
-
-] [25
-
-]
-Overfull \hbox (22.34296pt too wide) in paragraph at lines 300--301
-[]\OT1/cmr/m/n/12 t^^Tricetidvoubitov^^Sy pro-ce-sor ESP32 s tak-to-vac^^S^^P f
-rek-venc^^S^^P 240MHz a nap^^Sajec^^S^^Pm
+l.299 	\subsubsection
+                     {7805}]
+Underfull \hbox (badness 10000) in paragraph at lines 308--310
+[]\OT1/cmr/m/it/12 datasheet \OT1/cmr/m/n/12 [on-line] [cit. 2020-02-22] Do-stu
+pn^^Se z: [][]$\OT1/cmtt/m/n/12 https :
  []
 
+[24] [25
 
-Overfull \hbox (0.13913pt too wide) in paragraph at lines 303--304
+] [26
+
+]
+Overfull \hbox (0.13913pt too wide) in paragraph at lines 334--335
 []\OT1/cmr/m/n/12 T^^Tri ko-nek-tory na in-te-li-gentn^^S^^P serva LX-15D nebo 
 LX-16A. Deska dok^^Sa^^Tze
  []
 
-[26
+[27
 
 ]
-Overfull \hbox (1.72371pt too wide) in paragraph at lines 309--314
+Overfull \hbox (1.72371pt too wide) in paragraph at lines 340--345
 \OT1/cmr/m/n/12 ri-fe-ri-emi ope-ruj^^S^^Pc^^S^^Pmi na nap^^Tet^^S^^P 5V, jsou 
 ^^Tcty^^Tri piny opat^^Tren^^Se p^^Trevodn^^S^^Pkem
  []
 
-[27]
-<img/logika.png, id=338, 1105.36964pt x 744.01965pt>
+[28]
+<img/logika.png, id=368, 1105.36964pt x 744.01965pt>
 File: img/logika.png Graphic file (type png)
 <use img/logika.png>
-Package pdftex.def Info: img/logika.png  used on input line 326.
+Package pdftex.def Info: img/logika.png  used on input line 357.
 (pdftex.def)             Requested size: 390.0pt x 262.51105pt.
- [28
+ [29
 
- <./img/logika.png (PNG copy)>] [29] [30] [31] [32]
-Overfull \hbox (1.79315pt too wide) in paragraph at lines 412--414
+ <./img/logika.png (PNG copy)>] [30] [31] [32] [33]
+Overfull \hbox (1.79315pt too wide) in paragraph at lines 443--445
 \OT1/cmr/m/n/12 Trimr slou^^Tz^^S^^Pc^^S^^P jako d^^Teli^^Tc nap^^Tet^^S^^P ba-
 te-rie pro mo^^Tznost m^^Te^^Tren^^S^^P jej^^S^^Pho nap^^Tet^^S^^P.
  []
 
 
-Overfull \hbox (5.10248pt too wide) in paragraph at lines 412--414
+Overfull \hbox (5.10248pt too wide) in paragraph at lines 443--445
 \OT1/cmr/bx/n/12 P^^Tred pou^^Tzit^^S^^Pm nutno na-sta-vit na vhod-nou d^^Tel^^
 S^^Pc^^S^^P hod-notu vzhle-
  []
 
-<img/silovka.png, id=376, 1105.731pt x 744.381pt>
+<img/silovka.png, id=407, 1105.731pt x 744.381pt>
 File: img/silovka.png Graphic file (type png)
 <use img/silovka.png>
-Package pdftex.def Info: img/silovka.png  used on input line 422.
+Package pdftex.def Info: img/silovka.png  used on input line 453.
 (pdftex.def)             Requested size: 390.0pt x 262.54767pt.
-[33]
-Overfull \hbox (5.44194pt too wide) in paragraph at lines 429--430
+[34]
+Overfull \hbox (5.44194pt too wide) in paragraph at lines 460--461
  []\OT1/cmr/bx/n/12 X4: \OT1/cmr/m/n/12 Svor-kov-nice pro p^^Tripojen^^S^^P zdr
 oje s nap^^Tet^^S^^Pm 7-11V. X4-1 je z^^Saporn^^Sy
  []
 
-[34 <./img/silovka.png>] [35] [36]
+[35 <./img/silovka.png>] [36] [37]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37]
-Overfull \hbox (3.68202pt too wide) in paragraph at lines 510--511
+[38]
+Overfull \hbox (3.68202pt too wide) in paragraph at lines 542--543
 \OT1/cmr/m/n/12 Velk^^Sy elek-t-ro-ly-tick^^Sy kon-denz^^Sator jako z^^Sasob^^S
 arna proudu p^^Tri n^^Sahl^^Se zm^^Ten^^Te
  []
 
-[38]
-Overfull \hbox (4.24895pt too wide) in paragraph at lines 513--514
+[39]
+Overfull \hbox (4.24895pt too wide) in paragraph at lines 545--546
 \OT1/cmr/m/n/12 Zp^^Tetn^^Sa di-oda pro p^^Tr^^S^^Ppad nap^^Tet[]ov^^Se ^^Tspi^
 ^Tcky, kter^^Sa by kr^^Satkodob^^Te p^^Trevr^^Satila
  []
 
-[39] [40
+[40] [41
 
-] [41
+] [42
 
-] [42] [43]
+] [43] [44]
 Package hyperref Info: bookmark level for unknown listedequation defaults to 0 
-on input line 561.
- [44
+on input line 593.
+ [45
 
-] [45] [46] [47] [48]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 614.
- [49]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 614.
+] [46] [47] [48] [49]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 646.
+ [50]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 646.
  (./text.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 614.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 614.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 646.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 646.
 Package rerunfilecheck Info: File `text.out' has not changed.
-(rerunfilecheck)             Checksum: E77119E4D7E91D2022F23084F69A58DD;2971.
+(rerunfilecheck)             Checksum: 82B90C5F180809D7DE33E0DC21FAE930;3530.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1087,16 +1091,16 @@ LaTeX Warning: There were multiply-defined labels.
 Package logreq Info: Writing requests to 'text.run.xml'.
 \openout1 = `text.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 614.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 646.
  ) 
 Here is how much of TeX's memory you used:
- 19911 strings out of 492162
- 319818 string characters out of 6129063
- 631843 words of memory out of 5000000
- 23871 multiletter control sequences out of 15000+600000
+ 19923 strings out of 492162
+ 319963 string characters out of 6129063
+ 631807 words of memory out of 5000000
+ 23873 multiletter control sequences out of 15000+600000
  10296 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,11n,46p,2350b,1809s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,11n,46p,2350b,1807s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dis
@@ -1104,10 +1108,10 @@ t/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt12.pfb>
-Output written on text.pdf (49 pages, 458321 bytes).
+Output written on text.pdf (50 pages, 461599 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
- 488 compressed objects within 5 object streams
- 170 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 589 PDF objects out of 1000 (max. 8388607)
+ 518 compressed objects within 6 object streams
+ 180 named destinations out of 1000 (max. 500000)
+ 253 words of extra memory for PDF output out of 10000 (max. 10000000)
 

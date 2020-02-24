@@ -84,29 +84,23 @@ Robot je primárně navržen pro volnočasový vzdělávací kurz robotiky poř�
 
 \chapter{Proč vytvářet vlastní roboty?}
 Proč vlastně vytvářet vlastní elektroniku i mechaniku, když je na trhu tolik různých robotu a vozítek? Konkurenční roboti, kteří se běžně prodávají, jsou totiž většinou velmi drazí a často nemají ani moc možností. Například známé LEGO Mindstorms, u kterého se cena základní sady pohybuje nad sedmi tisíci korunami [], je vzhledem ke svým možnostem ohromně předražené.
- 
-Při vytváření pokročilejších aplikací potřebuje tvůrce znalost technických specifikací robota a jeho vnitřního fungování. U většiny komerčních robotu však není kompletní technická dokumentace volně dostupná.
 
 \section{Konkurence}
 
 \subsection{LEGO Mindstorms EV3}
-LEGO Mindstorms je známé svou jednoduchostí. Základní roboti se s touto sadou dají sestavit velmi rychle, což poskytuje hlavně začátečníkům motivaci, neboť již s poměrně malým úsilím sestaví něco, co na první pohled funguje. Dílky lEGa však nejsou moc pevné a konstrukce z nich postavená jich tedy vyžaduje velké množství, aby byla obstojně tuhá. To se samozřejmě dá jednoduše vyřešit, tím že si člověk udělá konstrukci z jiného materiálu. 
-Možnosti robota se z velké části odvíjí od senzoriky. Lego trpí na nedostatek senzoru. Nejen, že v základní sadě je, krom tlačítka, od každého sensory jen jeden kus. Ale ani kostka, řídící centrum lega, nedokáže číst víc než čtyři senzory naráz. Je pravda že lego má možnost spojovat několik kostek dohromady, to však samozřejmě vyžaduje mít jich víc což je při ceně lega poměrně drahé.
-Lego má své vlastní programovací prostředí, které je většinou pro začátečníky dobré. Jakmile však člověk chce vytvářet vetší program, prostředí velmi rychle ztratí užitečnost. Vetší programy jsou v grafickém prostředí velmi nepřehledné. Navíc prostředí lega může být u větších programů nestabilní. Existují však i prostředí ze kterých se dá lego programovat textově, například v jazyku C++, což je u složitějších programu přehlednější a také méně náročné pro počítač.
+LEGO Mindstorms je známé svou jednoduchostí. Základní roboti se s touto sadou dají sestavit velmi rychle, což poskytuje hlavně začátečníkům motivaci, neboť již s poměrně malým úsilím sestaví něco, co na první pohled funguje. Dílky LEGA však nejsou moc pevné a konstrukce z nich postavená jich tedy vyžaduje velké množství, aby byla obstojně tuhá. To se samozřejmě dá jednoduše vyřešit, tím že si člověk udělá konstrukci z jiného materiálu. Možnosti robota se z velké části odvíjí od senzoriky. LEGO trpí na nedostatek senzoru. Nejen, že v základní sadě je, krom tlačítka, od každého sensory jen jeden kus. Ale ani kostka, řídící centrum LEGA, nedokáže číst víc než čtyři senzory naráz. Je pravda že LEGO má možnost spojovat několik kostek dohromady, to však samozřejmě vyžaduje mít jich víc což je při ceně lega poměrně drahé. Lego má své vlastní programovací prostředí, které je většinou pro začátečníky dobré. Jakmile však člověk chce vytvářet vetší program, prostředí velmi rychle ztratí užitečnost. Vetší programy jsou v grafickém prostředí velmi nepřehledné. Navíc prostředí lega může být u větších programů nestabilní. Existují však i prostředí ze kterých se dá lego programovat textově, například v jazyku C++, což je u složitějších programu přehlednější a také méně náročné pro počítač.
 
 \subsection{Mbot}
-Mbot je oproti legu daleko levnější (cena se pohybuje kolem osmnácti set korun za kus) ale trpí stejným, nebo i větším, nedostatkem sensoru. Co se konstrukce týče, problémy s pevností u Mbota není ale zase se nedá snadno upravit. Konstrukce je totiž hliníková, což je v pořádku, pokud není potřeba konstrukci výrazně upravovat. Robota je ale většinou třeba přizpůsobit konkrétnímu užití, ze zkušenosti se nejvíce osvědčilo dřevo, které se dá jednoduše upravovat bez větší námahy a zároveň není problém z něj udělat dostatečně tuhou konstrukci. Hliník se však tak lehce ručně upravovat nedá.
-Mbot je založen na procesoru ATmega328 což je stejný procesor jaký se používá i u velice známého arduina. To znamená že některé programy, které jsou napsané pro arduino je možné spustit i zde.
+Mbot je oproti legu daleko levnější (cena se pohybuje kolem osmnácti set korun za kus) ale trpí stejným, nebo i větším, nedostatkem sensoru. Co se konstrukce týče, problémy s pevností u Mbota není ale zase se nedá snadno upravit. Konstrukce je totiž hliníková, což je v pořádku, pokud není potřeba konstrukci výrazně upravovat. Robota je ale většinou třeba přizpůsobit konkrétnímu užití, ze zkušenosti se nejvíce osvědčilo dřevo, které se dá jednoduše upravovat bez větší námahy a zároveň není problém z něj udělat dostatečně tuhou konstrukci. Hliník se však tak lehce ručně upravovat nedá. Mbot je založen na procesoru ATmega328 což je stejný procesor jaký se používá i u velice známého arduina. To znamená že některé programy, které jsou napsané pro arduino je možné spustit i zde.
 
 \subsection{Edison V2.0}
-Edison je velmi podobný legu a mí i podobné problémy. Opět nedisponuje velkým počtem senzoru ale oproti legu je daleko levnější. Stejně jako lego má i Edison vlastní grafické programovací prostředí, bohužel jsem jej nikdy nepoužíval, ale vypadá velmi podobně jako prostředí lega. Myslím si proto, že stejně jako prostředí lega bude i toto velice dobré na malé prográmky pro děti, ale nevhodné pro obsáhlé programy.
-Všechny senzory má Edison uvnitř sebe a nedají se proto dovést na místo kde je uživatel nejvíc potřebuje. Uživatel se proto musí přizpůsobit rozložení senzoru na řídící jednotce, stejně tak se nedá vyvést ani nic jiného. Jediné, co se dá, je vyměňovat kola (například za nějaké ozubení) a pomocí toho si pak dovést náhon z motoru na potřebné místo.
+Edison je velmi podobný legu a mí i podobné problémy. Opět nedisponuje velkým počtem senzoru ale oproti legu je daleko levnější. Stejně jako lego má i Edison vlastní grafické programovací prostředí, bohužel jsem jej nikdy nepoužíval, ale vypadá velmi podobně jako prostředí lega. Myslím si proto, že stejně jako prostředí lega bude i toto velice dobré na malé prográmky pro děti, ale nevhodné pro obsáhlé programy. Všechny senzory má Edison uvnitř sebe a nedají se proto dovést na místo kde je uživatel nejvíc potřebuje. Uživatel se proto musí přizpůsobit rozložení senzoru na řídící jednotce, stejně tak se nedá vyvést ani nic jiného. Jediné, co se dá, je vyměňovat kola (například za nějaké ozubení) a pomocí toho si pak dovést náhon z motoru na potřebné místo.
 
 \subsection{OZOBOT}
 Ozobot je miny robot, z toho vyplývají jeho největší výhody i nevýhody. Například pochopitelně není dělaný na to, aby cokoli vozil nebo jakkoliv stěhoval. Téměř se nedá upravovat, na to ale opět není dělaný jeho účel je především jezdit po čáře a vykonávat příkazy na ní zapsané pomocí barevných vzoru. Přes to že se novější verze dají i programovat, jejich funkce jsou pořád mířené do velké míry právě na čáru a barevné příkazy na ní.
 
-\subsection{Asuro}
-Asuro je robot postavený kolem základní desky. Jedná se o stavebnici, ale přesto nemá ani jednoduché pomůcky pro možnost přesné stavby. Asuro má mezi koly a motorem převodovku která se ukládá do jakýchsi ložisek které se bez jakéhokoli za pozicování napájí na plochu desky. Výsledkem je téměř nemožnost uložit kola převodovky přesně.
+%\subsection{Asuro}
+%Asuro je robot postavený kolem základní desky. Jedná se o stavebnici, ale přesto nemá ani jednoduché pomůcky pro možnost přesné stavby. Asuro má mezi koly a motorem převodovku která se ukládá do jakýchsi ložisek které se bez jakéhokoli za pozicování napájí na plochu desky. Výsledkem je téměř nemožnost uložit kola převodovky přesně.
 
 \subsection{Microbit}
 Microbit je především řídící deska se senzory a výstupními ledkami. Není to primárně vozítko, přesto že existují konstrukce, které jsou určené právě pro řízení microbitem. Taková konstrukce však muže využívat pouze serva nebo musí mýt vlastní řízení motoru. Microbit totiž motory řídit nedokáže sám, dokáže řídit jen serva, která si řízení řeší sama. Toto však není velký problém, protože existuje více různých konstrukcí, které právě toto řeší. Microbit má překvapivě docela dost senzoru přímo na základní destičce. Podle mích informací kompas, který je přímo na desce téměř nefunguje ale vzhledem k tomu, co všechno na sobě malá destička Microbit má to není až taková tragédie. Kompas je stejně často potřebné dostat co nejdál od zbytku robota, kvůli všemožnému rušení, takže by so i tak dost možná používal jako externí součástka.
@@ -135,7 +129,34 @@ Možná si říkáte proč mi záleží na tom aby robot pro začátečníky mel
 
 \chapter{SchoolBot}
 
-\section{funkce desky}
+\section{Z čeho se SchoolBot skládá?}
+SchoolBot je komplet, skládající se ze řady jednotlivých dílků, které nebudu popisovat samostatně pro začátek systém rozdělím na elektroniky a mechaniku.
+
+\subsection{Elektronika}
+
+Elektronika je především řídící deska SchoolBoard kterou shrnuji v samostatné kapitole a detailně rozebírám v přílohách. Krom desky obsahuje SchoolBot battery pack, motory s enkodéry a inteligentní serva LX15D[viz zdroje] které uvádí do provozu klepeta, nástroj pro možnost manipulace s objekty při soutěžích především herními prvky.
+
+\subsubsection{battery pack}
+
+Battery pack je sestaven ze dvou li-on baterii 18650 které jsou pomocí DPS spojeny v jeden celek. Připojení do robota je pak zajištováno pomocí dutinek a to každý článek zvlášť, serializují se až po vložení do robota. Důvodem pro vyvádění obou článku zvlášť je nabíjení, to je totiž realizováno pomocí lineárních nabíjecích modulu, které se napájejí z USB a každý článek se nabíjí zvlášť.
+Aby se battery pack nedal omylem připojit s opačnou polaritou je vyřešen tak že se dá při připojení otočit dvěma způsoby a oba mají správnou polaritu, dokonce i stejné pořadí článků.
+
+\subsubsection{motory s enkodéry}
+
+SchoolBot používá levné motory s plastovou převodovkou které v základu enkodéry nemají. Enkodéry si proto SchoolBot řeší sám, a to pomocí magnetu a dvou halových sond. Takto vyrobený inkrementální enkodér pak vyhodnocuje procesor na řídící desce.
+
+\subsection{Mechanika}
+
+Mechanika SchoolBota je celá z překližky vypálené pomocí laserového řezáku. Je stavěná kruhově aby se robot nemohl zaseknout v nějakém rohu a v přední části má umístěná klepeta kterými je schopna nabírat a převážet různé objekty. 
+
+\subsubsection{Uložení kol a motoru}
+
+Kola nejsou jen tak nasazená na motor. Aby se nevyvracela, a tím pádem méně zatěžovala převodovku motoru, jsou z druhé strany podepřena a uchycena k obvodu konstrukce.
+Celí motor i s kolem je pak z části držen podporou kola ale především je celí motor vložen do těsné šachty kde se nemůže otočit ani posunout jiným směrem než vzhůru a následně je přitlačen palubou která se přišroubuje čtyřmi šrouby. Takovéto řešení umožnuje jednoduchý přístup k motor.
+
+\newpage
+
+\section{SchoolBoard}
 
 Deska má k dispozici
 
@@ -160,8 +181,11 @@ Deska má k dispozici
 	\end{itemize}
 \section{Vývoj}
 
-SchoolBot jsem začal vyvíjet protože účastníci kurzu robotiky v minulých letech nestíhali vytvořit vlastní konstrukci a ještě jí naprogramovat. Přesto že elektroniku již vyřešenou měli, tak mechanika a především programování na ně bylo stále příliš. Proto začal koncem loňského školního roku, 2018/2019, vznikat robot který měl řešit jak elektroniku, tak většinu mechaniky. 
-První prototyp mechaniky byl hotoví již začátkem letních prázdnin, ale další vývoj pokračoval až o hodně později. První verze totiž vyžadovala jen velmi málo uprav a já měl na práci spoustu jiných věcí. V první řadě řídící desku, která již sice také měla první prototyp za sebou, ale vyžadovala daleko víc uprav. Již druhá verze desky byla plně provozu schopná a začátkem roku jsme jí začali stavět s účastníky kurzu. Ne všichni však chtěli použít mojí konstrukci. Někteří si jí chtěli navrhnout sami a někteří měli tak těžké doplňky, že by je tento robot neuvezl. SchoolBota tak využil jen jeden ze sedmi týmů.
+SchoolBot jsem začal vyvíjet protože účastníci kurzu robotiky v minulých letech nestíhali vytvořit vlastní konstrukci a ještě jí naprogramovat. Přesto že elektroniku již vyřešenou měli, tak mechanika a především programování na ně bylo stále příliš. Proto začal koncem loňského školního roku, 2018/2019, vznikat robot který měl řešit jak elektroniku, tak většinu mechaniky. První prototyp mechaniky byl hotoví již začátkem letních prázdnin, ale další vývoj pokračoval až o hodně později. První verze totiž vyžadovala jen velmi málo uprav a já měl na práci spoustu jiných věcí. V první řadě řídící desku, která již sice také měla první prototyp za sebou, ale vyžadovala daleko víc uprav. Již druhá verze desky byla plně provozu schopná a začátkem roku jsme jí začali stavět s účastníky kurzu. Ne všichni však chtěli použít mojí konstrukci. Někteří si jí chtěli navrhnout sami a někteří měli tak těžké doplňky, že by je tento robot neuvezl. SchoolBota tak využil jen jeden ze sedmi týmů.
+
+\section{Kde se deska opravdu používá}
+Deska se používá ve dvou volnočasových kurzech robotiky a při výuce elektrotechniky a automatizace.
+
 
 \chapter*{Závěr}
 
@@ -175,10 +199,6 @@ První prototyp mechaniky byl hotoví již začátkem letních prázdnin, ale da
 \listoftables
 \addcontentsline{toc}{section}{Seznam tabulek}
 
-
-\newpage
-
-\chapter*{Zdroje}
 \begin{thebibliography}{1}
 	
 	\section{LEGO Mindstorm}
@@ -264,6 +284,18 @@ První prototyp mechaniky byl hotoví již začátkem letních prázdnin, ale da
 	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
 	\url{http://www.ti.com/lit/ds/symlink/drv8833.pdf}
 	
+	\subsubsection{IRF4905}
+	
+	\bibitem{IRF4905}
+	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://www.infineon.com/dgdl/irf4905pbf.pdf?fileId=5546d462533600a4015355e329b1197e}
+	
+	\subsubsection{BS170}
+	
+	\bibitem{BS170}
+	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://www.onsemi.com/pub/Collateral/BS170-D.PDF}
+	
 	\subsubsection{7805}
 	
 	\bibitem{7805}
@@ -290,14 +322,13 @@ První prototyp mechaniky byl hotoví již začátkem letních prázdnin, ale da
 	
 \end{thebibliography}
 
-
 \part{přílohy}
 \part*{Technický list desky SchoolBoard}
 
 \chapter*{funkce desky}
 Deska má k dispozici
 \begin{itemize}
-\item třicetidvoubitový procesor ESP32 s taktovací frekvencí 240MHz a napájecím napětím 3,3 V 
+\item 32-bitový procesor ESP32 s taktovací frekvencí 240MHz a napájecím napětím 3,3 V 
 \item \item flash pamětí 4 MB (dělají se i verze s 8 a 16 MB), 520 KB SRAM, WI-Fi, Bluetooth, 28 vstupně výstupních piny, dva ADC převodníky (jeden s 6 piny a druhý s 10 piny), jedním DAC převodníkem s dvěma piny, tři UARTy, dvě SPI, tři I2C(jedno je použito interně pro flash) atd.
 \item Motorový driver DRV8833, který umožnuje řídit dva stejnosměrné nebo jeden krokový motor.
 \item Tři konektory na inteligentní serva LX-15D nebo LX-16A. Deska dokáže řídit až 254 těchto serv. Serva se totiž dokáží řetězit za sebe, ale pokud potřebují větší proud (když podávají větší kroutící moment), ubytek napětí na kabelech je už moc velký, aby serva mohla využít plný výkon. Proto jsou na desce konektory tři a ne jen jeden.
@@ -488,6 +519,7 @@ s hlavní funkcí desky (řízení motorů) nebo je problematické se o ně star
 			1 & 1 & L & L & Brake/slow decay \\ 
 			\hline
 		\end{tabular}
+		% zdroj!!!!!!!
 		\caption{}
 	\end{table}
 	\newpage
