@@ -22,7 +22,7 @@
 
 \titlecz{Postav si svého prvního robota}
 \titleen{Build your first robot}
-\author{Tomas Vavrinec}
+\author{Tomáš Vavrinec}
 \field{10}
 \school{Střední průmyslová škola a Vyšší odborná škola Brno, Sokolská}
 \mentor{Mgr.Miroslav Burda}
@@ -45,17 +45,13 @@
 \pagestyle{empty}
 
 \section*{Anotace}
-Začínající zájemce o elekroniku narazí po ...
-%todo 
-Cílem je především vyvinout vhodnou levnou a rozšiřitelnou vzdělávací pomůcku, která umožňuje názorně  
 
-která bude schopná řídit například i soutěžní roboty nebo výrobní linky.
-Tato práce se zabývá návrhem a výrobou robota Schoolbot, jeho použitím při výuce dětí v zájmovém vzdělávání a školní výuce předmětů automatizace a elektrotechniky. 
+Cílem práce je  vyvinout vhodnou levnou a rozšiřitelnou vzdělávací pomůcku -- řídící desku, která umožňuje názorně předvést vlastnosti senzorů a pohonů a která bude schopná řídit například i amatérské soutěžní roboty nebo školní ukázku výrobní linky. Dále vyvinout snadno dostupného robota, kterého tato řídící deska bude řídit.
 
-
+Tato práce se zabývá návrhem a výrobou řídící desky Schoolboard a robota Schoolbot a jejich použitím při výuce dětí v zájmovém vzdělávání a při školní výuce předmětů elektroniky, automatizace, programování a dalších. 
 
 \subsection*{Klíčová slova}
-robot; vyuka robotiky; řídící deska; esp32
+robot; vyuka robotiky; řídící deska; ESP32
 
 \vspace{20mm}
 
@@ -76,10 +72,44 @@ robot; vyuka robotiky; řídící deska; esp32
 
 \chapter*{Úvod}
 \addcontentsline{toc}{chapter}{Úvod} % přidá položku úvod do obsahu
-Projekt má za cíl vytvořit pomůcky pro seznámení s robotikou pro studenty nejen technických oborů případně pro zájemce o studium tohoto oboru. Důvodem k práci byly především nedostatky a velká cena konkurenčních systémů. Rozhodl jsem se tedy vyvinout takový systém který by plně vyhovoval účelu a zároveň by nebyl zbytečně drahý.
+Moje práce má za cíl vytvořit pomůcku (robota) pro praktické seznámení s~elektonikou, robotikou a programováním pro:  
+
+\begin{itemize}
+	\item účastníky volnočasových kroužků robotiky, elektroniky a podobných
+	\item studenty středních škol, především oborů elektronika, automatizace, robotika, ale i pro předměty informatika nebo fyzika
+	\item další začínající zájemce o elektoniku a robotiku. 
+\end{itemize}
+
+
+ Pokud zájemce -- začátečník  o elektroniku a nebo hobby robotiku absolvuje \uv{blikání ledkou}, obvykle chce pokračovat stavbou svého prvního robota (podle hesla: \uv{Ať se to hýbe!}). Když se 
+ rozhlédne kudy dál, zjistí, že všechny dostupné možnosti jsou tak či onak dost problematické (viz kapitola \ref{konkurence}). 
+ 
+ Podobná situace nastává ve škole, kdy například funkci probíraných senzorů, enkodérů a podobně někdy není na čem prakticky ukázat. To se týká především situace, kdy učitel chce, aby studenti s robotem sami pracovali, například ve dvojicích.   
+
+Řídící deska \textbf{Schoolboard} a robot \textbf{SchoolBot} jsou primárně navrženy pro volnočasový vzdělávací kroužek robotiky pořádaný na naší škole a jsou určeny pro začátečníky. Jako takoví dávají účastníkům kroužku možnosti, které má prakticky každý soutěžní robot, konkrétně pohon pro pohyb na hřišti, klepeta pro manipulaci s herními prvky a senzory pro samostatnou orientaci na hřišti. 
+\newpage
+
+ Takový robot by měl mít: 
+
+\begin{itemize}
+	\item \textbf{modulární senzoriku} -- být schopný připojit na sebe různé senzory 
+	
+	\item \textbf{rozšiřitelnou konstrukci} -- možnost i velké úpravy, změn a rozšíření konstrukce robota, připojení různých pohonů (motory, serva)
+	
+	\item \textbf{bezdrátové řízení}
+	
+	\item dostatečně \textbf{tuhou konstrukci}
+	
+	\item  \textbf{možnost programovat v C++}, které je dnes standardem v této oblasti
+	
+	\item a hlavně: \underline{\textbf{nízkou pořizovací cenu}}, protože bez ní jsou všechny ostatní příznivé vlastnosti bohužel téměř na nic 
+	
+\end{itemize}
+
+Ideálně by si takového robota učastníci kroužku měli být schopni postavit, spájet a oživit (podle pokynů vedoucího) sami. 
 
 %\section{SchoolBot}
-Robot \textbf{SchoolBot} je primárně navržen pro volnočasový vzdělávací kurz robotiky pořádaný na naší škole a je určen pro začátečníky, jako takový dává účastníkům možnosti, které má prakticky každý soutěžní robot, konkrétně pohon pro pohyb na hřišti a klepeta pro manipulaci s herními prvky.
+
 
 %\section{BlackBox}
 %BlackBox je elektronicky ovládaný trezor, který je s vhodnou úpravou schopen i jezdit na vlastních kolech. Pro začátečníky má i čistě mechanickou variantu bez elektroniky, ta však muže sloužit jen jako trezor a nemá ostatní možnosti které má až elektronická varianta. Elektronická varianta má rozmanité senzory, díky kterým muže nabývat různých podob od trezor po hodiny.
@@ -95,13 +125,13 @@ Proč vlastně vytvářet vlastní elektroniku i mechaniku, když je na trhu tol
 Při vytváření pokročilejších aplikací potřebuje tvůrce znalost technických specifikací robota a jeho vnitřního fungování. U většiny komerčních robotů však není kompletní technická dokumentace volně dostupná.
 
 
-\section{Konkurence}
+\section{Konkurence} \label{konkurence}
 
 \subsection{LEGO Mindstorms EV3}
 
 LEGO Mindstorms je známé svou jednoduchostí. Základní roboti se s touto sadou dají sestavit velmi rychle, což poskytuje hlavně začátečníkům motivaci, neboť již s poměrně malým úsilím sestaví něco, co na první pohled funguje. Dílky LEGa však nejsou moc pevné a konstrukce z nich postavená jich tedy vyžaduje velké množství, aby byla obstojně tuhá. To se samozřejmě dá vyřešit tím, že si člověk udělá konstrukci z jiného materiálu, potom ale odpadá výhoda jednoduchosti stavby.
 
-Možnosti robota se z velké části odvíjí od senzoriky. Lego trpí na nedostatek senzorů. Nejen, že v základní sadě je, krom tlačítka, od každého sensoru jen jeden kus. Ale ani kostka, řídící centrum LEGa, nedokáže číst víc než čtyři senzory naráz. Je pravda že LEGO má možnost spojovat několik kostek dohromady, to však samozřejmě vyžaduje mít jich víc, což je při ceně LEGa poměrně drahé.
+Možnosti robota se z velké části odvíjí od senzoriky. LEGO trpí na nedostatek senzorů. Nejen, že v základní sadě je, krom tlačítka, od každého sensoru jen jeden kus. Ale ani kostka, řídící centrum LEGa, nedokáže číst víc než čtyři senzory naráz. Je pravda že LEGO má možnost spojovat několik kostek dohromady, to však samozřejmě vyžaduje mít jich víc, což je při ceně LEGa poměrně drahé.
 
 
 LEGO má své vlastní programovací prostředí, které je většinou pro začátečníky dobré. Jakmile však uživatel chce vytvářet vetší program, prostředí velmi rychle ztratí užitečnost. Vetší programy jsou v grafickém prostředí velmi nepřehledné. Navíc prostředí LEGa může být u větších programů nestabilní. Existují však i prostředí, ze kterých se dá lego programovat textově, například v jazyku C++, což je u složitějších programu přehlednější a také méně náročné pro počítač.
@@ -249,179 +279,18 @@ SchoolBota tak letos využil jen jeden ze sedmi týmů.
 Deska se používá ve dvou volnočasových kurzech robotiky a při výuce elektrotechniky a automatizace.
 
 
-\chapter*{Závěr}
+\chapter*{Závěr} %todo závěr 
 
-\newpage
-%\printbibliography[title=Literatura]
-%\addcontentsline{toc}{section}{Literatura}
 
-\listoffigures
-\addcontentsline{toc}{section}{Seznam obrázků}
 
-\listoftables
-\addcontentsline{toc}{section}{Seznam tabulek}
-\renewcommand{\refname}{Další zdroje}
-\begin{thebibliography}{1}
+\appendix
+\addcontentsline{toc}{chapter}{Přílohy}
 	
-	\subsection*{LEGO Mindstorm}
-	
-	\bibitem{LEGO Mindstorm} 
-	\textit{porovnání cen LEGa} [online] www.heureka.cz [cit. 2020-02-22] Dostupné z: \\ 
-	\url{https://lego.heureka.cz/lego-mindstorms-31313-ev3/#o=2}
-	
-	
-	\subsection*{Mbot}
-	\bibitem{Mbot} 
-	\textit{Mbot} [online] https://www.makeblock.com/mbot [cit. 2020-02-22] Dostupné z: \url{https://www.makeblock.com/mbot}
-	
-	
-	\subsection*{Edison V2.0}
-	\bibitem{Edison V2.0} 
-	\textit{Meet Edison. Wiltronics | Science and Technology product specialists} [online] [cit. 2020-02-22] Dostupné z: \url{https://www.wiltronics.com.au/MeetEdison/}
-	
-	\bibitem{Edison V2.0}
-	\textit{Introducing Edison V2.0 - the newest version of the Edison robot. Edison Programmable Robot - Ideal for school classroom education} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://meetedison.com/meet-edison-v2-0/}
-	 
-	\bibitem{Edison V2.0}
-	\textit{příklad ceny} [online] [cit. 2020-02-22] Dostupné z: \\ 
-	\url{https://www.robotshop.com/ca/en/edison-programmable-v20-robot.html?gclid=Cj0KCQiA4sjyBRC5ARIsAEHsELHtKqVNJOl95kMUC8iBngIkgc3gCZU9KOTwuXWEo4hU4Qs1B-2wASkaAh9CEALw_wcB}
-	
-	\subsection*{OZOBOT}
-	
-	\bibitem{OZOBOT} 
-	\textit{OZOBOT} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://www.youtube.com/watch?v=lqR3zDWAQ1o}
-	
-	\bibitem{OZOBOT}
-	\textit{OZOBOT} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://www.youtube.com/watch?v=Cw30OdlczRo}
-	
-	\subsection*{Asuro}
-	
-	\bibitem{Asuro} 
-	\textit{Asuro} [online] [cit. 2020-02-22] Dostupné z:
-	\url{ http://www.arexx.com/downloads/asuro/asuro_manual_en.pdf}
-	
-	\bibitem{Asuro}
-	\textit{Programovatelný robot ASURO ARX-3 USB - Vyhledávání na Heureka.cz. Heureka.cz - Porovnání cen a srovnání produktů z internetových obchodů } [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://www.heureka.cz/?h[fraze]=Programovateln%C3%BD+robot+ASURO+ARX-3+USB}
-		
-	\bibitem{Asuro}
-	\textit{2012 Kurz zakladni robotiky - robot ASURO - talentovaní.cz. Talentovaní.cz - talentovaní.cz} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://vtp.talentovani.cz//2012 kurz-zakladni-robotiky-robot-asuro}
-	
-	\subsection*{Microbit}
-	
-	\bibitem{Microbit} 
-	\textit{Micro:bit Educational Foundation | micro:bit. Micro:bit Educational Foundation | micro:bit} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://microbit.org/}
-	
-	\bibitem{Microbit}
-	\textit{Cutebot - Micro:bit chytré auto - HW Kitchen. Ochutnejte s námi bastlení! | HWKitchen.cz} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://www.heureka.cz/?h[fraze]=Programovateln%C3%BD+robot+ASURO+ARX-3+USB}
-	
-	\subsection*{použité součástky}
-	
-	\subsubsection*{součásti desky SchoolBoard}
-	
-	\paragraph*{ESP32}
-	
-	\bibitem{WROOM}
-	\textit{Espressif Systems - Wi-Fi and Bluetooth chipsets and solutions } [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf}
-	
-	\bibitem{ESP32}
-	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://cdn.sparkfun.com/datasheets/IoT/esp32_datasheet_en.pdf}
-	
-	\bibitem{ESP32}
-	\textit{Apache Tomcat/6.0.29 - Error report.} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://pdf1.alldatasheet.com/datasheet-pdf/view/1148023/ESPRESSIF/ESP32.html}
-	
-	\paragraph*{DRV8833 (motoroví driver)}
-	
-	\bibitem{DRV8833}
-	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
-	\url{http://www.ti.com/lit/ds/symlink/drv8833.pdf}
-	
-	\paragraph*{IRF4905}
-	
-	\bibitem{IRF4905}
-	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://www.infineon.com/dgdl/irf4905pbf.pdf?fileId=5546d462533600a4015355e329b1197e}
-	
-	\paragraph*{BS170}
-	
-	\bibitem{BS170}
-	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://www.onsemi.com/pub/Collateral/BS170-D.PDF}
-	
-	\paragraph*{7805}
-	
-	\bibitem{7805}
-	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://www.st.com/resource/en/datasheet/l78.pdf}
-	
-	\paragraph*{Step-down}
-	
-	\bibitem{Step-down}
-	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://arduino-shop.cz/docs/produkty/0/698/1502185417.pdf}
-	
-	\paragraph*{Mikrospínač}
-	
-	\bibitem{mikrospinac}
-	\textit{datasheet} [online] [cit. 2020-02-22] Dostupné z:
-	\url{https://www.gme.cz/data/attachments/dsh.630-019.1.pdf}
-	
-	\subsubsection{inteligentní serva LX15D}
-	
-	\bibitem{inteligentni_serva_LX15D}
-	\textit{inteligentní serva LX15D} [online] [cit. 2020-02-22] Dostupné z:
-	\url{http://www.lewansoul.com/product/detail-7.html}
-	
-\end{thebibliography}
+%\chapter{Popis funkce jednotlivých součástek}
 
-\part{přílohy}
-\part*{Technický list desky SchoolBoard}
-
-\chapter*{funkce desky}
-Deska má k dispozici
-\begin{itemize}
-\item 32-bitový procesor ESP32 s taktovací frekvencí 240MHz a napájecím napětím 3,3 V 
-\item \item flash pamětí 4 MB (dělají se i verze s 8 a 16 MB), 520 KB SRAM, WI-Fi, Bluetooth, 28 vstupně výstupních piny, dva ADC převodníky (jeden s 6 piny a druhý s 10 piny), jedním DAC převodníkem s dvěma piny, tři UARTy, dvě SPI, tři I2C(jedno je použito interně pro flash) atd.
-\item Motorový driver DRV8833, který umožnuje řídit dva stejnosměrné nebo jeden krokový motor.
-\item Tři konektory na inteligentní serva LX-15D nebo LX-16A. Deska dokáže řídit až 254 těchto serv. Serva se totiž dokáží řetězit za sebe, ale pokud potřebují větší proud (když podávají větší kroutící moment), ubytek napětí na kabelech je už moc velký, aby serva mohla využít plný výkon. Proto jsou na desce konektory tři a ne jen jeden.
-\item Čtyři uživatelská tlačítka
-\item Tři uživatelské ledky a jedna ledky signalizující zapnutý stav
-\item Možnost měření baterie
-\item Hardwarové řešení startu a vypínání (dá se použít i jako nouzový vypínač). Tlačítka na zapínání a vypínání jsou jak přímo na desce, tak jsou i vyvedena na pinheady pro možnost připojení externího řízení.
-\item Konektor na připojení motorů s encoderem.
-\item Deska operuje na napětí 3,3V, ale aby byla schopná komunikovat i s periferiemi operujícími
-na napětí 5V, jsou čtyři piny opatřené převodníkem napěťových úrovní.
-Piny IO35, IO32, IO14 a IO12 jsou tedy schopny operovat jak na napětí 3,3V, tak na 5V.
-Piny jsou teoreticky schopné pracovat i na napětí vyšším, záleží na součástce IM3
-(step-down nebo stabilizátor 7805), která napájí převodník. Pokud bude IM3 dodávat jiné napětí, bude toto napětí i na 5V pinech (napětí nesmí klesnout pod 4,5V jinak procesor nedostane dost proudu).
-\item Vyvedení 5V napájení je na oddělené stabilizaci (součástka IM4) pro možnost napájení jiným napětím
-\item Deska má také vyvedeny všechny piny, které nejsou spojeny 
-s hlavní funkcí desky (řízení motorů) nebo je problematické se o ně starat při bootu ESP32.
-
-\end{itemize}
+\chapter{Řídící část}
 	
-\chapter*{popis funkce jednotlivých součástek}
-
-\section*{Logická řídící část}
-
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=\textwidth]{img/logika.png}
-		\caption{schema logické části desky}
-	\end{figure}
-	
-	\newpage
-	
-	\subsection*{DEVKIT C:}
+	\section{DEVKIT C:}
 	procesor ESP32 je v tomto případě osazený na devkitu C. Je to malá deska, která se stará o potřeby procesoru a dá se koupit jako celek. Zajišťuje jednoduché programování přes USB, zajištuje stabilizované napětí 3,3V pro ESP32 a 3,3V větev na desce a stará se o výchozí hodnoty na pinech u kterých je to potřeba.
 	Seznam důležitých pinů
 	\begin{itemize}
@@ -440,11 +309,11 @@ s hlavní funkcí desky (řízení motorů) nebo je problematické se o ně star
 	To znamená, že tyto piny budou potřebovat softwarové pull-upy při užití jako vstupní pin při 5V komunikace.
 	\item Piny s rudým označením THIS SIGNAL MUST BE HERE, jsou lehce problematické, protože ovlivňují boot ESP. Musí na nich tedy při bootu být správná logická hodnota, jinak by ESP mohlo třeba bootovat z jiné paměti nebo by třeba USB nemohlo zapisovat do paměti pro program. Piny IO0 a IO2 nejsou vyvedeny a je o ně interně postaráno, pin IO12 je ale vyveden a uživatel si tedy musí dát pozor, aby na něm neměl při bootu logickou 1. Pokud zůstane nepřipojen, deska se o něj postará.
 	
-	\subsection*{D2}
+	\subsection{D2}
 	Dioda sloužící k zamezení napájení 5V větve z USB.
 	Ochrana před přetížením napájení z USB.
 	
-	\subsection*{RN3A, B, C, D:}
+	\subsection{RN3A, B, C, D:}
 	rezistorová síť, odpory k ledkám.
 	
 	\subsection*{RN2A, B, C, D:}
@@ -507,15 +376,11 @@ s hlavní funkcí desky (řízení motorů) nebo je problematické se o ně star
 	\subsection*{JP2:}
 	jumper pro možnost odpojení měření baterie za účelem uvolnění analogového pinu IO34. Zároveň se dá použít na měření výstupu z děliče před jeho zapojením k ESP.
 	
-	\section*{Silová čás}
+	\chapter{Silová část}
 	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=\textwidth]{img/silovka.png}
-		\caption{schéma výkonové části}
-	\end{figure}
 
-	\subsubsection*{Power manager:}
+
+	\subsection{Power manager:}
 	
 	\paragraph*{X4:}
 	Svorkovnice pro připojení zdroje s napětím 7-11V. X4-1 je záporný pól a X4-2 je pól kladný.
@@ -607,102 +472,153 @@ s hlavní funkcí desky (řízení motorů) nebo je problematické se o ně star
 	
 	\end{itemize}
 
+\chapter{Obrazová příloha}
 
-	\part*{Vysvětlení některých pojmu pro začátečníky}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.5\textwidth, angle = 90]{img/logika.png}
+	\caption{schéma logické části desky}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.5\textwidth, angle = 90]{img/silovka.png}
+	\caption{schéma výkonové části}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\printbibliography[title=Literatura]
+
+\addcontentsline{toc}{section}{Literatura}
+
+\listoffigures
+\addcontentsline{toc}{section}{Seznam obrázků}
+
+\listoftables
+\addcontentsline{toc}{section}{Seznam tabulek}
+\renewcommand{\refname}{Další zdroje}
+\begin{thebibliography}{1}
 	
-	\chapter*{Důležité elektronické součástky}
-	\section*{Dioda}
-	Dioda je polovodičová součástka, která vede proud jenom jedním směrem. Dioda obsahuje PN přechod, který zajištuje její schopnost vest proud jen jednosměrně. Pokud nás zajímá, jak je dioda schopna vést proud můžeme se pro konkrétní diodu podívat na její voltampérovou charakteristiku. Pro všechny diody však budou platit několik bodu (s ohledem na napětí) kde se bude křivka zásadně měnit. Je to prahové napětí, a napětí průrazu. Prahové napětí je napětí, při kterém se dioda otevře, žádná dioda totiž není ideální a ani kladné napětí jí neprojde, pokud není dostatečně velké. Pro obyčejné diody většinou bývá menší než jeden volt (někdy se uvádí 0.6V, ale rozhodně to neplatí vždy). Ale například u LED diod je téměř vždy vyšší, konkrétně třeba u modře svítících bývá i přes dva a půl voltu.
-	Diody mají několik různých typů. Každý typ se hodí na jinou aplikaci. Například Zenerova dioda má výhodu vtom, že po průrazu není zničena a pokud napětí opět klesne, její funkce se obnoví. Její nevýhoda je však velká kapacita. Z podobných důvodů je každá dioda vhodná pro jinou aplikaci.
-	Zenerova dioda – Po průrazu není zničená, takže se dá využít třeba jako napěťová ochrana. Její nevýhodou většinou bývá velké kapacita.
-	Schottkyho dioda – Dokáže se velice rychle otevřít i zavřít (velmi rychle reaguje na změnu polarity) má však velký zpětný proud. Schottkyho dioda totiž není tak úplně dioda, nemá totiž žádní PN přechod.
-	Fotodioda – Dioda, která má velký PN přechod a má průsvitné pouzdro. PN přechod totiž nereaguje jen na elektřinu, ale je citlivý i na světlo (kromě fotodiod jsou proto diody v neprůsvitném pouzdře). Díky tomu se fotodioda dá využít jako detektor světla a aby se tento jev dal využít ještě lépe, 
-	je přechod oproti jiným diodám zvětšen.
-	\section*{MOSFET}
-	Zkratka vyjadřuje:
-	M (Metal) – elektroda G je tvořena kovem (hliníkem)
-	O (Oxide) – elektroda G je odizolována vrstvičkou oxidu křemičitého
-	S (Semiconductor) – oxid je vytvořen na polovodičové destičce
-	FET (Field effect transistor) – výsledkem je tranzistor řízený napětím UGS
-	MOSFET (Metal Oxide Semiconductor Field Effect Transistor)
-	MOSFET je druh tranzistorů, který je řízen elektrickým polem. Tranzistor je speciální tím, že má elektrodu G (Gate) od zbytku tranzistoru odizolovanou tenkou vrstvou oxidu křemičitého. To má za následek především to, že elektrodou G neteče teoreticky žádný proud. Na základě znalostí o bipolárních tranzistorech by si člověk mohl asi říct, že takovýto tranzistor přece nebude fungovat, protože přece proud bází určuje proud emitorem, takže pokud bází nepoteče nic tak emitorem taky ne. Ale MOSFETy jsou řízeny napětím. Napětím mezi G (Gate, vlastně báze akorát u MOSFETu se nazývá jinak) a S (Source, vlastně emitor), které se pak označuje jako UGS.
-	Elektroda G totiž vytváří elektrické pole, které vytváří vodivý kanál uvnitř tranzistoru. Vzniklé pole totiž odpuzuje/přitahuje kladné díry/záporné elektrony, čímž vytváří v jinak nevodivé oblasti nasycení na PN přechodu vodivou oblast.
-	Běžný MOSFET je MOSFET s indukovaným kanálem, to znamená že vodivá oblast (kanál) existuje jen pokud existuje dostatečně velké napětí UGS správné polarity (pro N MOSFET kladné a pro P MOSFET záporné).  Existují ale i MOSFETy s technologicky vytvořeným kanálem. Takové tranzistory mají vytvořený mezi elektrodami S a D vodivý kanál tvořený prostředím se stejným typem vodivosti. To pak umožnuje tranzistoru pracovat ve dvou režimech, režimu obohacení a režimu ochuzení. V režimu obohacení se vodivý kanál, díky elektrostatickému náboji tvořenému pomocí elektrody G, dále rozšiřuje a umožnuje tak protékat většímu proudu. V režimu ochuzení se však kanál naopak zužuje a omezuje tak průtok proudu.
-	Na všech obrázcích jsou MOSFET typu P, pokud si chcete představit MOSFET typ N, musíte si u všech obrázků představit opačné napětí UGS, aby platily pro typ N.
+	\subsection*{LEGO Mindstorm}
 	
-	
-	\chapter*{Důležité pojmy}
-	
-	\section*{Pin}
-	Pin je vývod elektrické součástky.
-	Pull-up
-	Pull-up je rezistor, který připojuje logickou dráhu k napájení. Pokud měříme napětí na takovéto dráze (když není nikam jinam připojena) pomocí měřidla s vysokým odporem (což bude každý pin nastavený jako vstupní) naměříme prakticky napájecí napětí. 
-	Toto se využívá například při čtení tlačítka, které je pak připojeno dvěma vodiči, z nichž jeden je připojen na zem a druhý je připojen zaprvé na pin procesoru a zadruhé přes pull-up k napájení. 
-	Pokud pak čteme tento pin, přečteme logickou jedničku, když tlačítko nebude stlačené a logickou nulu, když stlačené bude.
-	
-	\section*{Pull-down}
-	Pull-down je stejně jako pull-up rezistor, který určuje napětí na logické dráze, ale na rozdíl od
-	pull-upu připojuje dráhu k zemi.
-	Co je analogový a digitální signál
-	Digitální signál reprezentuje logické hodnoty, 0 nebo 1. Má tedy dva možné stavy. Analogový signál může naopak nabývat teoreticky nekonečně mnoha hodnot, protože je vyjádřen napětím, které může nabývat jakékoliv hodnoty v daném rozsahu. V praxi se většinou analogový signál převádí pomocí AD převodníku na digitální podobu, aby s takovýmto vstupem byl procesor schopen pracovat.
-	Technický list desky SchoolBoard
-	
-	\section*{Napěťový dělič}
-	Odvození vzájemného vztahu mezi napětím a odpory rezistoru.
-	\begin{listedequation}[h]
-		$$I=U{1}/R{1}$$
-		\caption{stejně tak}
-		$$I=U{2}/R{2}$$ 
-		\caption{z toho plyne}
-		$$U{1}/U{2} =R{1}/R{2}$$
-		\label{eq:hrnekeq}
-	\end{listedequation}
-	 		
-	Napětí na rezistorech se tedy dělí v poměru jejich odporu. V praxi v obvodu nebudou jen dva rezistory, ale aby dělič k něčemu byl, je na uzlu mezi rezistory měřeno referenční napětí. Pro výpočet se dá měřidlo nahradit dalším rezistorem zapojeným paralelně k R2. Tento další rezistor můžeme ve většině případů zanedbat, protože měřidla napětí budou většinou mít velký vnitřní odpor a tím pádem skrz ně nepoteče velký proud. Ale kdybychom měřidlo uvažovali, tak by platilo:
-	
-	\begin{listedequation}[h]
-		$$U{1}/U{2} =R{1}/R{2,3}$$
-		\caption{kde R{2,3}}
-		$$1/R{2,3} =1/R{2} +1/R{3}$$ 
-		\caption{Kde R3 je odpor měřidla (pravděpodobně bude v řádu megaohmu)}
-		\label{eq:hrnekeq}
-	\end{listedequation}
-	
-	\section*{Enkodér}
-	Enkodér je snímač polohy. Většinou se používá pro určení natočení motoru. Pomocí něj se dá počítat například úhlová rychlost motoru, nebo ve spojitosti s dalšími senzory třeba okamžitý výkon nebo kroutící moment. 
-	Enkodéry se dají rozdělit do dvou hlavních skupin, inkrementální a absolutní. 
-	Inkrementální enkodéry dávají informaci o velikosti posuvu a jeho směru.
-	Absolutní enkodéry udávají jeho reálnou pozici (jsou většinou daleko složitější než inkrementální).
-	
-	\subsection*{Inkrementální enkodéry}
-	Inkrementální enkodéry jsou, stejně jako ostatní druhy enkodérů, zdrojem informací o poloze, většinou motoru. Rozlišení je definováno počtem impulzů na otáčku, které enkodér při každé otáčce vytvoří. Aktuální pozice pak vlastně známá není, jen pokud se zjistí jiným snímačem. Enkodér vlastně říká, kterým směrem a o jaký úhel se rotor otočil. Takový enkodér má alespoň dvě sondy, na signálu posunuté o 90 stupňu (viz obrázek), které snímají pohyb rotoru. Snímání je pak zajištěno buď opticky, magneticky nebo u malých rychlostí i mechanicky. Mají velmi jednoduchou logiku vyhodnocování. Magnetická verze inkrementálního enkodéru má na rotoru, nebo jiném pohyblivém zařízení, umístěn magnet, jehož magnetické pole se snímá pomocí Hallových sond. Tento magnet pak určuje rozlišení enkodéru. Pokud má enkodér jen jeden magnet, má pak jen dvě hrany na otáčku sestupnou a vzestupnou, které jsou v případě ideálního magnetu stejně vzdálené. Stejná vzdálenost hrany na otáčku značí, že signál sondou vygenerovaný, bude o polovinu otáčky hight a polovinu low. Pokud tedy chceme větší rozlišení, musíme buď otáčky magnetu nějak z převodovat, což má nevýhodu vůlí, kterým je u převodovek těžké se vyhnout. Nebo musí být “magnet“ složen z většího počtu magnetů, aby měl výsledek větší počet pólů na otáčku.
-	
-	Optické inkrementální enkodéry jsou oproti magnetickým daleko běžnější. Používají se například ve většině počítačových myší. Nepotřebují magnety, ale jen nějakou clonu nebo odraznou plochu. Clona nebo odrazka pak umožní ve správném natočení, dostat se světlu do jeho snímače, většinou phototransistoru.
-	Disk na obrázku může být buď neprůsvitný a mýt v sobě otvory, nebo může být transparentní a mít na sobě jen nakreslené neprůsvitné nebo přímo odrazné plošky. Při odrazné možnosti je pak možné snímat natočení ze stejné strany, na které je umístěn zdroj světla. Podobný způsob může využívat například různé odraznosti barev, například na disku mohou být natištěny různě barevné plochy, které budou různě pohlcovat světlo a tedy se do snímače dostane různé množství světla. 
-	Mechanické enkodéry mechanicky připínají výstupy k dané dráze, stejně jako u tlačítek je touto dráhou většinou zem. Proč zrovna zem? Protože logická nula je ve většině případů právě zem a pokud musíme jednu ze stavů definovat, je lepší určit ten, který nám umožní větší flexibilitu. Signál pak připojíme přes pull-up k logickému napájení, který si už ale můžeme téměř libovolně zvolit. 
-	Co se vzhledu rotačního disku týče, přirovnal bych je k enkodéru optickému. Vlastně se dá říci, že místo světla se zde pohybuje elektřina (i když to není tak úplně přesné).
-	
-	\subsection*{Absolutní enkodéry}
-	Absolutní enkodéry udávají na rozdíl od inkrementálních reálnou polohu rotoru. Dávají nám tedy informaci o aktuálním natočení, nikoli o posunu jako ty inkrementální. Rozlišení se pak tedy neodvíjí od množství hran na otáčku, ale od schopnosti rozlišit úhel natočení (rozvedeno níže). Stejně jako enkodéry inkrementální mohou být i absolutní magnetické i optické a mohou být i mechanické (ty se téměř nepoužívají). Za mechanické absolutní enkodéry by se dali v jistém smyslu považovat potenciometry. Ty se ale málokdy dělají tak, aby s nimi bylo možné točit dokola při zachování informace o poloze. Magnetické absolutní enkodéry využívají opět Hallova jevu, ale na rozdíl od inkrementálního enkodéru nepřevádí výstupní signál na digitální, ale ženou jej na AD převodník. Díky tomu mají oproti inkrementálním enkodérům daleko přesnější informaci, ale zase obtížněji zpracovatelnou. Magnetické pole snímaného magnetu totiž sice může být velmi stálé, ale je téměř nemožné jej dokonale odstínit. Signál tak bude obsahovat všelijaké rušení (například běžící motor), které je třeba nějak odfiltrovat, jinak bude podstatně snižovat přesnost enkodéru. Jeho rozlišení pak vyplývá z přesnosti AD převodníku a ze schopnosti odstínit nebo vyfiltrovat měřený signál. Optické absolutní enkodéry mají oproti inkrementálnímu daleko složitější disk. Přesnost takovéhoto enkodéru pak určuje množství bitů, na kterých poskytuje informaci o natočení disku. Dalo by se říci, že pokud je enkodér řekněme osmibitový (viz obrázek) skládá se z osmi různých inkrementálních enkodérů s různou přesností, které na sebe jedinečným způsobem navazují.	Když se podíváte na obrázek A, můžete si všimnout, že od středu disku narůstá počet hran na otáčku. Dále si můžete všimnout, že kombinace pruhu je pro každý úhel jedinečná - v případě tohoto obrázku s přesností na 360 stupňu lomeno 256 (256 protože enkodér umožnuje rozlišení na osm bitech). Právě díky jedinečnosti informace pro každý úhel je enkodér absolutní, protože když při libovolném natočení, přečteme výstup, dokážeme určit, jak je zrovna enkodér natočen.
-	
-	\section*{PWM}
-	Pulse Width Modulation (Pulzní šířková modulace) je obdélníkový signál s proměnlivým poměrem vysokého a nízkého stavu. Tento poměr se pak nazývá procento PWM. Pokud je signál stále v poloze nízké, je nula procentní, a pokud je naopak stále vysoko, je sto procentní.
-	PWM se využívá například při řízení svítivosti ledek. Ledka vlastně velmi rychle bliká, ale lidskému oku se zdá, že svítí méně intenzivně. 
-	Větší využití má PWM v silové elektronice konkrétně při řízení stejnosměrných motoru. Pomocí PWM se totiž dá jednoduše řídit výkon motoru, motor je vlastně stejně jako ledka střevě zapnutý a vypnutý. To se však děje tak rychle, že se motor nestihne zastavit ani dosáhnout plného výkonu.
-	
-	\section*{Převodník napěťových úrovní}
-	Převodník napěťových úrovní slouží k možnosti převádět digitální signál mezi dvěma různými systémy, které normálně komunikují na odlišném napětí.
-	
-	\subsection*{Funkce}
-	
-	\paragraph*{Komunikace z nízkého na vyšší napětí}
-	Pokud napíše, řekněme procesor (provozován na napětí LV), na stranu napětí LV (low voltage) logickou nulu, tedy ji připojí na zem. Bude napětí GS rovno LV (napájecí napětí procesoru), protože G Q1 je připojena
-	k LV a na S je v tu chvíli napsaná nula (zem). Tím pádem je Q1 otevřen a zem projde skrz Q1. Pokud však procesor napíše místo nuly jedničku, bude napětí GS 0V. V tu chvíli je Q1 zavřen a dráha s vyšším napětím je tažena pull-up rezistorem R9 k HV (hight voltage) => na dráze je logická jedna.
-	
-	\paragraph*{Komunikace z vyššího napětí na nižší}
-	Pokud napíše, řekněme periferie napájena napětím HV, nulu. Signál projde skrz diodu uvnitř Q1, tím sníží napětí na S Q1 a plně Q1 otevře. Protože napětí GS je v tu chilli rovno LV. Pokud napíše periferie logickou jedna, napětí neprojde skrz Q1 a dráha LV-S je tažena pull-up rezistorem R8 k napětí LV.
+	\bibitem{LEGO Mindstorm} 
+	\textit{porovnání cen LEGa} [online] www.heureka.cz [cit. 2020-02-22] Dostupné z: \\ 
+	\url{https://lego.heureka.cz/lego-mindstorms-31313-ev3/#o=2}
 	
 	
+	\subsection*{Mbot}
+	\bibitem{Mbot} 
+	\textit{Mbot} [online] https://www.makeblock.com/mbot [cit. 2020-02-22] Dostupné z: \url{https://www.makeblock.com/mbot}
+	
+	
+	\subsection*{Edison V2.0}
+	\bibitem{Edison V2.0} 
+	\textit{Meet Edison. Wiltronics | Science and Technology product specialists} [online] [cit. 2020-02-22] Dostupné z: \url{https://www.wiltronics.com.au/MeetEdison/}
+	
+	\bibitem{Edison V2.0}
+	\textit{Introducing Edison V2.0 - the newest version of the Edison robot. Edison Programmable Robot - Ideal for school classroom education} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://meetedison.com/meet-edison-v2-0/}
+	
+	\bibitem{Edison V2.0}
+	\textit{příklad ceny} [online] [cit. 2020-02-22] Dostupné z: \\ 
+	\url{https://www.robotshop.com/ca/en/edison-programmable-v20-robot.html?gclid=Cj0KCQiA4sjyBRC5ARIsAEHsELHtKqVNJOl95kMUC8iBngIkgc3gCZU9KOTwuXWEo4hU4Qs1B-2wASkaAh9CEALw_wcB}
+	
+	\subsection*{OZOBOT}
+	
+	\bibitem{OZOBOT} 
+	\textit{OZOBOT} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://www.youtube.com/watch?v=lqR3zDWAQ1o}
+	
+	\bibitem{OZOBOT}
+	\textit{OZOBOT} [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://www.youtube.com/watch?v=Cw30OdlczRo}
+	
+	\subsection*{Asuro}
+	
+	\bibitem{Asuro} 
+	\textit{Asuro} [online] [cit. 2020-02-22] Dostupné z:
+	\url{ http://www.arexx.com/downloads/asuro/asuro_manual_en.pdf}
+	
+	\bibitem{Asuro}
+	\textit{Programovatelný robot ASURO ARX-3 USB - Vyhledávání na Heureka.cz. Heureka.cz - Porovnání cen a srovnání produktů z internetových obchodů } [online] [cit. 2020-02-22] Dostupné z:
+	\url{https://www.heureka.cz/?h[fraze]=Programovateln%C3%BD+robot+ASURO+ARX-3+USB}
+		
+		\bibitem{Asuro}
+		\textit{2012 Kurz zakladni robotiky - robot ASURO - talentovaní.cz. Talentovaní.cz - talentovaní.cz} [online] [cit. 2020-02-22] Dostupné z:
+		\url{https://vtp.talentovani.cz//2012 kurz-zakladni-robotiky-robot-asuro}
+		
+		\subsection*{Microbit}
+		
+		\bibitem{Microbit} 
+		\textit{Micro:bit Educational Foundation | micro:bit. Micro:bit Educational Foundation | micro:bit} [online] [cit. 2020-02-22] Dostupné z:
+		\url{https://microbit.org/}
+		
+		\bibitem{Microbit}
+		\textit{Cutebot - Micro:bit chytré auto - HW Kitchen. Ochutnejte s námi bastlení! | HWKitchen.cz} [online] [cit. 2020-02-22] Dostupné z:
+		\url{https://www.heureka.cz/?h[fraze]=Programovateln%C3%BD+robot+ASURO+ARX-3+USB}
+			
+			%\subsection*{použité součástky}
+			
+			\subsection*{součásti desky SchoolBoard}
+			
+			%\paragraph*{ESP32}
+			
+			\bibitem{WROOM}
+			\textit{Espressif Systems - Wi-Fi and Bluetooth chipsets and solutions } [online] [cit. 2020-02-22] Dostupné z:
+			\url{https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf}
+			
+			\bibitem{ESP32}
+			\textit{datasheet ESP32} [online] [cit. 2020-02-22] Dostupné z:
+			\url{https://cdn.sparkfun.com/datasheets/IoT/esp32_datasheet_en.pdf}
+			
+			\bibitem{ESP32_II} %todo proč dva datasheety? 
+			\textit{datasheet ESP32} [online] [cit. 2020-02-22] Dostupné z:
+			\url{https://pdf1.alldatasheet.com/datasheet-pdf/view/1148023/ESPRESSIF/ESP32.html}
+			
+			%\paragraph*{DRV8833 (motorový driver)}
+			
+			\bibitem{DRV8833}
+			\textit{datasheet DRV8833} [online] [cit. 2020-02-22] Dostupné z:
+			\url{http://www.ti.com/lit/ds/symlink/drv8833.pdf}
+			
+			%\paragraph*{IRF4905}
+			
+			\bibitem{IRF4905}
+			\textit{datasheet IRF4905} [online] [cit. 2020-02-22] Dostupné z:
+			\url{https://www.infineon.com/dgdl/irf4905pbf.pdf?fileId=5546d462533600a4015355e329b1197e}
+			
+			%\paragraph*{BS170}
+			
+			\bibitem{BS170}
+			\textit{datasheet BS170} [online] [cit. 2020-02-22] Dostupné z:
+			\url{https://www.onsemi.com/pub/Collateral/BS170-D.PDF}
+			
+			%\paragraph*{7805}
+			
+			\bibitem{7805}
+			\textit{datasheet 7805} [online] [cit. 2020-02-22] Dostupné z:
+			\url{https://www.st.com/resource/en/datasheet/l78.pdf}
+			
+			%\paragraph*{Step-down}
+			
+			\bibitem{Step-down}
+			\textit{datasheet Step-down} [online] [cit. 2020-02-22] Dostupné z:
+			\url{https://arduino-shop.cz/docs/produkty/0/698/1502185417.pdf}
+			
+			%\paragraph*{Mikrospínač}
+			
+			\bibitem{mikrospinac}
+			\textit{datasheet -- mikrospínač} [online] [cit. 2020-02-22] Dostupné z:
+			\url{https://www.gme.cz/data/attachments/dsh.630-019.1.pdf}
+			
+			\subsection*{inteligentní servo LX15D}
+			
+			\bibitem{inteligentni_serva_LX15D}
+			\textit{inteligentní serva LX15D} [online] [cit. 2020-02-22] Dostupné z:
+			\url{http://www.lewansoul.com/product/detail-7.html}
+			
+		\end{thebibliography}
 
 \end{document}
 
