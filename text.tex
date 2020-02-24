@@ -45,8 +45,13 @@
 \pagestyle{empty}
 
 \section*{Anotace}
-Tato práce se zabývá návrhem několika robotických zařízení. Jejich použitím při výuce dětí v zájmovém vzdělávání a školní výuce předmětů automatizace a elektrotechniky.
-Cílem je především vyvinout vhodné vzdělávací pomůcku, která bude schopná řídit například i soutěžní roboty nebo výrobní linky.
+Začínající zájemce o elekroniku narazí po ...
+%todo 
+Cílem je především vyvinout vhodnou levnou a rozšiřitelnou vzdělávací pomůcku, která umožňuje názorně  
+
+která bude schopná řídit například i soutěžní roboty nebo výrobní linky.
+Tato práce se zabývá návrhem a výrobou robota Schoolbot, jeho použitím při výuce dětí v zájmovém vzdělávání a školní výuce předmětů automatizace a elektrotechniky. 
+
 
 
 \subsection*{Klíčová slova}
@@ -151,16 +156,16 @@ Možná si říkáte, proč mi záleží na tom aby robot pro začátečníky m�
 	\centering
 	\begin{tabular}{|l|l|l|l|l|l|l|}
 		\hline
-		\textbf{robot }			& modulární   & rozšiři- & bezdrátové  & tuhá  & nízká & programova- \\
-		 & senzorika & telnost & řízení & konstrukce & cena & telnost z C++ \\
+		\textbf{robot }			& modulární   & rozšiři- & bezdrátové  & tuhá  & nízká & C++\footnote{Možnost naprogramování robota v C++.} \\
+		 & senzorika & telnost & řízení & konstrukce & cena &  \\
 		 \hline
-		SchoolBot 		& 1 				& 1 			& 1 			& 1 			& 1 		& 1	\\ 
 		Mbot 			& 0 				& 0 			& 0 			& 1 			& 0			& 0	\\ 
-		LEGO 	& 1/2 				& 1 			& 1 			& 0 			& 0			& 1/2	\\ 
+		LEGO\footnote{myšleno LEGO MINDSTORMS} 	& 1/2 				& 1 			& 1 			& 0 			& 0			& 1/2	\\ 
 		Edison 			& 0 				& 0 			& 1/2 			& 1/2 			& 1			& 0	\\ 
 		OZOBOT			& 0					& 0				& 1 			& 1				& 0			& 0	\\
 		Asuro			& 0					& 0				& 0 			& 0				& 0			& 1	\\
 		Microbit		& 0					& 1				& 1 			& 1				& 0			& 0	\\
+			\textbf{SchoolBot} 		& \textbf{1} 				& \textbf{1} 			& \textbf{1} 			& \textbf{1} 			& \textbf{1} 		& \textbf{1}	\\ 
 		\hline
 	\end{tabular}
 	\caption{Srovnání možností dostupných komerčních systémů pro hobby roboty}
@@ -191,38 +196,56 @@ Mechanika SchoolBota je celá z překližky vypálené pomocí laserového řez�
 \subsubsection{Uložení kol a motoru}
 
 Kola nejsou jen tak nasazená na motor. Aby se nevyvracela, a tím pádem méně zatěžovala převodovku motoru, jsou z druhé strany podepřena a uchycena k obvodu konstrukce.
-Celí motor i s kolem je pak z části držen podporou kola ale především je celí motor vložen do těsné šachty kde se nemůže otočit ani posunout jiným směrem než vzhůru a následně je přitlačen palubou která se přišroubuje čtyřmi šrouby. Takovéto řešení umožnuje jednoduchý přístup k motor.
+Celí motor i s kolem je pak z části držen podporou kola ale především je celí motor vložen do těsné šachty kde se nemůže otočit ani posunout jiným směrem než vzhůru a následně je přitlačen palubou která se přišroubuje čtyřmi šrouby. Takovéto řešení umožnuje jednoduchý přístup k motoru.
 
-\newpage
 
-\section{SchoolBoard}
+\chapter{SchoolBoard}
+
+\section{Popis desky}
 
 Deska má k dispozici
 
 \begin{itemize}
-	\item třicetidvoubitový procesor ESP32 s taktovací frekvencí 240MHz a napájecím napětím 3,3 V 
-	\item \item flash pamětí 4 MB (dělají se i verze s 8 a 16 MB), 520 KB SRAM, WI-Fi, Bluetooth, 28 vstupně výstupních piny, dva ADC převodníky (jeden s 6 piny a druhý s 10 piny), jedním DAC převodníkem s dvěma piny, tři UARTy, dvě SPI, tři I2C(jedno je použito interně pro flash) atd.
-	\item Motorový driver DRV8833, který umožnuje řídit dva stejnosměrné nebo jeden krokový motor.
+	\item třicetidvoubitový procesor ESP32 s taktovací frekvencí 240~MHz a napájecím napětím 3,3 V 
+	\item flash pamětí 4 MB (dělají se i verze s 8 a 16 MB), 520 KB SRAM, WI-Fi, Bluetooth, 28 vstupně výstupních piny, dva ADC převodníky (jeden s 6 piny a druhý s 10 piny), jedním DAC převodníkem s dvěma piny, tři UARTy, dvě SPI, tři I2C(jedno je použito interně pro flash) atd.
+	
+	\item Motorový driver DRV8833, který umožnuje řídit dva stejnosměrné motory nebo jeden krokový motor.
+	
 	\item Tři konektory na inteligentní serva LX-15D nebo LX-16A. Deska dokáže řídit až 254 těchto serv. Serva se totiž dokáží řetězit za sebe, ale pokud potřebují větší proud (když podávají větší kroutící moment), ubytek napětí na kabelech je už moc velký, aby serva mohla využít plný výkon. Proto jsou na desce konektory tři a ne jen jeden.
-	\item Čtyři uživatelská tlačítka
-	\item Tři uživatelské ledky a jedna ledky signalizující zapnutý stav
-	\item Možnost měření baterie
+	
+	\item Čtyři uživatelská tlačítka.
+	
+	\item Tři uživatelské LED a jedna LED signalizující zapnutý stav.
+	
+	\item Možnost měření napětí baterie.
+	
 	\item Hardwarové řešení startu a vypínání (dá se použít i jako nouzový vypínač). Tlačítka na zapínání a vypínání jsou jak přímo na desce, tak jsou i vyvedena na pinheady pro možnost připojení externího řízení.
-	\item Konektor na připojení motorů s encoderem.
-	\item Deska operuje na napětí 3,3V, ale aby byla schopná komunikovat i s periferiemi operujícími
-	na napětí 5V, jsou čtyři piny opatřené převodníkem napěťových úrovní.
-	Piny IO35, IO32, IO14 a IO12 jsou tedy schopny operovat jak na napětí 3,3V, tak na 5V.
+	
+	\item Konektor na připojení motorů s enkodérem.
+	
+	\item Deska operuje na napětí 3,3~V, ale aby byla schopná komunikovat i s periferiemi operujícími
+	na napětí 5~V, jsou čtyři piny opatřené převodníkem napěťových úrovní.
+	Piny IO35, IO32, IO14 a IO12 jsou tedy schopny operovat jak na napětí 3,3~V, tak na 5~V.
+	
 	Piny jsou teoreticky schopné pracovat i na napětí vyšším, záleží na součástce IM3
-	(step-down nebo stabilizátor 7805), která napájí převodník. Pokud bude IM3 dodávat jiné napětí, bude toto napětí i na 5V pinech (napětí nesmí klesnout pod 4,5V jinak procesor nedostane dost proudu).
-	\item Vyvedení 5V napájení je na oddělené stabilizaci (součástka IM4) pro možnost napájení jiným napětím
-	\item Deska má také vyvedeny všechny piny, které nejsou spojeny 
-	s hlavní funkcí desky (řízení motorů) nebo je problematické se o ně starat při bootu ESP32.
+	(step-down nebo stabilizátor 7805), která napájí převodník. Pokud bude IM3 dodávat jiné napětí, bude toto napětí i na 5~V pinech (napětí nesmí klesnout pod 4,5~V jinak procesor nedostane dost proudu).
+	
+	\item Vyvedení 5~V napájení je na oddělené stabilizaci (součástka IM4) pro možnost napájení jiným napětím.
+	
+	\item Deska má také vyvedeny všechny piny ESP32, které nejsou spojeny 
+	s hlavní funkcí desky (řízení motorů) a není problematické se o ně starat při bootu ESP32.
+	
 	\end{itemize}
 \section{Vývoj}
 
-SchoolBot jsem začal vyvíjet protože účastníci kurzu robotiky v minulých letech nestíhali vytvořit vlastní konstrukci a ještě jí naprogramovat. Přesto že elektroniku již vyřešenou měli, tak mechanika a především programování na ně bylo stále příliš. Proto začal koncem loňského školního roku, 2018/2019, vznikat robot který měl řešit jak elektroniku, tak většinu mechaniky. První prototyp mechaniky byl hotoví již začátkem letních prázdnin, ale další vývoj pokračoval až o hodně později. První verze totiž vyžadovala jen velmi málo uprav a já měl na práci spoustu jiných věcí. V první řadě řídící desku, která již sice také měla první prototyp za sebou, ale vyžadovala daleko víc uprav. Již druhá verze desky byla plně provozu schopná a začátkem roku jsme jí začali stavět s účastníky kurzu. Ne všichni však chtěli použít mojí konstrukci. Někteří si jí chtěli navrhnout sami a někteří měli tak těžké doplňky, že by je tento robot neuvezl. SchoolBota tak využil jen jeden ze sedmi týmů.
+SchoolBot jsem začal vyvíjet, protože účastníci kurzu robotiky v minulých letech nestíhali za jeden školní rok vytvořit vlastní konstrukci a ještě ji naprogramovat. Přesto, že elektroniku již vyřešenou měli, tak mechanika a především programování na ně bylo stále příliš. Přitom robotické soutěže jsou \uv{zlatým hřebem} každého školního roku. Proto jsem začal koncem loňského školního roku 2018/2019, vyvíjet robota, který měl řešit jak elektroniku, tak většinu mechaniky. 
 
-\section{Kde se deska opravdu používá}
+První prototyp mechaniky byl hotový již začátkem letních prázdnin, ale další vývoj pokračoval až o hodně později. První verze totiž vyžadovala jen velmi málo úprav a já měl na práci spoustu jiných věcí. V první řadě řídící desku, která již sice také měla první prototyp za sebou, ale vyžadovala daleko víc úprav. Již druhá verze desky byla plně provozuschopná a začátkem školního roku 2019/2020 jsme jí začali stavět s účastníky kurzu.
+
+ Ne všichni však chtěli použít mojí konstrukci. Někteří si jí chtěli navrhnout sami a někteří měli tak těžké doplňky, že by je tento robot neuvezl. 
+SchoolBota tak letos využil jen jeden ze sedmi týmů.
+
+\section{Kde se deska používá}
 Deska se používá ve dvou volnočasových kurzech robotiky a při výuce elektrotechniky a automatizace.
 
 

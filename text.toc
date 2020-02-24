@@ -39,29 +39,31 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Ulo\IeC {\v z}en\IeC {\'\i } kol a motoru}{15}{section*.14}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}SchoolBoard}{16}{section.2.2}% 
+\contentsline {chapter}{\numberline {3}SchoolBoard}{16}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}V\IeC {\'y}voj}{17}{section.2.3}% 
+\contentsline {section}{\numberline {3.1}Popis desky}{16}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Kde se deska opravdu pou\IeC {\v z}\IeC {\'\i }v\IeC {\'a}}{18}{section.2.4}% 
+\contentsline {section}{\numberline {3.2}V\IeC {\'y}voj}{17}{section.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Kde se deska opravdu pou\IeC {\v z}\IeC {\'\i }v\IeC {\'a}}{18}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Seznam obr\IeC {\'a}zk\IeC {\r u}}{20}{chapter*.16}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Seznam tabulek}{21}{chapter*.17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Mbot}{22}{section.2.5}% 
+\contentsline {section}{\numberline {3.4}Mbot}{22}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Edison V2.0}{22}{section.2.6}% 
+\contentsline {section}{\numberline {3.5}Edison V2.0}{22}{section.3.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}OZOBOT}{23}{section.2.7}% 
+\contentsline {section}{\numberline {3.6}OZOBOT}{23}{section.3.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Asuro}{23}{section.2.8}% 
+\contentsline {section}{\numberline {3.7}Asuro}{23}{section.3.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Microbit}{23}{section.2.9}% 
+\contentsline {section}{\numberline {3.8}Microbit}{23}{section.3.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.10}pou\IeC {\v z}it\IeC {\'e} sou\IeC {\v c}\IeC {\'a}stky}{24}{section.2.10}% 
+\contentsline {section}{\numberline {3.9}pou\IeC {\v z}it\IeC {\'e} sou\IeC {\v c}\IeC {\'a}stky}{24}{section.3.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.10.1}sou\IeC {\v c}\IeC {\'a}sti desky SchoolBoard}{24}{subsection.2.10.1}% 
+\contentsline {subsection}{\numberline {3.9.1}sou\IeC {\v c}\IeC {\'a}sti desky SchoolBoard}{24}{subsection.3.9.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{ESP32}{24}{section*.20}% 
 \defcounter {refsection}{0}\relax 
@@ -77,7 +79,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Mikrosp\IeC {\'\i }na\IeC {\v c}}{25}{section*.26}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.10.2}inteligentn\IeC {\'\i } serva LX15D}{25}{subsection.2.10.2}% 
+\contentsline {subsection}{\numberline {3.9.2}inteligentn\IeC {\'\i } serva LX15D}{25}{subsection.3.9.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{I\hspace {1em}p\IeC {\v r}\IeC {\'\i }lohy}{26}{part.1}% 
 \defcounter {refsection}{0}\relax 
