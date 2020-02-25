@@ -53,26 +53,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Kde se deska používá}{24}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Přílohy}{25}{chapter*.23}%
+\contentsline {subsection}{\numberline {3.3.1}Školní kroužek robotiky}{24}{subsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Řídící část}{26}{appendix.A}%
+\contentsline {chapter}{Přílohy}{26}{chapter*.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}DEVKIT C:}{26}{section.A.1}%
+\contentsline {chapter}{\numberline {A}Řídící část}{27}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}D2}{27}{subsection.A.1.1}%
+\contentsline {section}{\numberline {A.1}DEVKIT C:}{27}{section.A.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}RN3A, B, C, D:}{27}{subsection.A.1.2}%
+\contentsline {subsection}{\numberline {A.1.1}D2}{28}{subsection.A.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Silová část}{32}{appendix.B}%
+\contentsline {subsection}{\numberline {A.1.2}RN3A, B, C, D:}{28}{subsection.A.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.0.1}Power manager:}{32}{subsection.B.0.1}%
+\contentsline {chapter}{\numberline {B}Silová část}{33}{appendix.B}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{R2}{33}{section*.42}%
+\contentsline {subsection}{\numberline {B.0.1}Power manager:}{33}{subsection.B.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Obrazová příloha}{37}{appendix.C}%
+\contentsline {paragraph}{R2}{34}{section*.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatura}{40}{figure.caption.59}%
+\contentsline {chapter}{\numberline {C}Obrazová příloha}{38}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam obrázků}{40}{appendix*.60}%
+\contentsline {section}{Literatura}{41}{figure.caption.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam tabulek}{41}{appendix*.61}%
+\contentsline {section}{Seznam obrázků}{41}{appendix*.61}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Seznam tabulek}{42}{appendix*.62}%
