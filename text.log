@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.1)  25 FEB 2020 01:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.1)  25 FEB 2020 02:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1067,7 +1067,7 @@ n.cz [cit.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 644--646
-\OT1/cmr/m/n/12 2020-02-22] Do-stupn^^Se z: [][]$\OT1/cmtt/m/n/12 https : / / w
+\OT1/cmr/m/n/12 2020-02-24] Do-stupn^^Se z: [][]$\OT1/cmtt/m/n/12 https : / / w
 ww . hwkitchen . cz /
  []
 
@@ -1168,7 +1168,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt12.pfb>
-Output written on text.pdf (45 pages, 5425654 bytes).
+Output written on text.pdf (45 pages, 5425655 bytes).
 PDF statistics:
  569 PDF objects out of 1000 (max. 8388607)
  496 compressed objects within 5 object streams
