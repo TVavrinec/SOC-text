@@ -131,9 +131,20 @@ Proč vlastně vytvářet vlastní elektroniku i mechaniku, když je na trhu tol
  
 %zmizela poznámka o dokumentaci (nebyla tak pravdivá jak bych chtěl abych jí zde nechal [ splnoval by to asi jen Asuro a možná OZOBOT s Edisnem])
 
+\newpage
+
 \section{Konkurence} \label{konkurence}
 
 \subsection{LEGO Mindstorms EV3}[\ref{LEGO}]
+
+\begin{figure}[h]
+	
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/EV3.jpg}
+	\caption{LEGO Mindstorm} 
+	[\ref{LEGO}]
+	
+\end{figure}
 
 LEGO Mindstorms je známé svou jednoduchostí. Základní roboti se s touto sadou dají sestavit velmi rychle, což poskytuje hlavně začátečníkům motivaci, neboť již s poměrně malým úsilím sestaví něco, co na první pohled funguje. Dílky LEGa však nejsou moc pevné a konstrukce z nich postavená jich tedy vyžaduje velké množství, aby byla obstojně tuhá. To se samozřejmě dá vyřešit tím, že si člověk udělá konstrukci z jiného materiálu, potom ale odpadá výhoda jednoduchosti stavby.
 
@@ -142,7 +153,19 @@ Možnosti robota se z velké části odvíjí od senzoriky. LEGO trpí na nedost
 
 LEGO má své vlastní programovací prostředí, které je většinou pro začátečníky dobré. Jakmile však uživatel chce vytvářet vetší program, prostředí velmi rychle ztratí užitečnost. Vetší programy jsou v grafickém prostředí velmi nepřehledné. Navíc prostředí LEGa může být u větších programů nestabilní. Existují však i prostředí, ze kterých se dá lego programovat textově, například v jazyku C++, což je u složitějších programu přehlednější a také méně náročné pro počítač.
 
+\newpage
+
 \subsection{Mbot} [\ref{Mbot}]
+
+\begin{figure}[h]
+	
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/Mbot.jpg}
+	\caption{Mbot} 
+	[\ref{Mbot}]
+	
+\end{figure}
+
 Mbot je oproti legu daleko levnější (cena se pohybuje kolem osmnácti set korun za kus) ale trpí stejným, nebo i větším, nedostatkem sensorů. 
 
 Co se konstrukce týče, problémy s pevností u Mbota není, ale zase se nedá snadno upravit. Konstrukce je totiž hliníková, což je v pořádku, pokud není potřeba konstrukci výrazně upravovat. Robota je ale většinou třeba přizpůsobit konkrétnímu užití.
@@ -151,29 +174,73 @@ Co se konstrukce týče, problémy s pevností u Mbota není, ale zase se nedá 
 Mbot je založen na procesoru ATmega328, což je stejný procesor, jaký se používá i u velice známého Arduina. [\ref{Mbot}]
 To znamená, že některé programy, které jsou napsané pro Arduino, je možné spustit i zde.
 
-\subsection{Edison V2.0}
-Edison [\ref{Edison}]
-je velmi podobný LEGu a má i podobné problémy. Opět nedisponuje velkým počtem senzorů, ale oproti LEGu je alespoň daleko levnější. 
+\newpage
+
+\subsection{Edison V2.0}[\ref{Edison}]
+
+\begin{figure}[h]
+	
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/Edison.jpg}
+	\caption{Edison V2.0} 
+	[\ref{Edison}]
+	
+\end{figure}
+
+Edison je velmi podobný LEGu a má i podobné problémy. Opět nedisponuje velkým počtem senzorů, ale oproti LEGu je alespoň daleko levnější. 
 
 Stejně jako LEGO má i Edison vlastní grafické programovací prostředí, bohužel jsem jej nikdy nepoužíval, ale vypadá velmi podobně jako prostředí LEGa. Myslím si proto, že stejně jako prostředí LEGa bude i toto velice dobré na malé prográmky pro děti, ale nevhodné pro obsáhlé programy.
 
 Všechny senzory má Edison uvnitř sebe a nedají se proto dovést na místo, kde je uživatel nejvíc potřebuje. Uživatel se proto musí přizpůsobit rozložení senzorů na řídící jednotce, stejně tak se nedá vyvést ani nic jiného. Jediné, co se dá, je vyměňovat kola (například za nějaké ozubení) a pomocí toho si pak dovést náhon z motoru na potřebné místo.
 
+\newpage
+
 \subsection{OZOBOT }[\ref{OZOBOT}]
+\begin{figure}[h]
+	
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/OZOBOT.jpg}
+	\caption{OZOBOT 2.0} 
+	[\ref{OZOBOT}]
+	
+\end{figure}
 Ozobot je mini robot, z toho vyplývají jeho největší výhody i nevýhody. Například pochopitelně není dělaný na to, aby cokoli vozil nebo jakkoliv stěhoval. Téměř se nedá upravovat, na to ale opět není dělaný. Jeho účel je především jezdit po čáře a vykonávat příkazy na ní zapsané pomocí barevných vzorů. Přes to že se novější verze dají i programovat, jejich funkce jsou pořád mířené do velké míry právě na čáru a barevné příkazy na ní.
 
+\newpage
+
 \subsection{Asuro} [\ref{Asuro}]
+\begin{figure}[h]
+	
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/asuro.png}
+	\caption{Asuro} 
+	[\ref{Asuro}]
+	
+\end{figure}
 Asuro je robot postavený kolem základní desky. Jedná se o stavebnici, ale přesto nemá ani jednoduché pomůcky pro možnost přesné stavby. Asuro má mezi koly a motorem převodovku, která se ukládá do jakýchsi ložisek. Ta se bez jakéhokoli zapozicování napájí na plochu desky. Výsledkem je téměř nemožnost uložit kola převodovky přesně.
 
+\newpage
 
-\subsection{Microbit }[\ref{Microbit}]
-Microbit je především řídící deska se senzory a výstupními ledkami. Není to primárně vozítko, přestože existují konstrukce, které jsou určené právě pro řízení microbitem. Taková konstrukce však muže využívat pouze serva, nebo musí mít vlastní řízení motoru. Microbit totiž motory řídit nedokáže sám, dokáže řídit jen serva, která si silové řízení řeší sama. Toto však není velký problém, protože existuje více různých konstrukcí, které právě toto řeší. 
+\subsection{Microbit}[\ref{Microbit}]
+%\textbf
+
+\begin{figure}[h]
+		
+		\centering
+		\includegraphics[width=150pt]{img/microbit0.jpg}
+		\includegraphics[width=150pt]{img/microbit1.jpg}
+		\caption{Microbit} 
+		[\ref{Microbit}]
+		
+\end{figure}
+
+Microbit je především řídící deska se senzory a výstupními ledkami. Není to primárně vozítko, přestože existují konstrukce, které jsou určené právě pro řízení microbitem. Taková konstrukce však muže využívat pouze serva, nebo musí mít vlastní řízení motoru. Microbit totiž motory řídit edokáže sám, dokáže řídit jen serva, která si silové řízení řeší sama. Toto však není velký problém, protože existuje více různých konstrukcí, které právě toto řeší. 
 
 Microbit má překvapivě docela dost senzorů přímo na základní destičce. Podle mých informací kompas, který je přímo na desce téměř nefunguje, ale vzhledem k tomu, co všechno na sobě malá destička Microbit má, to není až taková tragédie. Kompas je stejně často potřebné dostat co nejdál od zbytku robota, kvůli všemožnému rušení, takže by se i tak dost možná používal jako externí součástka.
 
 Microbit má zároveň matici ledek, na které si uživatel muže zobrazovat, co se mu zlíbí a zároveň se jimi dá i měřit světelnost okolí. Používání led diod jako fotodiod sice není tak přesné, nicméně to jde a je to zajímavé řešení.
 
-Microbit ale nemá zrovna velké množství pinu které by se dali použít, a především je opět drahý. Cena čisté desky, bez jakéhokoli příslušenství, se pohybuje kolem 500 Kč a za tutu cenu jsem já schopen vyrobit desku které je schopna operovat i se silovímy výstupi (a ještě mi něco zbude).
+Microbit ale nemá zrovna velké množství pinu, které by se dali použít, a především je opět drahý. Cena čisté desky, bez jakéhokoli příslušenství, se pohybuje kolem 500 Kč a za tutu cenu jsem já schopen vyrobit desku které je schopna operovat i se silovímy výstupi (a ještě mi něco zbude).
 
 %todo nevýhody microbitu?  (třeba takhle? [poslední odstaveček])
 
@@ -221,7 +288,7 @@ SchoolBot je komplet, skládající se ze řady jednotlivých dílků, které ne
 
 \subsection{Elektronika}
 
-Elektronika je především řídící deska SchoolBoard kterou shrnuji v samostatné kapitole a detailně rozebírám v přílohách. Krom desky obsahuje SchoolBot battery pack, motory s enkodéry a inteligentní serva LX15D[viz zdroje] které uvádí do provozu klepeta, nástroj pro možnost manipulace s objekty při soutěžích především herními prvky.
+Elektronika je především řídící deska SchoolBoard kterou shrnuji v samostatné kapitole[\ref{RB3202}] a detailně rozebírám v přílohách. Krom desky obsahuje SchoolBot battery pack, motory s enkodéry a inteligentní serva LX15D[viz zdroje] které uvádí do provozu klepeta, nástroj pro možnost manipulace s objekty při soutěžích především herními prvky.
 
 \begin{figure}[h]
 	
@@ -268,11 +335,18 @@ Celí motor i s kolem je pak z části držen podporou kola ale především je 
 \newpage
 
 \subsubsection{Klepeta}
-Klepeta jsou postavena tak aby měla osu otáčení, co nejdále od sebe. Protože aby robot ve chvíli kdy s otevřenými klepety narazí do mantinelu musí mít konce klepet k sobě blíž než osy jejich otáčení aby se klepeta sama zavřela (o mantinel bez potřeby řízení). Z tohoto důvodu jsou serva, na kterých jsou klepeta uložena, posazena co nejdál od sebe, právě aby se klepeta mohla “ bezpečně“ otevřít co nejvíc.
+Klepeta jsou postavena tak aby měla osu otáčení, co nejdále od sebe. Protože ve chvíli kdy robot s otevřenými klepety narazí do mantinelu musí mít konce klepet k sobě blíž než osy jejich otáčení aby se klepeta sama zavřela (o mantinel bez potřeby řízení). Z tohoto důvodu jsou serva, na kterých jsou klepeta uložena, posazena co nejdál od sebe, právě aby se klepeta mohla otevřít co nejvíc a utoho si zachovat svojí schopnost zavříty se o mantinel (stěnu).
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{img/klepeta.png}
+	\caption{renderovaný pohled na klepeta}
+\end{figure}
 
 
 
 \chapter{SchoolBoard}
+
+[\label{RB3202}]
 
 \begin{figure}[h]
 	\centering
@@ -285,6 +359,7 @@ Klepeta jsou postavena tak aby měla osu otáčení, co nejdále od sebe. Proto�
 Deska má k dispozici
 
 \begin{itemize}
+	\item [\ref{RB3202l}]
 	\item třicetidvoubitový procesor ESP32 s taktovací frekvencí 240~MHz a napájecím napětím 3,3 V 
 	\item flash pamětí 4 MB (dělají se i verze s 8 a 16 MB), 520 KB SRAM, WI-Fi, Bluetooth, 28 vstupně výstupních piny, dva ADC převodníky (jeden s 6 piny a druhý s 10 piny), jedním DAC převodníkem s dvěma piny, tři UARTy, dvě SPI, tři I2C(jedno je použito interně pro flash) atd.
 	
@@ -393,7 +468,8 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 %\chapter{Popis funkce jednotlivých součástek}
 
 \chapter{Řídící část}
-	
+	[\label{RB3202l}]
+	\ref{RB3202s}
 	\section{DEVKIT C:}
 	procesor ESP32 je v tomto případě osazený na devkitu C. Je to malá deska, která se stará o potřeby procesoru a dá se koupit jako celek. Zajišťuje jednoduché programování přes USB, zajištuje stabilizované napětí 3,3V pro ESP32 a 3,3V větev na desce a stará se o výchozí hodnoty na pinech u kterých je to potřeba.
 	Seznam důležitých pinů
@@ -482,7 +558,7 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	
 	\chapter{Silová část}
 	
-
+	[\label{RB3202s}]
 
 	\subsection{Power manager:}
 	
@@ -613,11 +689,18 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	\textit{porovnání cen LEGa} [online] www.heureka.cz [cit. 2020-02-22] Dostupné z: \\ 
 	\url{https://lego.heureka.cz/lego-mindstorms-31313-ev3/#o=2}
 	
+	\bibitem{LEGO Mindstorm}
+	\textit{porovnání cen LEGa} [online] https://www.google.com/ [cit. 2020-02-22] Dostupné z: \\ 
+	\url{https://www.google.com/search?q=lego+mindstorms+ev3&sxsrf=ALeKk03Lud9t3UtEURVvSxEM4KXsQ1MuoA:1582604901663&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiW0e7X7uvnAhWEiVwKHUKQDZsQ_AUoAXoECA0QAw&biw=1920&bih=947#imgrc=2DWaZ4m8jvdEGM:}
 	
 	\subsection*{Mbot}	
 	\label{Mbot}
 	\bibitem{Mbot} 
 	\textit{Mbot} [online] https://www.makeblock.com/mbot [cit. 2020-02-22] Dostupné z: \url{https://www.makeblock.com/mbot}
+	
+	\label{Mbot}
+	\bibitem{Mbot} 
+	\textit{Mbot} [online] https://www.google.com [cit. 2020-02-22] Dostupné z: \url{https://www.google.com/search?biw=1920&bih=898&tbm=isch&sxsrf=ALeKk00t2ZCEa8I8sw4qB8LQrmWkCIeiFg%3A1582604904288&sa=1&ei=aKJUXu2PEc61kwWlwqSoCw&q=Mbot&oq=Mbot&gs_l=img.3..35i39l2j0i30l8.626107.627102..627373...0.0..0.135.496.3j2......0....1..gws-wiz-img.......0i67j0j0i7i30j0i131.YHxDaq30Lm0&ved=0ahUKEwjt447Z7uvnAhXO2qQKHSUhCbUQ4dUDCAc&uact=5#imgrc=T_kYRX2lTihlMM:}
 	
 	
 	\subsection*{Edison V2.0}
@@ -633,6 +716,10 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	\textit{příklad ceny} [online] https://www.robotshop.com [cit. 2020-02-22] Dostupné z: \\ 
 	\url{https://www.robotshop.com/ca/en/edison-programmable-v20-robot.html?gclid=Cj0KCQiA4sjyBRC5ARIsAEHsELHtKqVNJOl95kMUC8iBngIkgc3gCZU9KOTwuXWEo4hU4Qs1B-2wASkaAh9CEALw_wcB}
 	
+	\bibitem{Edison V2.0}
+	\textit{příklad ceny} [online] https://www.google.com [cit. 2020-02-22] Dostupné z: \\ 
+	\url{https://www.google.com/search?biw=1920&bih=898&tbm=isch&sxsrf=ALeKk00iii4_F6l8P2g7D--qym9RZ5Rj4A%3A1582605532874&sa=1&ei=3KRUXreANY7xkwWXubO4Ag&q=Edison+V2.0&oq=Edison+V2.0&gs_l=img.3..0i19j0i30i19.167383.169312..169560...0.0..0.110.259.2j1......0....2j1..gws-wiz-img.......35i39j0i7i30j0i30.6sdKNYrmvz8&ved=0ahUKEwi33uyE8evnAhWO-KQKHZfcDCcQ4dUDCAc&uact=5#imgrc=4Tg222jxKK-WvM:}
+	
 	\subsection*{OZOBOT}
 	\label{OZOBOT}
 	\bibitem{OZOBOT} 
@@ -642,6 +729,10 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	\bibitem{OZOBOT}
 	\textit{OZOBOT} [online] https://www.youtube.com [cit. 2020-02-22] Dostupné z:
 	\url{https://www.youtube.com/watch?v=Cw30OdlczRo}
+	
+	\bibitem{OZOBOT}
+	\textit{OZOBOT} [online] https://www.google.com [cit. 2020-02-22] Dostupné z:
+	\url{https://www.google.com/search?biw=1920&bih=898&tbm=isch&sxsrf=ALeKk029ry7yYsprObTuxw-D68iyq49Qaw%3A1582605808514&sa=1&ei=8KVUXp76Hu_isAfK_LHYDA&q=OZOBOT+2&oq=OZOBOT+2&gs_l=img.3..0i19j0i8i30i19.55321.56590..56902...0.0..0.156.417.2j2......0....1..gws-wiz-img.......35i39j0j0i67.QPcd6EEdVS8&ved=0ahUKEwiesqSI8uvnAhVvMewKHUp-DMsQ4dUDCAc&uact=5#imgrc=Vg-KZHt1GMu-1M:}
 	
 	\subsection*{Asuro}
 	\label{Asuro}
@@ -656,6 +747,10 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	\bibitem{Asuro}
 	\textit{2012 Kurz zakladni robotiky - robot ASURO - talentovaní.cz. Talentovaní.cz - talentovaní.cz} [online] https://vtp.talentovani.cz [cit. 2020-02-22] Dostupné z:
 	\url{https://vtp.talentovani.cz//2012 kurz-zakladni-robotiky-robot-asuro}
+	
+	\bibitem{Asuro}
+	\textit{2012 Kurz zakladni robotiky - robot ASURO - talentovaní.cz. Talentovaní.cz - talentovaní.cz} [online] https://www.google.com [cit. 2020-02-22] Dostupné z:
+	\url{https://www.google.com/search?biw=1920&bih=898&tbm=isch&sxsrf=ALeKk00J9MrVOgPUrcycwO3n6HWFHzblqA%3A1582605974864&sa=1&ei=lqZUXpioNJKysAeZ9YPwBA&q=microbit&oq=microbit&gs_l=img.3..35i39l2j0l3j0i10i30j0i30l4.49522.51183..51422...0.0..0.142.763.7j2......0....1..gws-wiz-img.......0i7i30j0i5i30j0i131.wdNXNaVPeJI&ved=0ahUKEwiYy83X8uvnAhUSGewKHZn6AE4Q4dUDCAc&uact=5#imgrc=EgPkaWkDHCSCTM:}
 		
 	\subsection*{Microbit}
 	\label{Microbit}
@@ -670,6 +765,13 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	\bibitem{Microbit}
 	\textit{BBC micro:bit} [online] https://www.hwkitchen.cz [cit. 2020-02-24] Dostupné z:
 	\url{https://www.hwkitchen.cz/bbc-microbit-mikropocitac-pro-vyuku-programovani/?gclid=CjwKCAiAhc7yBRAdEiwAplGxX1iGHQsQk-kVNGx9CbLFWDupyX8vAFWp6fAUcyxjx1f7uPbmkF48MRoCehMQAvD_BwE}
+			
+	\bibitem{Microbit}
+	\textit{BBC micro:bit} [online] https://www.google.com [cit. 2020-02-24] Dostupné z:
+	\url{https://www.google.com/search?biw=1920&bih=898&tbm=isch&sxsrf=ALeKk00J9MrVOgPUrcycwO3n6HWFHzblqA%3A1582605974864&sa=1&ei=lqZUXpioNJKysAeZ9YPwBA&q=microbit&oq=microbit&gs_l=img.3..35i39l2j0l3j0i10i30j0i30l4.49522.51183..51422...0.0..0.142.763.7j2......0....1..gws-wiz-img.......0i7i30j0i5i30j0i131.wdNXNaVPeJI&ved=0ahUKEwiYy83X8uvnAhUSGewKHZn6AE4Q4dUDCAc&uact=5#imgrc=EgPkaWkDHCSCTM:}
+	\bibitem{Microbit}
+	\textit{BBC micro:bit} [online] https://www.google.com [cit. 2020-02-24] Dostupné z:
+	\url{https://www.google.com/search?biw=1920&bih=898&tbm=isch&sxsrf=ALeKk02ykWHq3iwxHfNC5K2OSX4PttT9fA%3A1582606268980&sa=1&ei=vKdUXrvCO4b9kwXcxoyQBw&q=Microbit+voz%C3%ADtko&oq=Microbit+voz%C3%ADtko&gs_l=img.3...3943.4582..4940...0.0..0.87.313.4......0....1..gws-wiz-img.......35i39.zL--Z1Dztjs&ved=0ahUKEwi7kO3j8-vnAhWG_qQKHVwjA3IQ4dUDCAc&uact=5#imgrc=GswzKppDFNOmdM:}
 			
 			%\subsection*{použité součástky}
 			
