@@ -52,14 +52,20 @@ Cílem práce je  vyvinout vhodnou levnou a rozšiřitelnou vzdělávací pomůc
 Tato práce se zabývá návrhem a výrobou řídící desky Schoolboard a robota Schoolbot a jejich použitím při výuce dětí v zájmovém vzdělávání a při školní výuce předmětů elektroniky, automatizace, programování a dalších. 
 
 \subsection*{Klíčová slova}
-robot; vyuka robotiky; řídící deska; ESP32
+SchoolBot; ScoolBoard; robot; vyuka robotiky; řídící deska; ESP32
 
 \vspace{20mm}
 
 \section*{Annotation}
-%todo 
+%todo (čistý google [nepříjde mi uplně špatný ale moc to neznamená] asi by na to měl kouknout třeba Peťa aneo nejáký angličtinář)
+
+The aim of this work is to develop a suitable cheap and extensible educational tool - control board, which allows to demonstrate the characteristics of sensors and drives and which will be able to control, for example, amateur competition robots or school demonstration production line. Further, to develop an easily accessible robot to control this control board.
+
+This work deals with the design and production of the Schoolboard and Schoolbot robot and their use in teaching children in leisure education and in school teaching of electronics, automation, programming and others.
+
 
 \subsection*{Keywords}
+SchoolBot; ScoolBoard; robot; teaching robotics; control board; ESP32
 
 \newpage
 \pagestyle{plain}
@@ -120,14 +126,14 @@ Ideálně by si takového robota učastníci kroužku měli být schopni postavi
 
 \chapter{Proč vytvářet vlastní roboty?}
 
-Proč vlastně vytvářet vlastní elektroniku i mechaniku, když je na trhu tolik různých robotu a vozítek? Konkurenční roboti, kteří se běžně prodávají, jsou totiž většinou velmi drazí a často nemají ani moc možností. Například známé LEGO Mindstorms, u kterého se cena základní sady pohybuje nad sedmi tisíci korunami [], %todo
+Proč vlastně vytvářet vlastní elektroniku i mechaniku, když je na trhu tolik různých robotu a vozítek? Konkurenční roboti, kteří se běžně prodávají, jsou totiž většinou velmi drazí a často nemají ani moc možností. Například známé LEGO Mindstorms, u kterého se cena základní sady pohybuje nad sedmi tisíci korunami [\ref{LEGO}],
  je vzhledem ke svým možnostem ohromně předražené.
  
 %zmizela poznámka o dokumentaci (nebyla tak pravdivá jak bych chtěl abych jí zde nechal [ splnoval by to asi jen Asuro a možná OZOBOT s Edisnem])
 
 \section{Konkurence} \label{konkurence}
 
-\subsection{LEGO Mindstorms EV3}
+\subsection{LEGO Mindstorms EV3}[\ref{LEGO}]
 
 LEGO Mindstorms je známé svou jednoduchostí. Základní roboti se s touto sadou dají sestavit velmi rychle, což poskytuje hlavně začátečníkům motivaci, neboť již s poměrně malým úsilím sestaví něco, co na první pohled funguje. Dílky LEGa však nejsou moc pevné a konstrukce z nich postavená jich tedy vyžaduje velké množství, aby byla obstojně tuhá. To se samozřejmě dá vyřešit tím, že si člověk udělá konstrukci z jiného materiálu, potom ale odpadá výhoda jednoduchosti stavby.
 
@@ -136,35 +142,31 @@ Možnosti robota se z velké části odvíjí od senzoriky. LEGO trpí na nedost
 
 LEGO má své vlastní programovací prostředí, které je většinou pro začátečníky dobré. Jakmile však uživatel chce vytvářet vetší program, prostředí velmi rychle ztratí užitečnost. Vetší programy jsou v grafickém prostředí velmi nepřehledné. Navíc prostředí LEGa může být u větších programů nestabilní. Existují však i prostředí, ze kterých se dá lego programovat textově, například v jazyku C++, což je u složitějších programu přehlednější a také méně náročné pro počítač.
 
-\subsection{Mbot}
+\subsection{Mbot} [\ref{Mbot}]
 Mbot je oproti legu daleko levnější (cena se pohybuje kolem osmnácti set korun za kus) ale trpí stejným, nebo i větším, nedostatkem sensorů. 
 
 Co se konstrukce týče, problémy s pevností u Mbota není, ale zase se nedá snadno upravit. Konstrukce je totiž hliníková, což je v pořádku, pokud není potřeba konstrukci výrazně upravovat. Robota je ale většinou třeba přizpůsobit konkrétnímu užití.
  Ze zkušenosti se nejvíce osvědčilo dřevo, které se dá jednoduše upravovat bez větší námahy a zároveň není problém z něj udělat dostatečně tuhou konstrukci. Hliník se však tak lehce ručně upravovat nedá.
  
-Mbot je založen na procesoru ATmega328, což je stejný procesor, jaký se používá i u velice známého Arduina. %todo odkazy
+Mbot je založen na procesoru ATmega328, což je stejný procesor, jaký se používá i u velice známého Arduina. [\ref{Mbot}]
 To znamená, že některé programy, které jsou napsané pro Arduino, je možné spustit i zde.
 
 \subsection{Edison V2.0}
-Edison %todo odkaz podobně i dál
+Edison [\ref{Edison}]
 je velmi podobný LEGu a má i podobné problémy. Opět nedisponuje velkým počtem senzorů, ale oproti LEGu je alespoň daleko levnější. 
 
 Stejně jako LEGO má i Edison vlastní grafické programovací prostředí, bohužel jsem jej nikdy nepoužíval, ale vypadá velmi podobně jako prostředí LEGa. Myslím si proto, že stejně jako prostředí LEGa bude i toto velice dobré na malé prográmky pro děti, ale nevhodné pro obsáhlé programy.
 
 Všechny senzory má Edison uvnitř sebe a nedají se proto dovést na místo, kde je uživatel nejvíc potřebuje. Uživatel se proto musí přizpůsobit rozložení senzorů na řídící jednotce, stejně tak se nedá vyvést ani nic jiného. Jediné, co se dá, je vyměňovat kola (například za nějaké ozubení) a pomocí toho si pak dovést náhon z motoru na potřebné místo.
 
-
-\subsection{Mbot}
-Mbot je oproti legu daleko levnější (cena se pohybuje kolem osmnácti set korun za kus) ale trpí stejným, nebo i větším, nedostatkem sensoru. Co se konstrukce týče, problémy s pevností u Mbota není ale zase se nedá snadno upravit. Konstrukce je totiž hliníková, což je v pořádku, pokud není potřeba konstrukci výrazně upravovat. Robota je ale většinou třeba přizpůsobit konkrétnímu užití, ze zkušenosti se nejvíce osvědčilo dřevo, které se dá jednoduše upravovat bez větší námahy a zároveň není problém z něj udělat dostatečně tuhou konstrukci. Hliník se však tak lehce ručně upravovat nedá. Mbot je založen na procesoru ATmega328 což je stejný procesor jaký používá i velice známé arduino. To znamená že některé programy, které jsou napsané pro arduino je možné spustit i zde.
-
-\subsection{OZOBOT}
+\subsection{OZOBOT }[\ref{OZOBOT}]
 Ozobot je mini robot, z toho vyplývají jeho největší výhody i nevýhody. Například pochopitelně není dělaný na to, aby cokoli vozil nebo jakkoliv stěhoval. Téměř se nedá upravovat, na to ale opět není dělaný. Jeho účel je především jezdit po čáře a vykonávat příkazy na ní zapsané pomocí barevných vzorů. Přes to že se novější verze dají i programovat, jejich funkce jsou pořád mířené do velké míry právě na čáru a barevné příkazy na ní.
 
-\subsection{Asuro}
+\subsection{Asuro} [\ref{Asuro}]
 Asuro je robot postavený kolem základní desky. Jedná se o stavebnici, ale přesto nemá ani jednoduché pomůcky pro možnost přesné stavby. Asuro má mezi koly a motorem převodovku, která se ukládá do jakýchsi ložisek. Ta se bez jakéhokoli zapozicování napájí na plochu desky. Výsledkem je téměř nemožnost uložit kola převodovky přesně.
 
 
-\subsection{Microbit}
+\subsection{Microbit }[\ref{Microbit}]
 Microbit je především řídící deska se senzory a výstupními ledkami. Není to primárně vozítko, přestože existují konstrukce, které jsou určené právě pro řízení microbitem. Taková konstrukce však muže využívat pouze serva, nebo musí mít vlastní řízení motoru. Microbit totiž motory řídit nedokáže sám, dokáže řídit jen serva, která si silové řízení řeší sama. Toto však není velký problém, protože existuje více různých konstrukcí, které právě toto řeší. 
 
 Microbit má překvapivě docela dost senzorů přímo na základní destičce. Podle mých informací kompas, který je přímo na desce téměř nefunguje, ale vzhledem k tomu, co všechno na sobě malá destička Microbit má, to není až taková tragédie. Kompas je stejně často potřebné dostat co nejdál od zbytku robota, kvůli všemožnému rušení, takže by se i tak dost možná používal jako externí součástka.
@@ -374,11 +376,12 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	\caption{desky z kroužku a SchoolBot}
 \end{figure}
 
+%todo Výuka elektrotechyky
 %\subsection{Výuka elektrotechyky}
-%chtěl jsem napsat neco o laborkách ale nevím co a jak mám zminovat atd. buď to nechám alespoň ještě na konzultaci nebo to prostě nebude 
+%chtěl jsem napsat neco o laborkách ale nevím co a jak mám zminovat atd. buď to nechám alespoň ještě na konzultaci nebo to prostě nebude
+
 
 \newpage
-
 
 \chapter*{Závěr} %todo závěr 
 
@@ -599,21 +602,26 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 \listoftables
 \addcontentsline{toc}{section}{Seznam tabulek}
 \renewcommand{\refname}{Další zdroje}
+
+
+
 \begin{thebibliography}{1}
 	
-	\subsection*{LEGO Mindstorm}
-	
-	\bibitem{LEGO Mindstorm} 
+	\subsection*{LEGO Mindstorm}	
+	\label{LEGO}
+	\bibitem{LEGO Mindstorm}
 	\textit{porovnání cen LEGa} [online] www.heureka.cz [cit. 2020-02-22] Dostupné z: \\ 
 	\url{https://lego.heureka.cz/lego-mindstorms-31313-ev3/#o=2}
 	
 	
-	\subsection*{Mbot}
+	\subsection*{Mbot}	
+	\label{Mbot}
 	\bibitem{Mbot} 
 	\textit{Mbot} [online] https://www.makeblock.com/mbot [cit. 2020-02-22] Dostupné z: \url{https://www.makeblock.com/mbot}
 	
 	
 	\subsection*{Edison V2.0}
+	\label{Edison}
 	\bibitem{Edison V2.0} 
 	\textit{Meet Edison. Wiltronics | Science and Technology product specialists} [online] https://www.wiltronics.com [cit. 2020-02-22] Dostupné z: \url{https://www.wiltronics.com.au/MeetEdison/}
 	
@@ -626,7 +634,7 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	\url{https://www.robotshop.com/ca/en/edison-programmable-v20-robot.html?gclid=Cj0KCQiA4sjyBRC5ARIsAEHsELHtKqVNJOl95kMUC8iBngIkgc3gCZU9KOTwuXWEo4hU4Qs1B-2wASkaAh9CEALw_wcB}
 	
 	\subsection*{OZOBOT}
-	
+	\label{OZOBOT}
 	\bibitem{OZOBOT} 
 	\textit{OZOBOT} [online] https://www.youtube.com [cit. 2020-02-22] Dostupné z:
 	\url{https://www.youtube.com/watch?v=lqR3zDWAQ1o}
@@ -636,7 +644,7 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	\url{https://www.youtube.com/watch?v=Cw30OdlczRo}
 	
 	\subsection*{Asuro}
-	
+	\label{Asuro}
 	\bibitem{Asuro} 
 	\textit{Asuro} [online] http://www.arexx.com [cit. 2020-02-22] Dostupné z:
 	\url{ http://www.arexx.com/downloads/asuro/asuro_manual_en.pdf}
@@ -650,7 +658,7 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	\url{https://vtp.talentovani.cz//2012 kurz-zakladni-robotiky-robot-asuro}
 		
 	\subsection*{Microbit}
-		
+	\label{Microbit}
 	\bibitem{Microbit} 
 	\textit{Micro:bit Educational Foundation | micro:bit. Micro:bit Educational Foundation | micro:bit} [online] https://microbit.org/ [cit. 2020-02-22] Dostupné z:
 	\url{https://microbit.org/}
@@ -669,7 +677,11 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 			
 			%\paragraph*{ESP32}
 			
-			\bibitem{WROOM}
+			\bibitem{DevKitC}
+			\textit{datasheet DevKit C} [online] https://www.espressif.com [cit. 2020-02-22] Dostupné z:
+			\url{https://cdn.sos.sk/productdata/05/82/cd413a9e/esp32-devkitc.pdf}
+			
+			\bibitem{datasheet WROOM}
 			\textit{Espressif Systems - Wi-Fi and Bluetooth chipsets and solutions } [online] https://www.espressif.com [cit. 2020-02-22] Dostupné z:
 			\url{https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf}
 			
@@ -677,7 +689,7 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 			\textit{datasheet ESP32} [online] https://cdn.sparkfun.com [cit. 2020-02-22] Dostupné z:
 			\url{https://cdn.sparkfun.com/datasheets/IoT/esp32_datasheet_en.pdf}
 			
-			\bibitem{ESP32_II} %todo proč dva datasheety? (v obou jsou jiné informace [myšleno o jiné věci ne že by si protiřečili proste se zameřijí na jiné periferie a jsou oba dosti krátké {60 stran je proste v porovnání s datashitema tmeg <600 a víc stran> strašně málo}])
+			\bibitem{ESP32_II} %todo proč dva datasheety? (v obou jsou jiné informace [myšleno o jiné věci ne že by si protiřečili proste se zameřijí na jiné periferie a jsou oba dosti krátké {60 stran je proste strašně málo, v porovnání třeba s datashitema atmeg ktaré má víc jak 600 stran} klidne mužem jeden umazat])
 			\textit{datasheet ESP32} [online] https://pdf1.alldatasheet.com [cit. 2020-02-22] Dostupné z:
 			\url{https://pdf1.alldatasheet.com/datasheet-pdf/view/1148023/ESPRESSIF/ESP32.html}
 			
