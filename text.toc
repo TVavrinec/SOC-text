@@ -1,78 +1,43 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {czech}{}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Úvod}{8}{chapter*.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Proč vytvářet vlastní roboty?}{10}{chapter.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Konkurence}{11}{section.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}LEGO Mindstorms EV3}{11}{subsection.1.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.2}Mbot}{13}{subsection.1.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.3}Edison V2.0}{14}{subsection.1.1.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.4}OZOBOT }{15}{subsection.1.1.4}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.5}Asuro}{16}{subsection.1.1.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.6}Microbit}{17}{subsection.1.1.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.7}Shrnutí}{18}{subsection.1.1.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}SchoolBot}{19}{chapter.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Z čeho se SchoolBot skládá?}{20}{section.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Elektronika}{20}{subsection.2.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{battery pack}{21}{section*.20}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{motory s enkodéry}{21}{section*.22}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Mechanika}{22}{subsection.2.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Uložení kol a motoru}{22}{section*.23}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Klepeta}{23}{section*.25}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}SchoolBoard}{24}{chapter.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Popis desky}{25}{section.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Možné periferie}{26}{subsection.3.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Příklady možných senzoru}{26}{section*.28}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Příklady jiných periferii}{27}{section*.29}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Vývoj}{28}{section.3.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Kde se deska používá}{28}{section.3.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Školní kroužek robotiky}{28}{subsection.3.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Přílohy}{30}{chapter*.31}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Řídící část}{31}{appendix.A}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}DEVKIT C:}{31}{section.A.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.1}D2}{32}{subsection.A.1.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.1.2}RN3A, B, C, D:}{32}{subsection.A.1.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Silová část}{37}{appendix.B}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {B.0.1}Power manager:}{37}{subsection.B.0.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{R2}{38}{section*.50}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Obrazová příloha}{42}{appendix.C}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatura}{45}{figure.caption.67}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam obrázků}{45}{appendix*.68}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam tabulek}{46}{appendix*.69}%
+\contentsline {chapter}{\IeC {\'U}vod}{8}{chapter*.10}% 
+\contentsline {chapter}{\numberline {1}Pro\IeC {\v c} vytv\IeC {\'a}\IeC {\v r}et vlastn\IeC {\'\i } roboty?}{10}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Konkurence}{11}{section.1.1}% 
+\contentsline {subsection}{\numberline {1.1.1}LEGO Mindstorms EV3}{11}{subsection.1.1.1}% 
+\contentsline {subsection}{\numberline {1.1.2}Mbot}{12}{subsection.1.1.2}% 
+\contentsline {subsection}{\numberline {1.1.3}Edison V2.0}{13}{subsection.1.1.3}% 
+\contentsline {subsection}{\numberline {1.1.4}OZOBOT }{14}{subsection.1.1.4}% 
+\contentsline {subsection}{\numberline {1.1.5}Asuro}{15}{subsection.1.1.5}% 
+\contentsline {subsection}{\numberline {1.1.6}Microbit}{16}{subsection.1.1.6}% 
+\contentsline {subsection}{\numberline {1.1.7}Shrnut\IeC {\'\i }}{17}{subsection.1.1.7}% 
+\contentsline {chapter}{\numberline {2}SchoolBot}{18}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Elektronika}{18}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Battery pack}{19}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Motory s enkod\IeC {\'e}ry}{19}{subsection.2.1.2}% 
+\contentsline {section}{\numberline {2.2}Mechanika}{20}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Ulo\IeC {\v z}en\IeC {\'\i } kol a motoru}{20}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Klepeta}{21}{subsection.2.2.2}% 
+\contentsline {chapter}{\numberline {3}SchoolBoard}{22}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Popis desky}{22}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Mo\IeC {\v z}n\IeC {\'e} periferie}{23}{section.3.2}% 
+\contentsline {subsubsection}{P\IeC {\v r}\IeC {\'\i }klady mo\IeC {\v z}n\IeC {\'y}ch senzor\IeC {\r u}}{24}{section*.22}% 
+\contentsline {subsubsection}{P\IeC {\v r}\IeC {\'\i }klady jin\IeC {\'y}ch periferi\IeC {\'\i }}{25}{section*.23}% 
+\contentsline {section}{\numberline {3.3}V\IeC {\'y}voj}{25}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Kde se deska pou\IeC {\v z}\IeC {\'\i }v\IeC {\'a}}{26}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}\IeC {\v S}koln\IeC {\'\i } krou\IeC {\v z}ek robotiky}{26}{subsection.3.4.1}% 
+\contentsline {subsection}{\numberline {3.4.2}Krou\IeC {\v z}ek na DDM Helceletova}{26}{subsection.3.4.2}% 
+\contentsline {subsection}{\numberline {3.4.3}V\IeC {\'y}uka}{27}{subsection.3.4.3}% 
+\contentsline {subsection}{\numberline {3.4.4}Webov\IeC {\'e} str\IeC {\'a}nky ohledn\IeC {\v e} Schoolboard}{27}{subsection.3.4.4}% 
+\contentsline {chapter}{P\IeC {\v r}\IeC {\'\i }lohy}{28}{chapter*.25}% 
+\contentsline {chapter}{\numberline {A}\IeC {\v R}\IeC {\'\i }d\IeC {\'\i }c\IeC {\'\i } \IeC {\v c}\IeC {\'a}st}{29}{appendix.A}% 
+\contentsline {section}{\numberline {A.1}DEVKIT C}{29}{section.A.1}% 
+\contentsline {section}{\numberline {A.2}Ostatn\IeC {\'\i } sou\IeC {\v c}\IeC {\'a}stky na desce}{31}{section.A.2}% 
+\contentsline {paragraph}{D2}{31}{section*.27}% 
+\contentsline {paragraph}{RN3A, B, C, D}{31}{section*.28}% 
+\contentsline {chapter}{\numberline {B}Silov\IeC {\'a} \IeC {\v c}\IeC {\'a}st}{34}{appendix.B}% 
+\contentsline {section}{\numberline {B.1}Power manager}{34}{section.B.1}% 
+\contentsline {paragraph}{R2}{35}{section*.46}% 
+\contentsline {section}{\numberline {B.2}Ostatn\IeC {\'\i } sou\IeC {\v c}\IeC {\'a}stky na desce}{37}{section.B.2}% 
+\contentsline {chapter}{\numberline {C}Obrazov\IeC {\'a} p\IeC {\v r}\IeC {\'\i }loha}{39}{appendix.C}% 
+\contentsline {section}{Literatura}{44}{figure.caption.65}% 
+\contentsline {section}{Seznam obr\IeC {\'a}zk\IeC {\r u}}{44}{appendix*.66}% 
+\contentsline {section}{Seznam tabulek}{45}{appendix*.67}% 

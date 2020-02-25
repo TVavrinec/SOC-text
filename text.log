@@ -1,17 +1,17 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.2.1)  25 FEB 2020 06:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.2.21)  25 FEB 2020 16:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **text.tex
 (./text.tex
-LaTeX2e <2019-10-01> patch level 3
+LaTeX2e <2018-12-01>
 (./template/socthesis.cls
 Document Class: template/socthesis 2017/01/15 Document class for czech SOC thes
 es
-(c:/texlive/2019/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2019/10/25 v1.4k Standard LaTeX document class
-(c:/texlive/2019/texmf-dist/tex/latex/base/bk12.clo
-File: bk12.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
+(c:/texlive/2018/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+(c:/texlive/2018/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@chapter=\count81
@@ -26,62 +26,61 @@ File: bk12.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(c:/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+(c:/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 )
-(c:/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/01/15 3.38 The Babel package
+(c:/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/11/13 3.27 The Babel package
 
-(c:/texlive/2019/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2020/01/15 3.38 Babel switching mechanism
+(c:/texlive/2018/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
 )
-(c:/texlive/2019/texmf-dist/tex/generic/babel-czech/czech.ldf
+(c:/texlive/2018/texmf-dist/tex/generic/babel-czech/czech.ldf
 Language: czech 2008/07/06 v3.1a Czech support from the babel system
 
-(c:/texlive/2019/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/01/15 3.38 Babel common definitions
+(c:/texlive/2018/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/11/13 3.27 Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen103
 
-(c:/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@readstream=\read1
+(c:/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count90
 )
 Package babel Info: Making " an active character on input line 172.
 \cs@wordlen=\count91
 Package babel Info: Making - an active character on input line 226.
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(c:/texlive/2019/texmf-dist/tex/latex/tools/tabularx.sty
+(c:/texlive/2018/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 
-(c:/texlive/2019/texmf-dist/tex/latex/tools/array.sty
-Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+(c:/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen106
 \ar@mcellbox=\box27
 \extrarowheight=\dimen107
@@ -98,428 +97,162 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \TX@cols=\count92
 \TX@ftn=\toks18
 )
-(c:/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+(c:/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 
-(c:/texlive/2019/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-)
-(c:/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
-)
-(c:/texlive/2019/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
-)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
-(c:/texlive/2019/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
+Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
-(c:/texlive/2019/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
-(c:/texlive/2019/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(c:/texlive/2019/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+(c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(c:/texlive/2019/texmf-dist/tex/latex/hycolor/hycolor.sty
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-(c:/texlive/2019/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(c:/texlive/2019/texmf-dist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(c:/texlive/2019/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen113
 \Hy@linkcounter=\count93
 \Hy@pagecounter=\count94
 
-(c:/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+(c:/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(c:/texlive/2019/texmf-dist/tex/generic/intcalc/intcalc.sty
-Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-(c:/texlive/2019/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
 \Hy@SavedSpaceFactor=\count95
-\pdfmajorversion=\count96
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 4421.
-Package hyperref Info: Option `colorlinks' set `true' on input line 4421.
-Package hyperref Info: Option `plainpages' set `false' on input line 4421.
-Package hyperref Info: Option `unicode' set `true' on input line 4421.
 
-(c:/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
+(c:/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4393.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4393.
+Package hyperref Info: Option `plainpages' set `false' on input line 4393.
+Package hyperref Info: Option `unicode' set `true' on input line 4393.
+
+(c:/texlive/2018/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 4421.
-Package hyperref Info: Hyper figures OFF on input line 4547.
-Package hyperref Info: Link nesting OFF on input line 4552.
-Package hyperref Info: Hyper index ON on input line 4555.
-Package hyperref Info: Plain pages OFF on input line 4562.
-Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4393.
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count97
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count96
 
-(c:/texlive/2019/texmf-dist/tex/latex/url/url.sty
+(c:/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5159.
+LaTeX Info: Redefining \url on input line 5125.
 \XeTeXLinkMargin=\dimen114
-
-(c:/texlive/2019/texmf-dist/tex/generic/bitset/bitset.sty
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(c:/texlive/2019/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
-))
-\Fld@menulength=\count98
+\Fld@menulength=\count97
 \Field@Width=\dimen115
 \Fld@charsize=\dimen116
-Package hyperref Info: Hyper figures OFF on input line 6430.
-Package hyperref Info: Link nesting OFF on input line 6435.
-Package hyperref Info: Hyper index ON on input line 6438.
-Package hyperref Info: backreferencing OFF on input line 6445.
-Package hyperref Info: Link coloring ON on input line 6448.
-Package hyperref Info: Link coloring with OCG OFF on input line 6455.
-Package hyperref Info: PDF/A mode OFF on input line 6460.
-LaTeX Info: Redefining \ref on input line 6500.
-LaTeX Info: Redefining \pageref on input line 6504.
-
-(c:/texlive/2019/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
-)
-\Hy@abspage=\count99
-\c@Item=\count100
-\c@Hfootnote=\count101
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring ON on input line 6398.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count98
+\c@Item=\count99
+\c@Hfootnote=\count100
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(c:/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+(c:/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count101
+\c@bookmark@seq@number=\count102
 
-(c:/texlive/2019/texmf-dist/tex/latex/atveryend/atveryend.sty
-Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
-)
-\Fld@listcount=\count102
-\c@bookmark@seq@number=\count103
-
-(c:/texlive/2019/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
-(c:/texlive/2019/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
-)
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
+82.
 )
 \Hy@SectionHShift=\skip45
 )
-(c:/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
+(c:/texlive/2018/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
 
-(c:/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count104
+(c:/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count103
 )
-\csq@reset=\count105
-\csq@gtype=\count106
-\csq@glevel=\count107
-\csq@qlevel=\count108
-\csq@maxlvl=\count109
-\csq@tshold=\count110
+\csq@reset=\count104
+\csq@gtype=\count105
+\csq@glevel=\count106
+\csq@qlevel=\count107
+\csq@maxlvl=\count108
+\csq@tshold=\count109
 \csq@ltx@everypar=\toks19
 
-(c:/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2019-12-06 v5.2j csquotes generic definitions (JAW)
+(c:/texlive/2018/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(c:/texlive/2019/texmf-dist/tex/latex/csquotes/csquotes.cfg
+(c:/texlive/2018/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
+(c:/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-(c:/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
-Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count111
-
-(c:/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
-File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-(c:/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-\c@tabx@nest=\count112
-\c@listtotal=\count113
-\c@listcount=\count114
-\c@liststart=\count115
-\c@liststop=\count116
-\c@citecount=\count117
-\c@citetotal=\count118
-\c@multicitecount=\count119
-\c@multicitetotal=\count120
-\c@instcount=\count121
-\c@maxnames=\count122
-\c@minnames=\count123
-\c@maxitems=\count124
-\c@minitems=\count125
-\c@citecounter=\count126
-\c@maxcitecounter=\count127
-\c@savedcitecounter=\count128
-\c@uniquelist=\count129
-\c@uniquename=\count130
-\c@refsection=\count131
-\c@refsegment=\count132
-\c@maxextratitle=\count133
-\c@maxextratitleyear=\count134
-\c@maxextraname=\count135
-\c@maxextradate=\count136
-\c@maxextraalpha=\count137
-\c@abbrvpenalty=\count138
-\c@highnamepenalty=\count139
-\c@lownamepenalty=\count140
-\c@maxparens=\count141
-\c@parenlevel=\count142
-\blx@tempcnta=\count143
-\blx@tempcntb=\count144
-\blx@tempcntc=\count145
-\blx@maxsection=\count146
-\blx@maxsegment@0=\count147
-\blx@notetype=\count148
-\blx@parenlevel@text=\count149
-\blx@parenlevel@foot=\count150
-\blx@sectionciteorder@0=\count151
-\blx@entrysetcounter=\count152
-\labelnumberwidth=\skip46
-\labelalphawidth=\skip47
-\biblabelsep=\skip48
-\bibitemsep=\skip49
-\bibnamesep=\skip50
-\bibinitsep=\skip51
-\bibparsep=\skip52
-\bibhang=\skip53
-\blx@bcfin=\read2
-\blx@bcfout=\write3
-\blx@langwohyphens=\language85
-\c@mincomprange=\count153
-\c@maxcomprange=\count154
-\c@mincompwidth=\count155
-Package biblatex Info: Trying to load biblatex default data model...
-Package biblatex Info: ... file 'blx-dm.def' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
-)
-Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'iso-numeric.dbx' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex-iso690/iso-numeric.dbx
-File: iso-numeric.dbx 2017/04/25 v0.3.2 biblatex data model extension
-)
-Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count156
-\c@savedafterword=\count157
-\c@annotator=\count158
-\c@savedannotator=\count159
-\c@author=\count160
-\c@savedauthor=\count161
-\c@bookauthor=\count162
-\c@savedbookauthor=\count163
-\c@commentator=\count164
-\c@savedcommentator=\count165
-\c@editor=\count166
-\c@savededitor=\count167
-\c@editora=\count168
-\c@savededitora=\count169
-\c@editorb=\count170
-\c@savededitorb=\count171
-\c@editorc=\count172
-\c@savededitorc=\count173
-\c@foreword=\count174
-\c@savedforeword=\count175
-\c@holder=\count176
-\c@savedholder=\count177
-\c@introduction=\count178
-\c@savedintroduction=\count179
-\c@namea=\count180
-\c@savednamea=\count181
-\c@nameb=\count182
-\c@savednameb=\count183
-\c@namec=\count184
-\c@savednamec=\count185
-\c@translator=\count186
-\c@savedtranslator=\count187
-\c@shortauthor=\count188
-\c@savedshortauthor=\count189
-\c@shorteditor=\count190
-\c@savedshorteditor=\count191
-\c@supervisor=\count192
-\c@savedsupervisor=\count193
-\c@labelname=\count194
-\c@savedlabelname=\count195
-\c@institution=\count196
-\c@savedinstitution=\count197
-\c@lista=\count198
-\c@savedlista=\count199
-\c@listb=\count266
-\c@savedlistb=\count267
-\c@listc=\count268
-\c@savedlistc=\count269
-\c@listd=\count270
-\c@savedlistd=\count271
-\c@liste=\count272
-\c@savedliste=\count273
-\c@listf=\count274
-\c@savedlistf=\count275
-\c@location=\count276
-\c@savedlocation=\count277
-\c@organization=\count278
-\c@savedorganization=\count279
-\c@origlocation=\count280
-\c@savedoriglocation=\count281
-\c@origpublisher=\count282
-\c@savedorigpublisher=\count283
-\c@publisher=\count284
-\c@savedpublisher=\count285
-\c@language=\count286
-\c@savedlanguage=\count287
-\c@origlanguage=\count288
-\c@savedoriglanguage=\count289
-\c@pageref=\count290
-\c@savedpageref=\count291
-\shorthandwidth=\skip54
-\shortjournalwidth=\skip55
-\shortserieswidth=\skip56
-\shorttitlewidth=\skip57
-\shortauthorwidth=\skip58
-\shorteditorwidth=\skip59
-\locallabelnumberwidth=\skip60
-\locallabelalphawidth=\skip61
-\localshorthandwidth=\skip62
-\localshortjournalwidth=\skip63
-\localshortserieswidth=\skip64
-\localshorttitlewidth=\skip65
-\localshortauthorwidth=\skip66
-\localshorteditorwidth=\skip67
-Package biblatex Info: Trying to load compatibility code...
-Package biblatex Info: ... file 'blx-compat.def' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-)
-Package biblatex Info: Trying to load BibTeX backend compatibility...
-Package biblatex Info: ... file 'blx-bibtex.def' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-bibtex.def
-File: blx-bibtex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-
-
-Package biblatex Warning: Using fall-back BibTeX(8) backend:
-(biblatex)                functionality may be reduced/unavailable.
-
-)
-Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex.def' found.
- (c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count292
-\c@textcitetotal=\count293
-\c@textcitemaxnames=\count294
-\c@biburlbigbreakpenalty=\count295
-\c@biburlbreakpenalty=\count296
-\c@biburlnumpenalty=\count297
-\c@biburlucpenalty=\count298
-\c@biburllcpenalty=\count299
-\biburlbigskip=\muskip11
-\biburlnumskip=\muskip12
-\biburlucskip=\muskip13
-\biburllcskip=\muskip14
-\c@smartand=\count300
-)
-Package biblatex Info: Trying to load bibliography style 'iso-numeric'...
-Package biblatex Info: ... file 'iso-numeric.bbx' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex-iso690/iso-numeric.bbx
-File: iso-numeric.bbx 2017/04/25 v0.3.2 biblatex bibliography style
-Package biblatex Info: Trying to load bibliography style 'iso'...
-Package biblatex Info: ... file 'iso.bbx' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex-iso690/iso.bbx
-File: iso.bbx 2017/04/25 v0.3.2 biblatex bibliography style
-
-Space colon enabled: false
-Showing total pages enabled: false
-Short numeration enabled: false
-Printing thesis info at the end enabled: true
-Showing URL field enabled: true
-Showing ISBN field enabled: true
-Showing DOI field enabled: true
-Showing eprint field enabled: true
-Package biblatex Info: Delimiter 'editortypedelim' in context '' already define
-d, overwriting.
-))
-Package biblatex Info: Trying to load citation style 'iso-numeric'...
-Package biblatex Info: ... file 'iso-numeric.cbx' found.
- (c:/texlive/2019/texmf-dist/tex/latex/biblatex-iso690/iso-numeric.cbx
-File: iso-numeric.cbx 2017/04/25 v0.3.2 biblatex citation style
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Trying to load citation style 'iso-fullcite'...
-Package biblatex Info: ... file 'iso-fullcite.cbx' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex-iso690/iso-fullcite.cbx
-Package biblatex Info: Redefining '\fullcite'.
-Package biblatex Info: Redefining '\footfullcite'.
-))
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.cfg
-File: biblatex.cfg 
-))
-(c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/01/03 v3.4h Customizing captions (AR)
-
-(c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 61.
+(c:/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen117
 \captionmargin@=\dimen118
 \captionwidth=\dimen119
@@ -527,79 +260,77 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@indent=\dimen121
 \caption@parindent=\dimen122
 \caption@hangindent=\dimen123
-Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count301
-\c@continuedfloat=\count302
+\c@caption@flags=\count110
+\c@ContinuedFloat=\count111
 Package caption Info: hyperref package is loaded.
 )
-(c:/texlive/2019/texmf-dist/tex/latex/newfloat/newfloat.sty
-Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
-Package newfloat Info: Document class `book' detected (Hy).
+(c:/texlive/2018/texmf-dist/tex/latex/caption/newfloat.sty
+Package: newfloat 2018/03/04 v1.1a Defining new floating environments (AR)
 )
 Package newfloat Info: New float `listedequation' with options `' on input line
  32.
-\c@listedequation=\count303
-\newfloat@ftype=\count304
+\c@listedequation=\count112
+\newfloat@ftype=\count113
 Package newfloat Info: float type `listedequation'=8 on input line 32.
 
-(c:/texlive/2019/texmf-dist/tex/generic/xstring/xstring.sty
-(c:/texlive/2019/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count305
-\decimalpart=\count306
+(c:/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
+(c:/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count114
+\decimalpart=\count115
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
-\c@subfigure=\count307
-\c@subtable=\count308
-\c@sublistedequation=\count309
+(c:/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+\c@subfigure=\count116
+\c@subtable=\count117
+\c@sublistedequation=\count118
 )
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2019/11/16 v2.17d AMS math features
-\@mathmargin=\skip68
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip46
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen124
 ))
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen125
 )
-(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count310
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count311
-\leftroot@=\count312
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count313
-\DOTSCASE@=\count314
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
+\inf@bad=\count119
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count120
+\leftroot@=\count121
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count122
+\DOTSCASE@=\count123
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
 \Mathstrutbox@=\box29
 \strutbox@=\box30
 \big@size=\dimen126
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count315
-\c@MaxMatrixCols=\count316
-\dotsspace@=\muskip15
-\c@parentequation=\count317
-\dspbrk@lvl=\count318
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count124
+\c@MaxMatrixCols=\count125
+\dotsspace@=\muskip11
+\c@parentequation=\count126
+\dspbrk@lvl=\count127
 \tag@help=\toks21
-\row@=\count319
-\column@=\count320
-\maxfields@=\count321
+\row@=\count128
+\column@=\count129
+\maxfields@=\count130
 \andhelp@=\toks22
 \eqnshift@=\dimen127
 \alignsep@=\dimen128
@@ -608,33 +339,33 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \totwidth@=\dimen131
 \lineht@=\dimen132
 \@envbody=\toks23
-\multlinegap=\skip69
-\multlinetaggap=\skip70
+\multlinegap=\skip47
+\multlinetaggap=\skip48
 \mathdisplay@stack=\toks24
-LaTeX Info: Redefining \[ on input line 2858.
-LaTeX Info: Redefining \] on input line 2859.
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
 )
-(c:/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip71
+(c:/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/02/04 v3.8 Customized lists
+\labelindent=\skip49
 \enit@outerparindent=\dimen133
 \enit@toks=\toks25
 \enit@inbox=\box31
-\enit@count@id=\count322
-\enitdp@description=\count323
+\enit@count@id=\count131
+\enitdp@description=\count132
 )
-(c:/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-(c:/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+(c:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -656,53 +387,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'czech'.
- (./text.aux
-
-LaTeX Warning: Label `LEGO Mindstorm' multiply defined.
-
-
-LaTeX Warning: Label `Mbot' multiply defined.
-
-
-LaTeX Warning: Label `Mbot' multiply defined.
-
-
-LaTeX Warning: Label `Edison V2.0' multiply defined.
-
-
-LaTeX Warning: Label `Edison V2.0' multiply defined.
-
-
-LaTeX Warning: Label `Edison V2.0' multiply defined.
-
-
-LaTeX Warning: Label `OZOBOT' multiply defined.
-
-
-LaTeX Warning: Label `OZOBOT' multiply defined.
-
-
-LaTeX Warning: Label `Asuro' multiply defined.
-
-
-LaTeX Warning: Label `Asuro' multiply defined.
-
-
-LaTeX Warning: Label `Asuro' multiply defined.
-
-
-LaTeX Warning: Label `Microbit' multiply defined.
-
-
-LaTeX Warning: Label `Microbit' multiply defined.
-
-
-LaTeX Warning: Label `Microbit' multiply defined.
-
-
-LaTeX Warning: Label `Microbit' multiply defined.
-
-)
+ (./text.aux)
 \openout1 = `text.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
@@ -721,86 +406,61 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
- (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count324
+\scratchcounter=\count133
 \scratchdimen=\dimen134
 \scratchbox=\box32
-\nofMPsegments=\count325
-\nofMParguments=\count326
+\nofMPsegments=\count134
+\nofMParguments=\count135
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count327
+\MPscratchCnt=\count136
 \MPscratchDim=\dimen135
-\MPnumerator=\count328
-\makeMPintoPDFobject=\count329
+\MPnumerator=\count137
+\makeMPintoPDFobject=\count138
 \everyMPtoPDFconversion=\toks27
-) (c:/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
+) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(c:/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box33
 Package hyperref Info: Link coloring ON on input line 38.
 
-(c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+(c:/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(c:/texlive/2019/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-(c:/texlive/2019/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count330
+\c@section@level=\count139
 )
 LaTeX Info: Redefining \ref on input line 38.
 LaTeX Info: Redefining \pageref on input line 38.
 LaTeX Info: Redefining \nameref on input line 38.
 
 (./text.out) (./text.out)
-\@outlinefile=\write4
-\openout4 = `text.out'.
+\@outlinefile=\write3
+\openout3 = `text.out'.
 
-Package biblatex Info: Trying to load language 'czech' -> 'czech-iso'...
-Package biblatex Info: ... file 'czech-iso.lbx' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex-iso690/czech-iso.lbx
-File: czech-iso.lbx 2017/04/25 v0.3.2 biblatex localization
-Package biblatex Info: Trying to load language 'czech'...
-Package biblatex Info: ... file 'czech.lbx' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/czech.lbx
-File: czech.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
-)
-Package biblatex Info: Trying to load language 'czech'...
-Package biblatex Info: ... file 'czech.lbx' found.
-
-(c:/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/czech.lbx
-File: czech.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
-))
-Package biblatex Info: Input encoding 'utf8' specified.
-Package biblatex Info: Data encoding 'utf8' specified.
-(biblatex)             No need to reencode data.
-Package biblatex Info: Input encoding 'utf8' specified.
-Package biblatex Info: Data encoding 'utf8' specified.
-(biblatex)             No need to reencode data.
-\openout3 = `text-blx.bib'.
-
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'text.bbl' not found.
-
-No file text.bbl.
-Package biblatex Info: Reference section=0 on input line 38.
-Package biblatex Info: Reference segment=0 on input line 38.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-[1
+ [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (18.87473pt too wide) in alignment at lines 40--40
 [][][] 
  []
@@ -817,12 +477,12 @@ ov^^San^^S^^P t^^Seto pr^^Sace v sou-ladu se z^^Sakonem
  []
 
 [3]
-<template/jmk.png, id=146, 633.86812pt x 334.24875pt>
+<template/jmk.png, id=170, 633.86812pt x 334.24875pt>
 File: template/jmk.png Graphic file (type png)
 <use template/jmk.png>
 Package pdftex.def Info: template/jmk.png  used on input line 44.
 (pdftex.def)             Requested size: 156.0006pt x 82.26141pt.
-<template/jcmm.png, id=147, 853.1875pt x 258.9675pt>
+<template/jcmm.png, id=171, 853.1875pt x 258.9675pt>
 File: template/jcmm.png Graphic file (type png)
 <use template/jcmm.png>
 Package pdftex.def Info: template/jcmm.png  used on input line 44.
@@ -830,18 +490,17 @@ Package pdftex.def Info: template/jcmm.png  used on input line 44.
  [4 <./template/jmk.png> <./template/jcmm.png>] [5] (./text.toc [6
 
 ])
-\tf@toc=\write5
-\openout5 = `text.toc'.
+\tf@toc=\write4
+\openout4 = `text.toc'.
 
 
 [7]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 8
-5.
- (c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
+ (c:/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 85.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
  [8
 
 ] [9]
@@ -849,703 +508,629 @@ Kapitola 1.
 [10
 
 ]
-<img/EV3.jpg, id=223, 602.25pt x 602.25pt>
+<img/EV3.jpg, id=252, 602.25pt x 602.25pt>
 File: img/EV3.jpg Graphic file (type jpg)
 <use img/EV3.jpg>
-Package pdftex.def Info: img/EV3.jpg  used on input line 143.
+Package pdftex.def Info: img/EV3.jpg  used on input line 142.
 (pdftex.def)             Requested size: 195.0pt x 195.00294pt.
-
-Overfull \hbox (24.84712pt too wide) in paragraph at lines 154--155
-[]\OT1/cmr/m/n/12 LEGO m^^Sa sv^^Se vlastn^^S^^P pro-gra-mo-vac^^S^^P prost^^Tr
-ed^^S^^P, kter^^Se je v^^Tet^^Tsinou pro za^^Tc^^Sate^^Tcn^^S^^Pky
- []
-
-[11 <./img/EV3.jpg>] [12]
-<img/Mbot.jpg, id=235, 1505.625pt x 1119.18124pt>
+ [11 <./img/EV3.jpg>]
+<img/Mbot.jpg, id=262, 1505.625pt x 1119.18124pt>
 File: img/Mbot.jpg Graphic file (type jpg)
 <use img/Mbot.jpg>
-Package pdftex.def Info: img/Mbot.jpg  used on input line 163.
+Package pdftex.def Info: img/Mbot.jpg  used on input line 159.
 (pdftex.def)             Requested size: 195.0pt x 144.93512pt.
- [13 <./img/Mbot.jpg>]
-<img/Edison.jpg, id=246, 511.9125pt x 511.9125pt>
+ [12 <./img/Mbot.jpg>]
+<img/Edison.jpg, id=272, 511.9125pt x 511.9125pt>
 File: img/Edison.jpg Graphic file (type jpg)
 <use img/Edison.jpg>
-Package pdftex.def Info: img/Edison.jpg  used on input line 184.
+Package pdftex.def Info: img/Edison.jpg  used on input line 178.
 (pdftex.def)             Requested size: 195.0pt x 194.99744pt.
- [14 <./img/Edison.jpg>]
-<img/OZOBOT.jpg, id=255, 746.79pt x 420.06938pt>
+ [13 <./img/Edison.jpg>]
+<img/OZOBOT.jpg, id=287, 746.79pt x 420.06938pt>
 File: img/OZOBOT.jpg Graphic file (type jpg)
 <use img/OZOBOT.jpg>
-Package pdftex.def Info: img/OZOBOT.jpg  used on input line 202.
+Package pdftex.def Info: img/OZOBOT.jpg  used on input line 196.
 (pdftex.def)             Requested size: 195.0pt x 109.68336pt.
 
-[15 <./img/OZOBOT.jpg>]
-<img/asuro.png, id=264, 1412.27625pt x 918.43124pt>
+[14 <./img/OZOBOT.jpg>]
+<img/asuro.png, id=299, 1412.27625pt x 918.43124pt>
 File: img/asuro.png Graphic file (type png)
 <use img/asuro.png>
-Package pdftex.def Info: img/asuro.png  used on input line 215.
+Package pdftex.def Info: img/asuro.png  used on input line 208.
 (pdftex.def)             Requested size: 195.0pt x 126.7997pt.
- [16 <./img/asuro.png>]
-<img/microbit0.jpg, id=274, 770.88pt x 578.16pt>
+ [15 <./img/asuro.png>]
+<img/microbit0.jpg, id=312, 770.88pt x 578.16pt>
 File: img/microbit0.jpg Graphic file (type jpg)
 <use img/microbit0.jpg>
-Package pdftex.def Info: img/microbit0.jpg  used on input line 230.
+Package pdftex.def Info: img/microbit0.jpg  used on input line 222.
 (pdftex.def)             Requested size: 150.0pt x 112.49814pt.
-<img/microbit1.jpg, id=275, 602.25pt x 602.25pt>
+<img/microbit1.jpg, id=313, 602.25pt x 602.25pt>
 File: img/microbit1.jpg Graphic file (type jpg)
 <use img/microbit1.jpg>
-Package pdftex.def Info: img/microbit1.jpg  used on input line 231.
+Package pdftex.def Info: img/microbit1.jpg  used on input line 223.
 (pdftex.def)             Requested size: 150.0pt x 150.00156pt.
- [17 <./img/microbit0.jpg> <./img/microbit1.jpg>]
-Overfull \hbox (14.22389pt too wide) in paragraph at lines 254--268
+ [16 <./img/microbit0.jpg> <./img/microbit1.jpg>]
+Overfull \hbox (14.22389pt too wide) in paragraph at lines 243--257
  [][] 
  []
 
-[18]
+[17]
 Kapitola 2.
-<img/SchoolBot.png, id=293, 745.78625pt x 745.78625pt>
-File: img/SchoolBot.png Graphic file (type png)
-<use img/SchoolBot.png>
-Package pdftex.def Info: img/SchoolBot.png  used on input line 275.
-(pdftex.def)             Requested size: 348.2721pt x 348.26639pt.
-[19
 
- <./img/SchoolBot.png>]
-<img/LX-15d.png, id=302, 301.125pt x 407.27156pt>
+Overfull \hbox (3.49167pt too wide) in paragraph at lines 276--278
+\OT1/cmr/m/n/12 kter^^Sa uv^^Sad^^S^^P do pro-vozu kle-peta, n^^Sastroj pro ma-
+ni-pu-laci s ob-jekty p^^Tri sout^^Te^^Tz^^S^^Pch,
+ []
+
+<img/LX-15d.png, id=344, 301.125pt x 407.27156pt>
 File: img/LX-15d.png Graphic file (type png)
 <use img/LX-15d.png>
-Package pdftex.def Info: img/LX-15d.png  used on input line 296.
+Package pdftex.def Info: img/LX-15d.png  used on input line 282.
 (pdftex.def)             Requested size: 77.99881pt x 105.49037pt.
- [20 <./img/LX-15d.png>]
-<img/battery_pack_v3.png, id=310, 1522.68875pt x 712.6625pt>
+[18
+
+ <./img/LX-15d.png>]
+<img/battery_pack_v3.png, id=354, 1522.68875pt x 712.6625pt>
 File: img/battery_pack_v3.png Graphic file (type png)
 <use img/battery_pack_v3.png>
-Package pdftex.def Info: img/battery_pack_v3.png  used on input line 310.
+Package pdftex.def Info: img/battery_pack_v3.png  used on input line 295.
 (pdftex.def)             Requested size: 390.0pt x 182.52579pt.
- [21 <./img/battery_pack_v3.png>]
-<img/ulozeni_motoru.png, id=319, 1324.95pt x 745.78625pt>
+ [19 <./img/battery_pack_v3.png>]
+<img/ulozeni_motoru.png, id=362, 1324.95pt x 745.78625pt>
 File: img/ulozeni_motoru.png Graphic file (type png)
 <use img/ulozeni_motoru.png>
-Package pdftex.def Info: img/ulozeni_motoru.png  used on input line 331.
+Package pdftex.def Info: img/ulozeni_motoru.png  used on input line 317.
 (pdftex.def)             Requested size: 348.2721pt x 196.02786pt.
- [22 <./img/ulozeni_motoru.png>]
-<img/klepeta.png, id=327, 1324.95pt x 745.78625pt>
+ [20 <./img/ulozeni_motoru.png>]
+<img/klepeta.png, id=369, 1324.95pt x 745.78625pt>
 File: img/klepeta.png Graphic file (type png)
 <use img/klepeta.png>
-Package pdftex.def Info: img/klepeta.png  used on input line 341.
+Package pdftex.def Info: img/klepeta.png  used on input line 327.
 (pdftex.def)             Requested size: 390.0pt x 219.5157pt.
- [23 <./img/klepeta.png>]
+ [21 <./img/klepeta.png>]
 Kapitola 3.
-<img/RB3202.JPG, id=335, 1032.9792pt x 686.0832pt>
-File: img/RB3202.JPG Graphic file (type jpg)
-<use img/RB3202.JPG>
-Package pdftex.def Info: img/RB3202.JPG  used on input line 353.
-(pdftex.def)             Requested size: 390.0pt x 259.02885pt.
-[24
 
- <./img/RB3202.JPG>]
-Overfull \hbox (0.13913pt too wide) in paragraph at lines 368--369
+Overfull \hbox (0.13913pt too wide) in paragraph at lines 351--352
 []\OT1/cmr/m/n/12 T^^Tri ko-nek-tory na in-te-li-gentn^^S^^P serva LX-15D nebo 
 LX-16A. Deska dok^^Sa^^Tze
  []
 
-[25]
-Overfull \hbox (11.05548pt too wide) in paragraph at lines 384--386
-\OT1/cmr/m/n/12 sou^^Tc^^Sastce IM3 (step-down nebo sta-bi-liz^^Sator 7805), kt
-er^^Sa nap^^Saj^^S^^P p^^Trevodn^^S^^Pk.
- []
+[22
 
-[26] [27] [28]
-<img/sada2.JPG, id=361, 1032.9792pt x 686.0832pt>
+] [23] [24] [25]
+<img/sada2.JPG, id=400, 1032.9792pt x 686.0832pt>
 File: img/sada2.JPG Graphic file (type jpg)
 <use img/sada2.JPG>
-Package pdftex.def Info: img/sada2.JPG  used on input line 450.
+Package pdftex.def Info: img/sada2.JPG  used on input line 440.
 (pdftex.def)             Requested size: 429.00238pt x 284.92859pt.
 
-Overfull \hbox (39.00238pt too wide) in paragraph at lines 450--451
+Overfull \hbox (39.00238pt too wide) in paragraph at lines 440--441
  [][] 
  []
 
-[29 <./img/sada2.JPG>] [30
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (9.1834pt too wide) in paragraph at lines 446--447
+\OT1/cmr/m/n/12 Na DDM Hel-ce-le-tova, sekce Ro-bot^^Sarna se deska Scho-ol-bo-
+ard pou^^Tz^^S^^Pv^^Sa v krou^^Tzku
+ []
+
+[26] [27 <./img/sada2.JPG>] [28
 
 ]
 P\v {r}\'{\i }loha A.
-[31
 
-] [32] [33] [34]
-Overfull \hbox (1.79315pt too wide) in paragraph at lines 553--555
-\OT1/cmr/m/n/12 Trimr slou^^Tz^^S^^Pc^^S^^P jako d^^Teli^^Tc nap^^Tet^^S^^P ba-
-te-rie pro mo^^Tznost m^^Te^^Tren^^S^^P jej^^S^^Pho nap^^Tet^^S^^P.
+Overfull \hbox (10.17351pt too wide) in paragraph at lines 507--508
+[]\OT1/cmr/m/n/12 EN { re-set pin, po-kud je na n^^Tem lo-gick^^Sa 0, ESP32 se 
+re-se-tuje, v norm^^Saln^^S^^Pm
  []
 
 
-Overfull \hbox (5.10248pt too wide) in paragraph at lines 553--555
-\OT1/cmr/bx/n/12 P^^Tred pou^^Tzit^^S^^Pm nutno na-sta-vit na vhod-nou d^^Tel^^
-S^^Pc^^S^^P hod-notu vzhle-
+Overfull \hbox (2.56816pt too wide) in paragraph at lines 509--513
+[]\OT1/cmr/m/n/12 Piny s ozna^^Tcen^^S^^Pm re-serv AD1 jsou vy-hra-zen^^Se pro 
+ex-tern^^S^^P pou^^Tzit^^S^^P a nejsou
  []
 
-[35] [36]
+[29
+
+] [30] [31]
+Overfull \hbox (11.39247pt too wide) in paragraph at lines 587--588
+\OT1/cmr/m/n/12 nap^^Tet^^S^^P na v^^Systupu. Na-o-pak nev^^Syhoda je nut-nost 
+na-sta-vit po^^Tzadovan^^Se
+ []
+
+
+Overfull \hbox (2.02817pt too wide) in paragraph at lines 589--590
+[]\OT1/cmr/m/n/12 7805 m^^Sa v^^Syhodu nap^^Tet[]ov^^Se sta-bi-lity na-o-pak ne
+v^^Syhodu ma-xim^^Saln^^S^^Pho
+ []
+
+[32] [33]
 P\v {r}\'{\i }loha B.
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 563.
-
-
-Overfull \hbox (5.44194pt too wide) in paragraph at lines 566--567
- []\OT1/cmr/bx/n/12 X4: \OT1/cmr/m/n/12 Svor-kov-nice pro p^^Tripojen^^S^^P zdr
-oje s nap^^Tet^^S^^Pm 7-11V. X4-1 je z^^Saporn^^Sy
+Overfull \hbox (1.69194pt too wide) in paragraph at lines 606--607
+ []\OT1/cmr/bx/n/12 X4 \OT1/cmr/m/n/12 Svor-kov-nice pro p^^Tripojen^^S^^P zdro
+je s nap^^Tet^^S^^Pm 7-11V. X4-1 je z^^Saporn^^Sy
  []
 
-[37
+[34
 
-] [38] [39] [40]
-Overfull \hbox (3.68202pt too wide) in paragraph at lines 648--649
-\OT1/cmr/m/n/12 Velk^^Sy elek-t-ro-ly-tick^^Sy kon-denz^^Sator jako z^^Sasob^^S
-arna proudu p^^Tri n^^Sahl^^Se zm^^Ten^^Te
+]
+Overfull \hbox (3.52232pt too wide) in paragraph at lines 641--643
+ []\OT1/cmr/bx/n/12 JP6 \OT1/cmr/m/n/12 Ko-nek-tor, pro mo^^Tznost vy-ve-den^^S
+^^P vyp^^S^^Pnan^^S^^P, zap^^S^^Pn^^San^^S^^P, re-setu a kon-
  []
 
-
-Overfull \hbox (4.24895pt too wide) in paragraph at lines 651--652
-\OT1/cmr/m/n/12 Zp^^Tetn^^Sa di-oda pro p^^Tr^^S^^Ppad nap^^Tet[]ov^^Se ^^Tspi^
-^Tcky, kter^^Sa by kr^^Satkodob^^Te p^^Trevr^^Satila
- []
-
-[41]
+[35] [36] [37] [38]
 P\v {r}\'{\i }loha C.
-<img/logika.png, id=453, 1105.36964pt x 744.01965pt>
+<img/SchoolBot.png, id=499, 745.78625pt x 745.78625pt>
+File: img/SchoolBot.png Graphic file (type png)
+<use img/SchoolBot.png>
+Package pdftex.def Info: img/SchoolBot.png  used on input line 701.
+(pdftex.def)             Requested size: 390.0pt x 389.996pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/logika.png, id=500, 1105.36964pt x 744.01965pt>
 File: img/logika.png Graphic file (type png)
 <use img/logika.png>
-Package pdftex.def Info: img/logika.png  used on input line 659.
+Package pdftex.def Info: img/logika.png  used on input line 708.
 (pdftex.def)             Requested size: 585.0pt x 393.77225pt.
 
-Overfull \hbox (3.77225pt too wide) in paragraph at lines 659--660
+Overfull \hbox (3.77225pt too wide) in paragraph at lines 708--709
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 21.85002pt on input line 661.
+LaTeX Warning: Float too large for page by 21.85002pt on input line 710.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/silovka.png, id=454, 1105.731pt x 744.381pt>
+<img/silovka.png, id=501, 1105.731pt x 744.381pt>
 File: img/silovka.png Graphic file (type png)
 <use img/silovka.png>
-Package pdftex.def Info: img/silovka.png  used on input line 665.
+Package pdftex.def Info: img/silovka.png  used on input line 714.
 (pdftex.def)             Requested size: 585.0pt x 393.8272pt.
 
-Overfull \hbox (3.8272pt too wide) in paragraph at lines 665--666
+Overfull \hbox (3.8272pt too wide) in paragraph at lines 714--715
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 21.85002pt on input line 667.
+LaTeX Warning: Float too large for page by 21.85002pt on input line 716.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[42
+<img/RB3202.JPG, id=502, 1032.9792pt x 686.0832pt>
+File: img/RB3202.JPG Graphic file (type jpg)
+<use img/RB3202.JPG>
+Package pdftex.def Info: img/RB3202.JPG  used on input line 722.
+(pdftex.def)             Requested size: 390.0pt x 259.02885pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[39
 
 ]
+! Undefined control sequence.
+l.729 \printbibliography
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-LaTeX Warning: Empty bibliography on input line 671.
+[40 <./img/SchoolBot.png>] [41 <./img/logika.png (PNG copy)>] [42 <./img/silovk
+a.png>] [43 <./img/RB3202.JPG>] (./text.lof)
+\tf@lof=\write5
+\openout5 = `text.lof'.
 
-[43 <./img/logika.png (PNG copy)>] [44 <./img/silovka.png>] (./text.lof)
-\tf@lof=\write6
-\openout6 = `text.lof'.
-
-
-[45
+ [44
 
 ] (./text.lot)
-\tf@lot=\write7
-\openout7 = `text.lot'.
+\tf@lot=\write6
+\openout6 = `text.lot'.
 
- [46
+ [45
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 693--695
+Underfull \hbox (badness 10000) in paragraph at lines 750--752
 [][]$\OT1/cmtt/m/n/12 https : / / www . google . com / search ? q = lego + mind
 storms + ev3 & sxsrf =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--695
+Underfull \hbox (badness 10000) in paragraph at lines 750--752
 \OT1/cmtt/m/n/12 ALeKk03Lud9t3UtEURVvSxEM4KXsQ1MuoA : 1582604901663 & source =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--695
+Underfull \hbox (badness 10000) in paragraph at lines 750--752
 \OT1/cmtt/m/n/12 lnms & tbm = isch & sa = X & ved = 2ahUKEwiW0e7X7uvnAhWEiVwKHU
 KQDZsQ _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
+Underfull \hbox (badness 5345) in paragraph at lines 754--755
+[]\OT1/cmr/m/it/12 LEGO Mind-storms \OT1/cmr/m/n/12 [on-line] https://www.lego.
+com [cit. 2020-02-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
 [][]$\OT1/cmtt/m/n/12 https : / / www . google . com / search ? biw = 1920 & bi
 h = 898 & tbm = isch &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
 \OT1/cmtt/m/n/12 sxsrf = ALeKk00t2ZCEa8I8sw4qB8LQrmWkCIeiFg % 3A1582604904288 &
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
 \OT1/cmtt/m/n/12 sa = 1 & ei = aKJUXu2PEc61kwWlwqSoCw & q = Mbot & oq = Mbot & 
-gs _ l = img . 3 .
+gs _ l = img .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
-\OT1/cmtt/m/n/12 .35i39l2j0i30l8 . 626107 . 627102 . .627373 . . . 0 . 0 . .0 .
- 135 . 496 .
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
+\OT1/cmtt/m/n/12 3 . .35i39l2j0i30l8 . 626107 . 627102 . .627373 . . . 0 . 0 . 
+.0 . 135 . 496 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
 \OT1/cmtt/m/n/12 3j2 . . . . . .0 . . . .1 . .gws-[]wiz-[]img . . . . . . . 0i6
 7j0j0i7i30j0i131 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--704
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
 \OT1/cmtt/m/n/12 YHxDaq30Lm0 & ved = 0ahUKEwjt447Z7uvnAhXO2qQKHSUhCbUQ4dUDCAc &
 
  []
 
-[47
+[46
 
-pdfTeX warning (ext4): destination with the same identifier (name{cite.LEGO\040
-Mindstorm}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.706 	\subsection
-                  *{Edison V2.0}pdfTeX warning (ext4): destination with the sam
-e identifier (name{cite.Mbot}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.706 	\subsection
-                  *{Edison V2.0}]
-Underfull \hbox (badness 3930) in paragraph at lines 716--718
+]
+Underfull \hbox (badness 2173) in paragraph at lines 774--776
 []\OT1/cmr/m/it/12 p^^Tr^^S^^Pklad ceny \OT1/cmr/m/n/12 [on-line] https://www.r
 obotshop.com [cit. 2020-02-22]
  []
 
 
-Overfull \hbox (12.62778pt too wide) in paragraph at lines 716--718
+Overfull \hbox (18.50272pt too wide) in paragraph at lines 774--776
 [][]$\OT1/cmtt/m/n/12 https : / / www . robotshop . com / ca / en / edison-[]pr
 ogrammable-[]v20-[]robot .
  []
 
 
-Overfull \hbox (246.2779pt too wide) in paragraph at lines 716--718
+Overfull \hbox (252.15283pt too wide) in paragraph at lines 774--776
 \OT1/cmtt/m/n/12 html ? gclid = Cj0KCQiA4sjyBRC5ARIsAEHsELHtKqVNJOl95kMUC8iBngI
 kgc3gCZU9KOTwuXWEo4hU4Qs1B-[]2wASkaAh9CEALw _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--722
+Underfull \hbox (badness 10000) in paragraph at lines 778--780
 [][]$\OT1/cmtt/m/n/12 https : / / www . google . com / search ? biw = 1920 & bi
-h = 898 & tbm = isch &
+h = 898 &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--722
-\OT1/cmtt/m/n/12 sxsrf = ALeKk00iii4 _ F6l8P2g7D-[]-[]qym9RZ5Rj4A % 3A158260553
-2874 &
+Underfull \hbox (badness 10000) in paragraph at lines 778--780
+\OT1/cmtt/m/n/12 tbm = isch & sxsrf = ALeKk00iii4 _ F6l8P2g7D-[]-[]qym9RZ5Rj4A 
+%
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--722
-\OT1/cmtt/m/n/12 sa = 1 & ei = 3KRUXreANY7xkwWXubO4Ag & q = Edison + V2 . 0 & o
-q = Edison + V2 . 0 &
+Underfull \hbox (badness 10000) in paragraph at lines 778--780
+\OT1/cmtt/m/n/12 3A1582605532874 & sa = 1 & ei = 3KRUXreANY7xkwWXubO4Ag & q = E
+dison +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--722
-\OT1/cmtt/m/n/12 gs _ l = img . 3 . .0i19j0i30i19 . 167383 . 169312 . .169560 .
- . . 0 . 0 . .0 . 110 .
+Underfull \hbox (badness 10000) in paragraph at lines 778--780
+\OT1/cmtt/m/n/12 V2 . 0 & oq = Edison + V2 . 0 & gs _ l = img . 3 . .0i19j0i30i
+19 . 167383 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--722
-\OT1/cmtt/m/n/12 259 . 2j1 . . . . . .0 . . . .2j1 . .gws-[]wiz-[]img . . . . .
- . . 35i39j0i7i30j0i30 .
+Underfull \hbox (badness 10000) in paragraph at lines 778--780
+\OT1/cmtt/m/n/12 169312 . .169560 . . . 0 . 0 . .0 . 110 . 259 . 2j1 . . . . . 
+.0 . . . .2j1 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 720--722
-\OT1/cmtt/m/n/12 6sdKNYrmvz8 & ved = 0ahUKEwi33uyE8evnAhWO-[]KQKHZfcDCcQ4dUDCAc
- &
+Underfull \hbox (badness 10000) in paragraph at lines 778--780
+\OT1/cmtt/m/n/12 .gws-[]wiz-[]img . . . . . . . 35i39j0i7i30j0i30 . 6sdKNYrmvz8
+ & ved =
  []
 
-[48pdfTeX warning (ext4): destination with the same identifier (name{cite.Ediso
-n\040V2.0}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.729 	\bibitem{OZOBOT}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{cite.Edison\040V2.0}) has been already used, duplicate ignored
+Underfull \hbox (badness 10000) in paragraph at lines 778--780
+\OT1/cmtt/m/n/12 0ahUKEwi33uyE8evnAhWO-[]KQKHZfcDCcQ4dUDCAc & uact = 5 # imgrc 
+=
+ []
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.729 	\bibitem{OZOBOT}
-                       pdfTeX warning (ext4): destination with the same identif
-ier (name{cite.Edison\040V2.0}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.729 	\bibitem{OZOBOT}
-                       ]
-Underfull \hbox (badness 10000) in paragraph at lines 734--736
+[47]
+Underfull \hbox (badness 5878) in paragraph at lines 791--793
 \OT1/cmr/m/n/12 z: [][]$\OT1/cmtt/m/n/12 https : / / www . google . com / searc
 h ? biw = 1920 & bih = 898 & tbm = isch &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--736
+Underfull \hbox (badness 10000) in paragraph at lines 791--793
 \OT1/cmtt/m/n/12 sxsrf = ALeKk029ry7yYsprObTuxw-[]D68iyq49Qaw % 3A1582605808514
  &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--736
+Underfull \hbox (badness 10000) in paragraph at lines 791--793
 \OT1/cmtt/m/n/12 sa = 1 & ei = 8KVUXp76Hu _ isAfK _ LHYDA & q = OZOBOT + 2 & oq
- = OZOBOT + 2 & gs _ l =
+ = OZOBOT + 2 &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--736
-\OT1/cmtt/m/n/12 img . 3 . .0i19j0i8i30i19 . 55321 . 56590 . .56902 . . . 0 . 0
- . .0 . 156 . 417 .
+Underfull \hbox (badness 10000) in paragraph at lines 791--793
+\OT1/cmtt/m/n/12 gs _ l = img . 3 . .0i19j0i8i30i19 . 55321 . 56590 . .56902 . 
+. . 0 . 0 . .0 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--736
-\OT1/cmtt/m/n/12 2j2 . . . . . .0 . . . .1 . .gws-[]wiz-[]img . . . . . . . 35i
-39j0j0i67 . QPcd6EEdVS8 &
+Underfull \hbox (badness 10000) in paragraph at lines 791--793
+\OT1/cmtt/m/n/12 156 . 417 . 2j2 . . . . . .0 . . . .1 . .gws-[]wiz-[]img . . .
+ . . . . 35i39j0j0i67 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--736
-\OT1/cmtt/m/n/12 ved = 0ahUKEwiesqSI8uvnAhVvMewKHUp-[]DMsQ4dUDCAc & uact = 5 # 
-imgrc =
+Underfull \hbox (badness 10000) in paragraph at lines 791--793
+\OT1/cmtt/m/n/12 QPcd6EEdVS8 & ved = 0ahUKEwiesqSI8uvnAhVvMewKHUp-[]DMsQ4dUDCAc
+ &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--750
-\OT1/cmr/m/it/12 len-to-van^^S^^P.cz - ta-len-to-van^^S^^P.cz \OT1/cmr/m/n/12 [
-on-line] https://vtp.talentovani.cz
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 748--750
-\OT1/cmr/m/n/12 [cit. 2020-02-22] Do-stupn^^Se z: [][]$\OT1/cmtt/m/n/12 https :
- / / vtp . talentovani . cz /
- []
-
-
-Underfull \hbox (badness 3815) in paragraph at lines 752--754
+Underfull \hbox (badness 2073) in paragraph at lines 808--810
 \OT1/cmr/m/it/12 len-to-van^^S^^P.cz - ta-len-to-van^^S^^P.cz \OT1/cmr/m/n/12 [
 on-line] https://www.google.com [cit.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--754
+Underfull \hbox (badness 10000) in paragraph at lines 808--810
 \OT1/cmtt/m/n/12 bih = 898 & tbm = isch & sxsrf = ALeKk00J9MrVOgPUrcycwO3n6HWFH
 zblqA %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--754
+Underfull \hbox (badness 10000) in paragraph at lines 808--810
 \OT1/cmtt/m/n/12 3A1582605974864 & sa = 1 & ei = lqZUXpioNJKysAeZ9YPwBA & q = m
 icrobit &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--754
+Underfull \hbox (badness 10000) in paragraph at lines 808--810
 \OT1/cmtt/m/n/12 oq = microbit & gs _ l = img . 3 . .35i39l2j0l3j0i10i30j0i30l4
  .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--754
+Underfull \hbox (badness 10000) in paragraph at lines 808--810
 \OT1/cmtt/m/n/12 49522 . 51183 . .51422 . . . 0 . 0 . .0 . 142 . 763 . 7j2 . . 
 . . . .0 . . . .1 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--754
+Underfull \hbox (badness 10000) in paragraph at lines 808--810
 \OT1/cmtt/m/n/12 .gws-[]wiz-[]img . . . . . . . 0i7i30j0i5i30j0i131 . wdNXNaVPe
 JI & ved =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--754
+Underfull \hbox (badness 10000) in paragraph at lines 808--810
 \OT1/cmtt/m/n/12 0ahUKEwiYy83X8uvnAhUSGewKHZn6AE4Q4dUDCAc & uact = 5 # imgrc =
  []
 
-[49pdfTeX warning (ext4): destination with the same identifier (name{cite.OZOBO
-T}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.754 		
-        pdfTeX warning (ext4): destination with the same identifier (name{cite.
-OZOBOT}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.754 		
-        pdfTeX warning (ext4): destination with the same identifier (name{cite.
-Asuro}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.754 		
-        pdfTeX warning (ext4): destination with the same identifier (name{cite.
-Asuro}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.754 		
-        ]
-Underfull \hbox (badness 1728) in paragraph at lines 762--764
-\OT1/cmr/m/n/12 Do-stupn^^Se z: [][]$\OT1/cmtt/m/n/12 https : / / www . heureka
- . cz / ?h[fraze ] =Programovateln %
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 766--768
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 821--823
 []\OT1/cmr/m/it/12 BBC micro:bit \OT1/cmr/m/n/12 [on-line] https://www.hwkitche
 n.cz [cit.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 766--768
+Underfull \hbox (badness 10000) in paragraph at lines 821--823
 \OT1/cmr/m/n/12 2020-02-24] Do-stupn^^Se z: [][]$\OT1/cmtt/m/n/12 https : / / w
 ww . hwkitchen . cz /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 766--768
+Underfull \hbox (badness 10000) in paragraph at lines 821--823
 \OT1/cmtt/m/n/12 bbc-[]microbit-[]mikropocitac-[]pro-[]vyuku-[]programovani / ?
 gclid =
  []
 
 
-Overfull \hbox (172.17786pt too wide) in paragraph at lines 766--768
+Overfull \hbox (178.0528pt too wide) in paragraph at lines 821--823
 \OT1/cmtt/m/n/12 CjwKCAiAhc7yBRAdEiwAplGxX1iGHQsQk-[]kVNGx9CbLFWDupyX8vAFWp6fAU
 cyxjx1f7uPbmkF48MRoCehMQAvD _
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 770--772
+Underfull \hbox (badness 3965) in paragraph at lines 825--827
 []\OT1/cmr/m/it/12 BBC micro:bit \OT1/cmr/m/n/12 [on-line] https://www.google.c
 om [cit. 2020-02-24]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--772
+Underfull \hbox (badness 10000) in paragraph at lines 825--827
 \OT1/cmr/m/n/12 Do-stupn^^Se z: [][]$\OT1/cmtt/m/n/12 https : / / www . google 
 . com / search ? biw = 1920 & bih =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--772
+Underfull \hbox (badness 10000) in paragraph at lines 825--827
 \OT1/cmtt/m/n/12 898 & tbm = isch & sxsrf = ALeKk00J9MrVOgPUrcycwO3n6HWFHzblqA 
 %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--772
+Underfull \hbox (badness 10000) in paragraph at lines 825--827
 \OT1/cmtt/m/n/12 3A1582605974864 & sa = 1 & ei = lqZUXpioNJKysAeZ9YPwBA & q = m
 icrobit &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--772
+Underfull \hbox (badness 10000) in paragraph at lines 825--827
 \OT1/cmtt/m/n/12 oq = microbit & gs _ l = img . 3 . .35i39l2j0l3j0i10i30j0i30l4
  .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--772
+Underfull \hbox (badness 10000) in paragraph at lines 825--827
 \OT1/cmtt/m/n/12 49522 . 51183 . .51422 . . . 0 . 0 . .0 . 142 . 763 . 7j2 . . 
 . . . .0 . . . .1 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--772
+Underfull \hbox (badness 10000) in paragraph at lines 825--827
 \OT1/cmtt/m/n/12 .gws-[]wiz-[]img . . . . . . . 0i7i30j0i5i30j0i131 . wdNXNaVPe
 JI & ved =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 770--772
+Underfull \hbox (badness 10000) in paragraph at lines 825--827
 \OT1/cmtt/m/n/12 0ahUKEwiYy83X8uvnAhUSGewKHZn6AE4Q4dUDCAc & uact = 5 # imgrc =
  []
 
-[50pdfTeX warning (ext4): destination with the same identifier (name{cite.Asuro
-}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.772 	\bibitem{Microbit}
-                         pdfTeX warning (ext4): destination with the same ident
-ifier (name{cite.Microbit}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.772 	\bibitem{Microbit}
-                         pdfTeX warning (ext4): destination with the same ident
-ifier (name{cite.Microbit}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.772 	\bibitem{Microbit}
-                         pdfTeX warning (ext4): destination with the same ident
-ifier (name{cite.Microbit}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.772 	\bibitem{Microbit}
-                         ]pdfTeX warning (ext4): destination with the same iden
-tifier (name{cite.Microbit}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.772 	\bibitem{Microbit}
-                         
-Underfull \hbox (badness 3965) in paragraph at lines 773--775
+Underfull \hbox (badness 3965) in paragraph at lines 828--830
 []\OT1/cmr/m/it/12 BBC micro:bit \OT1/cmr/m/n/12 [on-line] https://www.google.c
 om [cit. 2020-02-24]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 773--775
+Underfull \hbox (badness 10000) in paragraph at lines 828--830
 \OT1/cmr/m/n/12 Do-stupn^^Se z: [][]$\OT1/cmtt/m/n/12 https : / / www . google 
 . com / search ? biw = 1920 & bih =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 773--775
+Underfull \hbox (badness 10000) in paragraph at lines 828--830
 \OT1/cmtt/m/n/12 898 & tbm = isch & sxsrf = ALeKk02ykWHq3iwxHfNC5K2OSX4PttT9fA 
 %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 773--775
+Underfull \hbox (badness 10000) in paragraph at lines 828--830
 \OT1/cmtt/m/n/12 3A1582606268980 & sa = 1 & ei = vKdUXrvCO4b9kwXcxoyQBw & q = M
 icrobit +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 773--775
+Underfull \hbox (badness 10000) in paragraph at lines 828--830
 \OT1/cmtt/m/n/12 voz % C3 % ADtko & oq = Microbit + voz % C3 % ADtko & gs _ l =
  img . 3 . . . 3943 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 773--775
+Underfull \hbox (badness 10000) in paragraph at lines 828--830
 \OT1/cmtt/m/n/12 4582 . .4940 . . . 0 . 0 . .0 . 87 . 313 . 4 . . . . . .0 . . 
 . .1 . .gws-[]wiz-[]img .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 773--775
+Underfull \hbox (badness 10000) in paragraph at lines 828--830
 \OT1/cmtt/m/n/12 . . . . . . 35i39 . zL-[]-[]Z1Dztjs & ved = 0ahUKEwi7kO3j8-[]v
 nAhWG _
  []
 
-
-Underfull \hbox (badness 2285) in paragraph at lines 787--789
+[49]
+Underfull \hbox (badness 5288) in paragraph at lines 842--844
 []\OT1/cmr/m/it/12 Espressif Sys-tems - Wi-Fi and Blu-e-to-oth chip-sets and so
--lu-ti-ons
+-lu-ti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 787--789
-\OT1/cmr/m/n/12 [on-line] https://www.espressif.com [cit. 2020-02-22] Do-stupn^
-^Se z:
+Underfull \hbox (badness 10000) in paragraph at lines 842--844
+\OT1/cmr/m/it/12 ons  \OT1/cmr/m/n/12 [on-line] https://www.espressif.com [cit.
+ 2020-02-22] Do-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 787--789
-[][]$\OT1/cmtt/m/n/12 https : / / www . espressif . com / sites / default / fil
-es / documentation /
+Underfull \hbox (badness 10000) in paragraph at lines 842--844
+\OT1/cmr/m/n/12 stupn^^Se z: [][]$\OT1/cmtt/m/n/12 https : / / www . espressif 
+. com / sites / default / files /
  []
 
 
-Underfull \hbox (badness 3482) in paragraph at lines 791--793
+Underfull \hbox (badness 3482) in paragraph at lines 846--848
 []\OT1/cmr/m/it/12 datasheet ESP32 \OT1/cmr/m/n/12 [on-line] https://cdn.sparkf
 un.com [cit. 2020-02-
  []
 
-[51]
-Underfull \hbox (badness 1552) in paragraph at lines 825--827
+[50]
+Underfull \hbox (badness 1552) in paragraph at lines 880--882
 []\OT1/cmr/m/it/12 datasheet Step-down \OT1/cmr/m/n/12 [on-line] https://arduin
 o-shop.cz [cit. 2020-02-
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 825--827
-\OT1/cmr/m/n/12 22] Do-stupn^^Se z: [][]$\OT1/cmtt/m/n/12 https : / / arduino-[
-]shop . cz / docs / produkty / 0 / 698 /
+Underfull \hbox (badness 10000) in paragraph at lines 892--894
+\OT1/cmtt/m/n/12 isch & ved = 2ahUKEwiKxrf2-[]OznAhUM4hoKHfgyB8YQ2-[]cCegQIABAA
+ & oq =
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 831--833
-\OT1/cmr/m/n/12 Do-stupn^^Se z: [][]$\OT1/cmtt/m/n/12 https : / / www . gme . c
-z / data / attachments / dsh . 630-[]019 .
+Underfull \hbox (badness 10000) in paragraph at lines 892--894
+\OT1/cmtt/m/n/12 LX-[]15D & gs _ l = img . 3 . .35i39 . 2197 . 2197 . .2378 . .
+ . 0 . 0 . .0 . 105 . 105 .
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 842.
-[52]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 842.
+
+Underfull \hbox (badness 10000) in paragraph at lines 892--894
+\OT1/cmtt/m/n/12 0j1 . . . . . .0 . . . .1 . .gws-[]wiz-[]img . jm-[]ypRJ7CoM &
+ ei = WTNVXsq1NIzEa _
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 903.
+[51]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 903.
  (./text.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 842.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 842.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 903.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 903.
 Package rerunfilecheck Info: File `text.out' has not changed.
-(rerunfilecheck)             Checksum: A16C397D2378EC28BA25264EBB3275B9;3714.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package logreq Info: Writing requests to 'text.run.xml'.
-\openout1 = `text.run.xml'.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 842.
+(rerunfilecheck)             Checksum: AABBC40C3984217CABA1DFDEDD6ECBD2;4755.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 903.
  ) 
 Here is how much of TeX's memory you used:
- 20018 strings out of 492162
- 321615 string characters out of 6129063
- 634127 words of memory out of 5000000
- 23956 multiletter control sequences out of 15000+600000
+ 13256 strings out of 492616
+ 187988 string characters out of 6132768
+ 310539 words of memory out of 5000000
+ 16838 multiletter control sequences out of 15000+600000
  10750 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,16n,46p,1507b,1809s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,16n,46p,1507b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texli
-ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/a
+<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2018/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt12.pfb>
-Output written on text.pdf (52 pages, 9942009 bytes).
+Output written on text.pdf (51 pages, 9946218 bytes).
 PDF statistics:
- 699 PDF objects out of 1000 (max. 8388607)
- 606 compressed objects within 7 object streams
- 176 named destinations out of 1000 (max. 500000)
- 339 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 769 PDF objects out of 1000 (max. 8388607)
+ 674 compressed objects within 7 object streams
+ 195 named destinations out of 1000 (max. 500000)
+ 387 words of extra memory for PDF output out of 10000 (max. 10000000)
 

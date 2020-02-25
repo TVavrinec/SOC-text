@@ -1,44 +1,22 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {czech}{}
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces LEGO Mindstorm\relax }}{11}{figure.caption.11}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Mbot\relax }}{13}{figure.caption.12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Edison V2.0\relax }}{14}{figure.caption.13}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.4}{\ignorespaces OZOBOT 2.0\relax }}{15}{figure.caption.14}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Asuro\relax }}{16}{figure.caption.15}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Microbit\relax }}{17}{figure.caption.16}%
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces LEGO Mindstorm\relax }}{11}{figure.caption.11}% 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Mbot\relax }}{12}{figure.caption.12}% 
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Edison V2.0\relax }}{13}{figure.caption.13}% 
+\contentsline {figure}{\numberline {1.4}{\ignorespaces OZOBOT 2.0\relax }}{14}{figure.caption.14}% 
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Asuro\relax }}{15}{figure.caption.15}% 
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Microbit \cite {Microbit_obr1}, \cite {Microbit_obr2}\relax }}{16}{figure.caption.16}% 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces render 3D modelu SchoolBota\relax }}{19}{figure.caption.18}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces inteligentní servo LX-15d\relax }}{20}{figure.caption.19}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces render 3D modelu battery packu\relax }}{21}{figure.caption.21}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces render 3D modelu motorového lože\relax }}{22}{figure.caption.24}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces renderovaný pohled na klepeta\relax }}{23}{figure.caption.26}%
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces inteligentn\IeC {\'\i } servo LX-15d \cite {inteligentni_servo_LX15D}\relax }}{18}{figure.caption.18}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces render 3D modelu battery packu\relax }}{19}{figure.caption.19}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces render 3D modelu motorov\IeC {\'e}ho lo\IeC {\v z}e\relax }}{20}{figure.caption.20}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces renderovan\IeC {\'y} pohled na klepeta\relax }}{21}{figure.caption.21}% 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces deska SchoolBoard\relax }}{24}{figure.caption.27}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces desky z kroužku a SchoolBot\relax }}{29}{figure.caption.30}%
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces desky z krou\IeC {\v z}ku a SchoolBot\relax }}{27}{figure.caption.24}% 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.1}{\ignorespaces schéma logické části desky\relax }}{43}{figure.caption.66}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {C.2}{\ignorespaces schéma výkonové části\relax }}{44}{figure.caption.67}%
+\contentsline {figure}{\numberline {C.1}{\ignorespaces render 3D modelu SchoolBota\relax }}{40}{figure.caption.62}% 
+\contentsline {figure}{\numberline {C.2}{\ignorespaces sch\IeC {\'e}ma logick\IeC {\'e} \IeC {\v c}\IeC {\'a}sti desky\relax }}{41}{figure.caption.63}% 
+\contentsline {figure}{\numberline {C.3}{\ignorespaces sch\IeC {\'e}ma v\IeC {\'y}konov\IeC {\'e} \IeC {\v c}\IeC {\'a}sti\relax }}{42}{figure.caption.64}% 
+\contentsline {figure}{\numberline {C.4}{\ignorespaces deska SchoolBoard \relax }}{43}{figure.caption.65}% 

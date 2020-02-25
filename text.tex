@@ -19,7 +19,7 @@
 \hypersetup{colorlinks=true, linkcolor=myblue, urlcolor=mygreen, citecolor=blue, anchorcolor = magenta,
 	linktocpage = true, frenchlinks } % nastavení barvy odkazů 
 
-\addbibresource{text.bib}
+%\addbibresource{text.bib}
 
 \titlecz{Postav si svého prvního robota}
 \titleen{Build your first robot}
@@ -52,20 +52,19 @@ Cílem práce je  vyvinout vhodnou levnou a rozšiřitelnou vzdělávací pomůc
 Tato práce se zabývá návrhem a výrobou řídící desky Schoolboard a robota Schoolbot a jejich použitím při výuce dětí v zájmovém vzdělávání a při školní výuce předmětů elektroniky, automatizace, programování a dalších. 
 
 \subsection*{Klíčová slova}
-SchoolBot; ScoolBoard; robot; vyuka robotiky; řídící deska; ESP32
+SchoolBot; SchoolBoard; robot; vyuka robotiky; řídící deska; ESP32
 
 \vspace{20mm}
 
 \section*{Annotation}
-%todo (čistý google [nepříjde mi uplně špatný ale moc to neznamená] asi by na to měl kouknout třeba Peťa aneo nejáký angličtinář)
 
-The aim of this work is to develop a suitable cheap and extensible educational tool - control board, which allows to demonstrate the characteristics of sensors and drives and which will be able to control, for example, amateur competition robots or school demonstration production line. Further, to develop an easily accessible robot to control this control board.
+The aim of this work is to develop a suitable cheap and extensible educational tool -- control board, which allows to demonstrate the characteristics of sensors and drives and which will be able to control, for example, amateur competition robots or school demonstration production line. Further, to develop an easily accessible robot to control this control board.
 
-This work deals with the design and production of the Schoolboard and Schoolbot robot and their use in teaching children in leisure education and in school teaching of electronics, automation, programming and others.
+This work concerns with the design and production of the control board named Schoolboard and Schoolbot robot and their use in teaching children in leisure education and in school teaching of electronics, automation, programming and others.
 
 
 \subsection*{Keywords}
-SchoolBot; ScoolBoard; robot; teaching robotics; control board; ESP32
+SchoolBot; SchoolBoard; robot; teaching robotics; control board; ESP32
 
 \newpage
 \pagestyle{plain}
@@ -113,7 +112,7 @@ Moje práce má za cíl vytvořit pomůcku (robota) pro praktické seznámení s
 	
 \end{itemize}
 
-Ideálně by si takového robota učastníci kroužku měli být schopni postavit, spájet a oživit (podle pokynů vedoucího) sami. 
+Ideálně by si takového robota účastníci kroužku měli být schopni postavit, spájet a oživit (podle pokynů vedoucího) sami. 
 
 %\section{SchoolBot}
 
@@ -126,7 +125,7 @@ Ideálně by si takového robota učastníci kroužku měli být schopni postavi
 
 \chapter{Proč vytvářet vlastní roboty?}
 
-Proč vlastně vytvářet vlastní elektroniku i mechaniku, když je na trhu tolik různých robotu a vozítek? Konkurenční roboti, kteří se běžně prodávají, jsou totiž většinou velmi drazí a často nemají ani moc možností. Například známé LEGO Mindstorms, u kterého se cena základní sady pohybuje nad sedmi tisíci korunami [\ref{LEGO}],
+Proč vlastně vytvářet vlastní elektroniku i mechaniku, když je na trhu tolik různých robotu a vozítek? Konkurenční roboti, kteří se běžně prodávají, jsou totiž většinou velmi drazí a často nemají ani moc možností. Například známé LEGO Mindstorms, u kterého se cena základní sady pohybuje nad sedmi tisíci korunami \cite{lego_cena},
  je vzhledem ke svým možnostem ohromně předražené.
  
 %zmizela poznámka o dokumentaci (nebyla tak pravdivá jak bych chtěl abych jí zde nechal [ splnoval by to asi jen Asuro a možná OZOBOT s Edisnem])
@@ -135,59 +134,54 @@ Proč vlastně vytvářet vlastní elektroniku i mechaniku, když je na trhu tol
 
 \section{Konkurence} \label{konkurence}
 
-\subsection{LEGO Mindstorms EV3}[\ref{LEGO}]
+\subsection{LEGO Mindstorms EV3}
 
 \begin{figure}[h]
 	
 	\centering
 	\includegraphics[width=0.5\textwidth]{img/EV3.jpg}
-	\caption{LEGO Mindstorm} 
-	[\ref{LEGO}]
+	\caption{LEGO Mindstorm}~\cite{lego_obr}
 	
 \end{figure}
 
-LEGO Mindstorms je známé svou jednoduchostí. Základní roboti se s touto sadou dají sestavit velmi rychle, což poskytuje hlavně začátečníkům motivaci, neboť již s poměrně malým úsilím sestaví něco, co na první pohled funguje. Dílky LEGa však nejsou moc pevné a konstrukce z nich postavená jich tedy vyžaduje velké množství, aby byla obstojně tuhá. To se samozřejmě dá vyřešit tím, že si člověk udělá konstrukci z jiného materiálu, potom ale odpadá výhoda jednoduchosti stavby.
+LEGO Mindstorms \cite{lego} je známé svou jednoduchostí. Základní roboti se s touto sadou dají sestavit velmi rychle, což poskytuje hlavně začátečníkům motivaci, neboť již s poměrně malým úsilím sestaví něco, co na první pohled funguje. Dílky LEGa však nejsou moc pevné a konstrukce z nich postavená jich tedy vyžaduje velké množství, aby byla obstojně tuhá. To se samozřejmě dá vyřešit tím, že si člověk udělá konstrukci z jiného materiálu, potom ale odpadá výhoda jednoduchosti stavby.
 
 Možnosti robota se z velké části odvíjí od senzoriky. LEGO trpí na nedostatek senzorů a ještě vic na melí počet konektorů. Nejen, že v základní sadě je, krom tlačítka, od každého sensoru jen jeden kus. Ale ani kostka, řídící centrum LEGa, nedokáže číst víc než čtyři senzory naráz. Je pravda že LEGO má možnost spojovat několik kostek dohromady, to však samozřejmě vyžaduje mít jich víc, což je při ceně LEGa poměrně drahé.
 
 
-LEGO má své vlastní programovací prostředí, které je většinou pro začátečníky dobré. Jakmile však uživatel chce vytvářet vetší program, prostředí velmi rychle ztratí užitečnost. Vetší programy jsou v grafickém prostředí velmi nepřehledné. Navíc prostředí LEGa může být u větších programů nestabilní. Existují však i prostředí, ze kterých se dá lego programovat textově, například v jazyku C++, což je u složitějších programu přehlednější a také méně náročné pro počítač.
+LEGO má své vlastní programovací prostředí, které je většinou pro začá\-teč\-ní\-ky dobré. Jakmile však uživatel chce vytvářet vetší program, prostředí velmi rychle ztratí užitečnost. Vetší programy jsou v grafickém prostředí velmi nepřehledné. Navíc prostředí LEGa může být u větších programů nestabilní. Existují však i prostředí, ze kterých se dá lego programovat textově, například v jazyku C++, což je u složitějších programu přehlednější a také méně náročné pro počítač.
 
-\newpage
-
-\subsection{Mbot} [\ref{Mbot}]
+\subsection{Mbot} 
 
 \begin{figure}[h]
 	
 	\centering
 	\includegraphics[width=0.5\textwidth]{img/Mbot.jpg}
 	\caption{Mbot} 
-	[\ref{Mbot}]
+	\cite{Mbot_obr}
 	
 \end{figure}
 
-Mbot je oproti legu daleko levnější (cena se pohybuje kolem osmnácti set korun za kus) ale trpí stejným, nebo i větším, nedostatkem konektoru pro sensory. 
+Mbot \cite{Mbot} je oproti LEGu daleko levnější (cena se pohybuje kolem osmnácti set korun za kus) ale trpí stejným, nebo i větším, nedostatkem konektoru pro sensory. 
 
 Co se konstrukce týče, problémy s pevností u Mbota není, ale zase se nedá snadno upravit. Konstrukce je totiž hliníková, což je v pořádku, pokud není potřeba konstrukci výrazně upravovat. Robota je ale většinou třeba přizpůsobit konkrétnímu užití.
  Ze zkušenosti se nejvíce osvědčilo dřevo, které se dá jednoduše upravovat bez větší námahy a zároveň není problém z něj udělat dostatečně tuhou konstrukci. Hliník se však tak lehce ručně upravovat nedá.
  
-Mbot je založen na procesoru ATmega328, což je stejný procesor, jaký se používá i u velice známého Arduina. [\ref{Mbot}]
+Mbot je založen na procesoru ATmega328, což je stejný procesor, jaký se používá i u velice známého Arduina.
 To znamená, že některé programy, které jsou napsané pro Arduino, je možné spustit i zde.
 
-\newpage
-
-\subsection{Edison V2.0}[\ref{Edison}]
+\subsection{Edison V2.0}
 
 \begin{figure}[h]
 	
 	\centering
 	\includegraphics[width=0.5\textwidth]{img/Edison.jpg}
 	\caption{Edison V2.0} 
-	[\ref{Edison}]
+	\cite{Edison_obr}
 	
 \end{figure}
 
-Edison je velmi podobný LEGu a má i podobné problémy. Opět nedisponuje velkým počtem senzorů, ale oproti LEGu je alespoň daleko levnější. 
+Edison \cite{Edison1}, \cite{Edison2} je velmi podobný LEGu a má i podobné problémy. Opět nedisponuje velkým počtem senzorů, ale oproti LEGu je alespoň daleko levnější \cite{Edison_cena}. 
 
 Stejně jako LEGO má i Edison vlastní grafické programovací prostředí, bohužel jsem jej nikdy nepoužíval, ale vypadá velmi podobně jako prostředí LEGa. Myslím si proto, že stejně jako prostředí LEGa bude i toto velice dobré na malé prográmky pro děti, ale nevhodné pro obsáhlé programy.
 
@@ -195,33 +189,31 @@ Všechny senzory má Edison uvnitř sebe a nedají se proto dovést na místo, k
 
 \newpage
 
-\subsection{OZOBOT }[\ref{OZOBOT}]
+\subsection{OZOBOT }
 \begin{figure}[h]
 	
 	\centering
 	\includegraphics[width=0.5\textwidth]{img/OZOBOT.jpg}
 	\caption{OZOBOT 2.0} 
-	[\ref{OZOBOT}]
+	\cite{OZOBOT_obr}
 	
 \end{figure}
-Ozobot je mini robot, z toho vyplývají jeho největší výhody i nevýhody. Například pochopitelně není dělaný na to, aby cokoli vozil nebo jakkoliv stěhoval. Téměř se nedá upravovat, na to ale opět není dělaný. Jeho účel je především jezdit po čáře a vykonávat příkazy na ní zapsané pomocí barevných vzorů. Přes to že se novější verze dají i programovat, jejich funkce jsou pořád mířené do velké míry právě na čáru a barevné příkazy na ní.
+Ozobot \cite{OZOBOT1}, \cite{OZOBOT2} je mini robot, z toho vyplývají jeho největší výhody i nevýhody. Například pochopitelně není dělaný na to, aby cokoli vozil nebo jakkoliv stěhoval. Téměř se nedá upravovat, na to ale opět není dělaný. Jeho účel je především jezdit po čáře a vykonávat příkazy na ní zapsané pomocí barevných vzorů. Přes to že se novější verze dají i programovat, jejich funkce jsou pořád mířené do velké míry právě na čáru a barevné příkazy na ní.
 
 \newpage
 
-\subsection{Asuro} [\ref{Asuro}]
-\begin{figure}[h]
-	
+\subsection{Asuro}
+\begin{figure}[h]	
 	\centering
 	\includegraphics[width=0.5\textwidth]{img/asuro.png}
 	\caption{Asuro} 
-	[\ref{Asuro}]
-	
+	\cite{Asuro_obr}	
 \end{figure}
-Asuro je robot postavený kolem základní desky. Jedná se o stavebnici, ale přesto nemá ani jednoduché pomůcky pro možnost přesné stavby. Asuro má mezi koly a motorem převodovku, která se ukládá do jakýchsi ložisek. Ta se bez jakéhokoli zapozicování napájí na plochu desky. Výsledkem je téměř nemožnost uložit kola převodovky přesně.
+Asuro \cite{Asuro_navod}, \cite{Asuro_cena} je robot postavený kolem základní desky. Jedná se o stavebnici, ale přesto nemá ani jednoduché pomůcky pro možnost přesné stavby. Asuro má mezi koly a motorem převodovku, která se ukládá do jakýchsi ložisek. Ta se bez jakéhokoli zapozicování napájí na plochu desky. Výsledkem je téměř nemožnost uložit kola převodovky přesně.
 
 \newpage
 
-\subsection{Microbit}[\ref{Microbit}]
+\subsection{Microbit}
 %\textbf
 
 \begin{figure}[h]
@@ -229,25 +221,22 @@ Asuro je robot postavený kolem základní desky. Jedná se o stavebnici, ale p�
 		\centering
 		\includegraphics[width=150pt]{img/microbit0.jpg}
 		\includegraphics[width=150pt]{img/microbit1.jpg}
-		\caption{Microbit} 
-		[\ref{Microbit}]
+		\caption{Microbit \cite{Microbit_obr1}, \cite{Microbit_obr2}} 
 		
 \end{figure}
 
-Microbit je především řídící deska se senzory a výstupními ledkami. Není to primárně vozítko, přestože existují konstrukce, které jsou určené právě pro řízení microbitem. Taková konstrukce však muže využívat pouze serva, nebo musí mít vlastní řízení motoru. Microbit totiž motory řídit edokáže sám, dokáže řídit jen serva, která si silové řízení řeší sama. Toto však není velký problém, protože existuje více různých konstrukcí, které právě toto řeší. 
+Microbit \cite{Microbit1}, \cite{Microbit2}, \cite{Microbit3} je především řídící deska se senzory a výstupními ledkami. Není to primárně vozítko, přestože existují konstrukce, které jsou určené právě pro řízení microbitem. Taková konstrukce však muže využívat pouze serva, nebo musí mít vlastní řízení motoru. Microbit totiž motory řídit edokáže sám, dokáže řídit jen serva, která si silové řízení řeší sama. Toto však není velký problém, protože existuje více různých konstrukcí, které právě toto řeší. 
 
 Microbit má překvapivě docela dost senzorů přímo na základní destičce. Podle mých informací kompas, který je přímo na desce téměř nefunguje, ale vzhledem k tomu, co všechno na sobě malá destička Microbit má, to není až taková tragédie. Kompas je stejně často potřebné dostat co nejdál od zbytku robota, kvůli všemožnému rušení, takže by se i tak dost možná používal jako externí součástka.
 
 Microbit má zároveň matici ledek, na které si uživatel muže zobrazovat, co se mu zlíbí a zároveň se jimi dá i měřit světelnost okolí. Používání led diod jako fotodiod sice není tak přesné, nicméně to jde a je to zajímavé řešení.
 
-Microbit ale nemá zrovna velké množství pinu, které by se dali použít, a především je opět drahý. Cena čisté desky, bez jakéhokoli příslušenství, se pohybuje kolem 500 Kč a za tutu cenu jsem já schopen vyrobit desku které je schopna operovat i se silovímy výstupi (a ještě mi něco zbude).
-
-%todo nevýhody microbitu?  (třeba takhle? [poslední odstaveček])
+Microbit ale nemá zrovna velké množství pinu, které by se daly použít, a především je opět drahý. Cena čisté desky, bez jakéhokoli příslušenství, se pohybuje kolem 500 Kč a za tuto cenu jsem já schopen vyrobit desku, která je schopna operovat i se silovými výstupy (a ještě mi něco zbude).
 
 \subsection{Shrnutí}
 Komerční systémy jsou většinou velmi drahé, mívají nedostatek senzorů, mívají měkkou nebo obtížně upravitelnou konstrukci a také nemají moc velký výkon ani přesnost pohonu.
 
-Možná si říkáte, proč mi záleží na tom aby robot pro začátečníky měl všechny tyto možnosti. Vždyť člověku, co nikdy robota nestavěl, by to mohlo být skoro jedno. Ano, ale já chci, aby se na prvním robotu, které si zájemce postaví, dalo stavět dál. Aby bylo vidět, že si z robota, který toho moc neuměl, může uživatel postavit něco, co by třeba mohlo jezdit na soutěže a vyhrávat. % ahoj ahoj 
+Možná si říkáte, proč mi záleží na tom aby robot pro začátečníky měl všechny tyto možnosti. Vždyť člověku, co nikdy robota nestavěl, by to mohlo být skoro jedno. Ano, ale já chci, aby se na prvním robotu, které si zájemce postaví, dalo stavět dál. Aby bylo vidět, že si z robota, který toho moc neuměl, může uživatel postavit něco, co by třeba mohlo jezdit na soutěže a vyhrávat.
 
 \begin{table}[h]
 	\centering
@@ -265,45 +254,41 @@ Možná si říkáte, proč mi záleží na tom aby robot pro začátečníky m�
 			\textbf{SchoolBot} 		& \textbf{1} 				& \textbf{1} 			& \textbf{1} 			& \textbf{1} 			& \textbf{1} 		& \textbf{1}	\\ 
 		\hline
 	\end{tabular}
-	\caption{Srovnání možností dostupných komerčních systémů pro hobby roboty}
+	\begin{center}
+		\caption{Srovnání možností dostupných komerčních systémů pro hobby roboty}
+	\end{center}
 \end{table}
 
 \chapter{SchoolBot}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.893\textwidth]{img/SchoolBot.png}
-	\caption{render 3D modelu SchoolBota}
-\end{figure}
-
-
-
-\newpage
-
-\section{Z čeho se SchoolBot skládá?}
-SchoolBot je komplet, skládající se ze řady jednotlivých dílků, které nebudu popisovat samostatně pro začátek systém rozdělím na elektroniky a mechaniku.
 
 
 
 
-\subsection{Elektronika}
 
-Elektronika je především řídící deska SchoolBoard kterou shrnuji v samostatné kapitole[\ref{RB3202}] a detailně rozebírám v přílohách. Krom desky obsahuje SchoolBot battery pack, motory s enkodéry a inteligentní serva LX15D[viz zdroje] které uvádí do provozu klepeta, nástroj pro možnost manipulace s objekty při soutěžích především herními prvky.
+SchoolBot je komplet, skládající se ze řady jednotlivých dílků, které nebudu popisovat samostatně, ale pro přehlednosti systém rozdělím na elektroniku a~mechaniku.
+
+
+
+
+\section{Elektronika}
+
+Elektronika je především řídící deska SchoolBoard kterou shrnuji v samostatné kapitole \ref{RB3202} a detailně rozebírám v přílohách. Krom desky obsahuje SchoolBot battery pack, motory s enkodéry a inteligentní serva LX15D
+\cite{inteligentni_servo_LX15D}, která uvádí do provozu klepeta, nástroj pro manipulaci s objekty při soutěžích, především s herními prvky.
 
 \begin{figure}[h]
 	
 	\centering
 	\includegraphics[width=0.2\textwidth]{img/LX-15d.png}
-	\caption{inteligentní servo LX-15d}
+	\caption{inteligentní servo LX-15d \cite{inteligentni_servo_LX15D}}
 	
 \end{figure}
 
-\newpage
+\subsection{Battery pack}
 
-\subsubsection{battery pack}
+Battery pack je sestaven ze dvou li-on baterií 18650, které jsou pomocí DPS spojeny v jeden celek. Připojení do robota je pak zajištováno pomocí dutinek a to každý článek zvlášť, serializují se až po vložení do robota. Důvodem pro vyvádění obou článku zvlášť je nabíjení. To je totiž realizováno pomocí lineárních nabíjecích modulu, které se napájejí z USB a každý článek se nabíjí zvlášť.
 
-Battery pack je sestaven ze dvou li-on baterii 18650 které jsou pomocí DPS spojeny v jeden celek. Připojení do robota je pak zajištováno pomocí dutinek a to každý článek zvlášť, serializují se až po vložení do robota. Důvodem pro vyvádění obou článku zvlášť je nabíjení, to je totiž realizováno pomocí lineárních nabíjecích modulu, které se napájejí z USB a každý článek se nabíjí zvlášť.
-Aby se battery pack nedal omylem připojit s opačnou polaritou je vyřešen tak že se dá při připojení otočit dvěma způsoby a oba mají správnou polaritu, dokonce i stejné pořadí článků.
+Aby se battery pack nedal omylem připojit s opačnou polaritou, je vyřešen tak, že se dá při připojení otočit dvěma způsoby a oba mají správnou polaritu, dokonce i stejné pořadí článků.
 
 \begin{figure}[h]
 	\centering
@@ -311,20 +296,21 @@ Aby se battery pack nedal omylem připojit s opačnou polaritou je vyřešen tak
 	\caption{render 3D modelu battery packu}
 \end{figure}
 
-\subsubsection{motory s enkodéry}
+\subsection{Motory s enkodéry}
 
-SchoolBot používá levné motory s plastovou převodovkou které v základu enkodéry nemají. Enkodéry si proto SchoolBot řeší sám, a to pomocí magnetu a dvou halových sond. Takto vyrobený inkrementální enkodér pak vyhodnocuje procesor na řídící desce.
+SchoolBot používá levné motory s plastovou převodovkou, které v základu enkodéry nemají. Enkodéry si proto SchoolBot řeší sám, a to pomocí magnetu a dvou Halových sond. Takto vyrobený inkrementální enkodér pak vyhodnocuje procesor na řídící desce.
 
 \newpage
 
-\subsection{Mechanika}
+\section{Mechanika}
 
-Mechanika SchoolBota je celá z překližky vypálené pomocí laserového řezáku. Je stavěná kruhově aby se robot nemohl zaseknout v nějakém rohu a v přední části má umístěná klepeta kterými je schopna nabírat a převážet různé objekty. 
+Mechanika SchoolBota je celá z překližky vypálené pomocí laserového řezáku. Je stavěná kruhově, aby se robot nemohl zaseknout v nějakém rohu a~v~přední části má umístěná klepeta, kterými je robot schopen nabírat a převážet různé objekty. 
 
-\subsubsection{Uložení kol a motoru}
+\subsection{Uložení kol a motoru}
 
 Kola nejsou jen tak nasazená na motor. Aby se nevyvracela, a tím pádem méně zatěžovala převodovku motoru, jsou z druhé strany podepřena a uchycena k obvodu konstrukce.
-Celí motor i s kolem je pak z části držen podporou kola ale především je celí motor vložen do těsné šachty kde se nemůže otočit ani posunout jiným směrem než vzhůru a následně je přitlačen palubou která se přišroubuje čtyřmi šrouby. Takovéto řešení umožnuje jednoduchý přístup k motoru.
+
+Celý motor i s kolem je pak zčásti držen podporou kola, ale především je celý motor vložen do těsné šachty, kde se nemůže otočit ani posunout jiným směrem než vzhůru. Následně je přitlačen palubou, která se přišroubuje čtyřmi šrouby. Takovéto řešení umožnuje jednoduchý přístup k motoru a jeho pevné uchycení.
 
 \begin{figure}[h]
 	\centering
@@ -334,8 +320,8 @@ Celí motor i s kolem je pak z části držen podporou kola ale především je 
 
 \newpage
 
-\subsubsection{Klepeta}
-Klepeta jsou postavena tak aby měla osu otáčení, co nejdále od sebe. Protože ve chvíli kdy robot s otevřenými klepety narazí do mantinelu musí mít konce klepet k sobě blíž než osy jejich otáčení aby se klepeta sama zavřela (o mantinel bez potřeby řízení). Z tohoto důvodu jsou serva, na kterých jsou klepeta uložena, posazena co nejdál od sebe, právě aby se klepeta mohla otevřít co nejvíc a utoho si zachovat svojí schopnost zavříty se o mantinel (stěnu).
+\subsection{Klepeta}
+Klepeta jsou postavena tak, aby měla osu otáčení co nejdále od sebe. Protože ve chvíli, kdy robot s otevřenými klepety narazí do mantinelu, musí mít konce klepet k sobě blíž než osy jejich otáčení, aby se klepeta sama zavřela (o mantinel bez potřeby řízení). Z tohoto důvodu jsou serva, na kterých jsou klepeta uložena, posazena co nejdál od sebe, právě aby se klepeta mohla otevřít co nejvíc a u toho si zachovat svojí schopnost zavřít se o mantinel (stěnu).
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{img/klepeta.png}
@@ -344,23 +330,20 @@ Klepeta jsou postavena tak aby měla osu otáčení, co nejdále od sebe. Proto�
 
 
 
-\chapter{SchoolBoard}
+\chapter{SchoolBoard}\label{RB3202}
 
-[\label{RB3202}]
+\ref{RB3202_obr}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{img/RB3202.JPG}
-	\caption{deska SchoolBoard}
-\end{figure}
+
 
 \section{Popis desky}
 
-Deska má k dispozici
+Deska \ref{RB3202l} %todo
+má k dispozici
 
 \begin{itemize}
-	\item [\ref{RB3202l}]
-	\item třicetidvoubitový procesor ESP32 s taktovací frekvencí 240~MHz a napájecím napětím 3,3 V 
+	\item třicetidvoubitový procesor ESP32 s taktovací frekvencí 240~MHz 
+	a~na\-pá\-je\-cím napětím 3,3 V 
 	\item flash pamětí 4 MB (dělají se i verze s 8 a 16 MB), 520 KB SRAM, WI-Fi, Bluetooth, 28 vstupně výstupních piny, dva ADC převodníky (jeden s 6 piny a druhý s 10 piny), jedním DAC převodníkem s dvěma piny, tři UARTy, dvě SPI, tři I2C(jedno je použito interně pro flash) atd.
 	
 	\item Motorový driver DRV8833, který umožnuje řídit dva stejnosměrné motory nebo jeden krokový motor.
@@ -382,52 +365,56 @@ Deska má k dispozici
 	Piny IO35, IO32, IO14 a IO12 jsou tedy schopny operovat jak na napětí 3,3~V, tak na 5~V.
 	
 	Piny jsou teoreticky schopné pracovat i na napětí vyšším, záleží na součástce IM3
-	(step-down nebo stabilizátor 7805), která napájí převodník. Pokud bude IM3 dodávat jiné napětí, bude toto napětí i na 5~V pinech (napětí nesmí klesnout pod 4,5~V jinak procesor nedostane dost proudu).
+	(step-down nebo stabilizátor 7805), která napájí pře\-vod\-ník. Pokud bude IM3 dodávat jiné napětí, bude toto napětí i na 5~V pinech (napětí nesmí klesnout pod 4,5~V jinak procesor nedostane dost proudu).
 	
 	\item Vyvedení 5~V napájení je na oddělené stabilizaci (součástka IM4) pro možnost napájení jiným napětím.
 	
 	\item Deska má také vyvedeny všechny piny ESP32, které nejsou spojeny 
-	s hlavní funkcí desky (řízení motorů) a není problematické se o ně starat při bootu ESP32.
+	s~hlavní funkcí desky (řízení motorů) a není problematické se o ně starat při bootu ESP32.
+	
+	\item Schoooboard je možné řetězit a tím pro robota nebo jiné zařízení získat  jednak další výpočetní výkon, jednak další možnosti rozšíření. 
 	
 	\end{itemize}
-\subsection{Možné periferie}
-Vzhledem k tomu že je deska řízena procesorem ESP32, který umožnuje komunikaci po řadě sběrnic a disponuje i svým vlastním AD převodníkem (přesto že ne úplně perfektním). Je schopna pracovat s velmi rozsáhlou řadou periferii. Díky převodníku napěťových úrovní navíc umožnuje komunikaci ne jen na 3.3V (pracovní napětí procesoru) ale i na napětí 5V (při jiném nastavení jisté součástky[viz přílohy] i jiném napětí vyšším než 3.3V). 
-\subsubsection{Příklady možných senzoru}
+
+\section{Možné periferie}
+Vzhledem k tomu že je deska řízena procesorem ESP32, který umožnuje komunikaci po řadě sběrnic a disponuje i svým vlastním AD převodníkem. Je schopna pracovat s velmi rozsáhlou řadou periferií. Díky převodníku na\-pě\-ťo\-vých úrovní navíc umožnuje komunikaci ne jen na 3,3~V (pracovní napětí procesoru) ale i na napětí 5~V (při jiném nastavení jisté součástky[viz přílohy \ref{RB3202-5V}]
+ i~jiném napětí vyšším než 3,3~V). 
+\subsubsection{Příklady možných senzorů}
 \begin{itemize}
 	\item Kamera
-	\item Ultrazvukoví dálkoměr
+	\item Ultrazvukový dálkoměr
 	\item Infračervený dálkoměr
-	\item Laseroví dálkoměr
+	\item Laserový dálkoměr
 	\item Senzory na sledování čáry
 	\item Senzory barev
 	\item Gyroskop
 	\item Akcelerometr
 	\item Kompas
 	\item Hodiny reálného času
-	\item Teplotoměr
+	\item Teploměr
 	\item Barometr
 	\item Senzor osvětlení
 	\item Vlhkoměr
-	\item A mnoho dalších
+	\item a mnoho dalších ... 
 \end{itemize}
 
-\subsubsection{Příklady jiných periferii}
+\subsubsection{Příklady jiných periferií}
 
 \begin{itemize}
 	\item Inteligentní serva (např. LX15D nebo LX16A)
-	\item Inteligentní ledky (např. WS2812)
+	\item Inteligentní LED (např. WS2812)
 	\item Modelářská serva
-	\item Stejnosměrné motory (s rozsahem napětí od 6 do 11V a proudem do 1A [při použití silnější verze stejného driver do 1,5A])
-	\item Krokoví motor
-	\item Obyčejné ledky
+	\item Stejnosměrné motory (s rozsahem napětí od 6 do 11~V a proudem do 1~A [při použití silnější verze stejného driveru do 1,5A])
+	\item Krokový motor
+	\item Obyčejné LED
 	\item Elektromagnetické ventily
 \end{itemize}
 
 \section{Vývoj}
 
-SchoolBot jsem začal vyvíjet, protože účastníci kurzu robotiky v minulých letech nestíhali za jeden školní rok vytvořit vlastní konstrukci a ještě ji naprogramovat. Přesto, že elektroniku již vyřešenou měli, tak mechanika a především programování na ně bylo stále příliš. Přitom robotické soutěže jsou \uv{zlatým hřebem} každého školního roku. Proto jsem začal koncem loňského školního roku 2018/2019, vyvíjet robota, který měl řešit jak elektroniku, tak většinu mechaniky. 
+SchoolBot jsem začal vyvíjet, protože účastníci kurzu robotiky v minulých letech nestíhali za jeden školní rok vytvořit vlastní konstrukci a ještě ji naprogramovat. Přesto, že elektroniku již vyřešenou měli, tak mechanika a~především programování na ně bylo stále příliš. Přitom robotické soutěže jsou \uv{zlatým hřebem} každého školního roku. Proto jsem začal koncem loň\-ské\-ho školního roku 2018/2019 vyvíjet robota, který měl řešit jak elektroniku, tak většinu mechaniky. 
 
-První prototyp mechaniky byl hotový již začátkem letních prázdnin, ale další vývoj pokračoval až o hodně později. První verze totiž vyžadovala jen velmi málo úprav a já měl na práci spoustu jiných věcí. V první řadě řídící desku, která již sice také měla první prototyp za sebou, ale vyžadovala daleko víc úprav. Již druhá verze desky byla plně provozuschopná a začátkem školního roku 2019/2020 jsme jí začali stavět s účastníky kurzu.
+První prototyp mechaniky byl hotový již začátkem letních prázdnin, ale další vývoj pokračoval až o hodně později. První verze totiž vyžadovala jen velmi málo úprav jsem musel dokončit řídící desku, která již sice také měla první prototyp za sebou, ale vyžadovala daleko víc úprav. Již druhá verze desky byla plně provozuschopná a začátkem školního roku 2019/2020 jsme jí začali stavět s účastníky kurzu.
 
  Ne všichni však chtěli použít mojí konstrukci. Někteří si jí chtěli navrhnout sami a někteří měli tak těžké doplňky, že by je tento robot neuvezl. 
 SchoolBota tak letos využil jen jeden ze sedmi týmů.
@@ -435,13 +422,16 @@ SchoolBota tak letos využil jen jeden ze sedmi týmů.
 \section{Kde se deska používá}
 Deska se používá ve dvou volnočasových kurzech robotiky a při výuce elektrotechniky a automatizace na naší škole.
 
-%\newpage
 
 \subsection{Školní kroužek robotiky}
 
-Ve školním kurzu robotiky se začalo pracovat se SchoolBoardem koncem října. Účastníci si jej nejprve zapájeli (jelikož první verze SchoolBoardu se ještě neosazovala strojově) desku a někdy v prosinci si začali navrhovat a stavět mechanickou konstrukci robota. V té době již byli rozděleni do týmu na soutěž Robotický Den, v Praze a měli vybranou disciplínu které se chtěli zúčastnit. Tím pádem již mohli vyvíjet konkrétní instrumenty pro konkrétní úkoly a nemuseli vymýšlet univerzální systémy které jsou náročné na mechaniku, a především na programování. Díky těmto znalostem některé týmy došli k názoru, že si musí konstrukci opravdu navrhnout samo a nemůžou použít SchoolBot. Robot jednoduše není dost silný, aby uvezl instrumenty, které mají sami o sobe, více než dva kilogramy.
+Ve školním kurzu robotiky se začalo pracovat se SchoolBoardem koncem října. Účastníci si nejprve zapájeli %(jelikož první verze SchoolBoardu se ještě neosazovala strojově) 
+desku a v prosinci si začali navrhovat a~stavět mechanickou konstrukci robota. V té době již byli rozděleni do týmů na soutěž Robotický Den \cite{RD2020}
+ v Praze a měli vybranou disciplínu, které se chtěli zúčastnit. Tím pádem již mohli vyvíjet konkrétní instrumenty pro konkrétní úkoly a nemuseli vymýšlet univerzální systémy, které jsou náročné na mechaniku, a především na programování. Díky těmto znalostem některé týmy došly k názoru, že si musí konstrukci opravdu navrhnout samy a nemůžou použít SchoolBot. Robot jednoduše není dost silný, aby uvezl předměty, které samy váží více než dva kilogramy.
 
-Tímto způsobem vzniklo v šesti týmech pět různých robotu, jeden tým (ten šestý) zůstal u SchoolBotu a svou vlastní konstrukci tak nevytvořil. Všichni tito roboti však jsou řízeni SchoolBoardem, v jednom případně dokonce dvěma, protože mu nestačili dva motory a protože v týmu víc desek měli tak to vyřešili tímto způsobem.
+Tímto způsobem vzniklo v šesti týmech pět různých robotů, jeden tým (ten šestý) zůstal u SchoolBotu a svou vlastní konstrukci tak nevytvořil. Všichni tito roboti však jsou řízeni SchoolBoardem. 
+
+V jednom případně dokonce dvěma Schoolboardy, protože týmu nestačily dva motory a protože v týmu měli víc desek.
 
 Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutěž se koná až 6 a 7.6.2020 a je tím pádem pro mě ještě v budoucnosti.
 
@@ -451,15 +441,51 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	\caption{desky z kroužku a SchoolBot}
 \end{figure}
 
-%todo Výuka elektrotechyky
-%\subsection{Výuka elektrotechyky}
-%chtěl jsem napsat neco o laborkách ale nevím co a jak mám zminovat atd. buď to nechám alespoň ještě na konzultaci nebo to prostě nebude
+\subsection{Kroužek na DDM Helceletova}
+
+Na DDM Helceletova, sekce Robotárna se deska Schoolboard používá v kroužku \textit{Robotika pro středoškoláky}.
+
+\subsection{Výuka}
+
+Schoolboard i Schoolboard se používá na naší škole jako pomůcka pro výuku elektoniky  a~automatizace.
+
+\subsection{Webové stránky ohledně Schoolboard}
+
+Na webu \url{www.jesper.cz} je deska Schoolboard prezentována pod obchodním názvem \textit{Jesper} a budou zde k ní vždy aktuální informace a návody k práci.
 
 
-\newpage
+\chapter*{Závěr} 
 
-\chapter*{Závěr} %todo závěr 
+Cílem mé práce bylo  vytvořit pomůcku (robota) pro praktické seznámení s~elektonikou, robotikou a programováním pro zájemce z řad začínajících elektroniků a robotiků, použitelnou také  ve  školní výuce.   
 
+Mnou navržená a vyrobená elektronika (deska Schoolboard) i konstrukce robota (Schoolbot) splňuje všechny požadované parametry: 
+ 
+
+\begin{itemize}
+	\item modulární senzoriku
+	
+	\item rozšiřitelnou konstrukci
+	
+	\item bezdrátové řízení
+	
+	\item dostatečně tuhou konstrukci
+	
+	\item  možnost programovat v C++
+	
+	\item \textbf{nízkou pořizovací cenu}
+\end{itemize}
+
+
+Deska i robot se již používá ve dvou volnočasových kurzech robotiky a~při výuce na naší škole. 
+
+\vspace{0.5\baselineskip} % polovina výšky řádku
+V současnosti je navržená vylepšená verze desky, která obsahuje navíc gyroskop, akcelerometr a komunikaci pro sběrnici 485. 
+
+
+\vspace{0.5\baselineskip} % polovina výšky řádku
+Do budoucna mám v plánu tuto vylepšenou desku vyrábět a  nabídnout
+ji na \url{www.jesper.cz} dalším zájemcům. 
+ 
 
 
 \appendix
@@ -468,101 +494,115 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 %\chapter{Popis funkce jednotlivých součástek}
 
 \chapter{Řídící část}
-	[\label{RB3202l}]
-	\ref{RB3202s}
-	\section{DEVKIT C:}
-	procesor ESP32 je v tomto případě osazený na devkitu C. Je to malá deska, která se stará o potřeby procesoru a dá se koupit jako celek. Zajišťuje jednoduché programování přes USB, zajištuje stabilizované napětí 3,3V pro ESP32 a 3,3V větev na desce a stará se o výchozí hodnoty na pinech u kterých je to potřeba.
-	Seznam důležitých pinů
-	\begin{itemize}
-	\item EN – reset pin, pokud je na něm logická 0, ESP32 se resetuje, v normálním stavu na něm má být logická 1, proto je zde pull-up rezistor, který zajištuje logickou 1.
+	\label{RB3202l}
+	%\ref{RB3202s}
+	\section{DEVKIT C}
+	Procesor ESP32 je v tomto případě osazený na devkitu C \cite{DevKitC}.
+	Je to malá deska, která se stará o potřeby procesoru a~dá se koupit jako celek. Zajišťuje jednoduché programování přes USB, zajištuje stabilizované napětí 3,3~V pro ESP32 a 3,3~V větev na desce a~stará se o výchozí hodnoty na pinech, u~kterých je to potřeba.
+	
+	
+	Seznam důležitých pinů (viz schéma desky v příloze %todo \ref{RB3202sch}
+	-- obrázek C.2 a~datasheet \cite{DevKitC}): 
+	\begin{itemize} 
+	\item EN – reset pin, pokud je na něm logická 0, ESP32 se resetuje, v~normálním stavu na něm má být logická 1, proto je zde pull-up rezistor, který zajištuje logickou 1.
 	
 	\item Piny s označením reserv AD1 jsou vyhrazené pro externí použití 
-	a nejsou tedy na desce nijak zapojené, jsou to piny, na které je připojený 
+	a~nejsou tedy na desce nijak zapojené, jsou to piny, na které je připojený 
 	první AD převodník ESP32 (ADC1), ADC1 je plně k užití pro uživatele na rozdíl 
-	od ADC2, který je využíván Wi-Fi. ADC2 je tedy uživateli k dispozici, jen pokud jej zrovna nevyžaduje Wi-Fi.
+	od ADC2, který je využíván Wi-Fi. ADC2 je tedy uživateli k~dispozici, jen pokud jej zrovna nevyžaduje Wi-Fi.
 	
-	\item Piny s označením AD1 jsou také piny ADC1, ale jsou interně připojené na některé periferie, která však nemusí být použité
+	\item Piny s označením AD1 jsou také piny ADC1, ale jsou interně připojené na některé periferie, která však nemusí být použité.
 	
-	\item \item IO34 – použitelná na měření napětí na baterii přes jumper JP2 přímo na desce
-	\item \item IO35 – pin řídící inteligentní serva
-	\item \item IO33, 32 jsou připojené na převodník napěťových úrovní pro možnost komunikovat na 5V. Analogové měření je ovlivněno pull-up rezistory na převodníku napěťových úrovní. Při potřebě užití těchto pinů jako analogových vstupů tedy doporučuji odebrat tyto pull-up rezistory. 
-	To znamená, že tyto piny budou potřebovat softwarové pull-upy při užití jako vstupní pin při 5V komunikace.
+	\item IO34 -- pin použitelný na měření napětí na baterii přes jumper JP2 přímo na desce
+	\item IO35 -- pin řídící inteligentní serva
+	
+	\item piny IO32, IO33 jsou připojené na převodník napěťových úrovní pro možnost komunikovat na 5~V. Analogové měření je ovlivněno pull-up rezistory na převodníku napěťových úrovní. Při potřebě užití těchto pinů jako analogových vstupů tedy doporučuji odebrat tyto pull-up rezistory. 
+	
+	To znamená, že tyto piny budou potřebovat softwarové pull-upy při užití jako vstupní pin při 5~V komunikace.
+	
 	\item Piny s rudým označením THIS SIGNAL MUST BE HERE, jsou lehce problematické, protože ovlivňují boot ESP. Musí na nich tedy při bootu být správná logická hodnota, jinak by ESP mohlo třeba bootovat z jiné paměti nebo by třeba USB nemohlo zapisovat do paměti pro program. Piny IO0 a IO2 nejsou vyvedeny a je o ně interně postaráno, pin IO12 je ale vyveden a uživatel si tedy musí dát pozor, aby na něm neměl při bootu logickou 1. Pokud zůstane nepřipojen, deska se o něj postará.
 	
-	\subsection{D2}
-	Dioda sloužící k zamezení napájení 5V větve z USB.
-	Ochrana před přetížením napájení z USB.
-	
-	\subsection{RN3A, B, C, D:}
-	rezistorová síť, odpory k ledkám.
-	
-	\subsection*{RN2A, B, C, D:}
-	rezistorová síť, ochranné odpory ke tlačítkům, aby 
-	byl procesor chráněn při případné chybě 
-	v programu.
-	
-	\subsection*{SW0, 1, 2, 3:}
-	uživatelská tlačítka
-	
-	\subsection*{C3, 4, 5, 8:}
-	kondenzátory pro vyhlazení signálu z tlačítka při stisknutí
-	
-	\subsection*{JP4, 9:}
-	vyvedení tlačítek a ledek ven z desky pro možnost	
-	vyvedení dál od desky, např. deska muže být v útrobách robota, ale tlačítka a ledky mohou být 
-	pořád pohodlně dostupné, protože jsou vyvedené	
-	někam na povrch stroje.
-	
-	\subsection*{LED0, 1, 2:}
-	ledky pro možnost signalizace různých stavů programu
-	
-	\subsection*{Led3:}
-	powerled, signalizace, zda je deska zapnutá nebo vypnutá
-	
-	\subsection*{JP6, 12:}
-	konektor pro připojení motoru s encoderem
-	\item Vnější piny – napájení motoru
-	\item Piny vedle vnějších pinů – napájení encoderu
-	\item Vnitřní piny – signály encoderu
-	\item Konektor je primárně určen pro inkrementální magnetické encodery, s nimi i počítají programové knihovny
-	
-	\subsection*{JP5:}
-	vyvod 3.3V napájení
-	
-	\subsection*{JP8, 11:}
-	vyvedení některých pinů ESP, každý pin je vyveden alespoň dvakrát pro možnost připojení osciloskopu pro příjemnější hledání chyb programu.
-	
 	\subsection*{LEVEL SHIFTER:}
-	Neboli převodník napěťových úrovní zajištuje možnost digitální komunikace s 5V periferií pro čtyři piny ESP. Konkrétně pro piny IO32, IO33, IO14, IO12.
+	Neboli převodník napěťových úrovní zajištuje možnost digitální komunikace s 5~V periferií pro čtyři piny ESP. Konkrétně pro piny IO32, IO33, IO14, IO12.
 	\item IO32 – jeden z pinů ADC1, podrobněji u DEVKIT C.
 	\item IO33 – jeden z pinů ADC1, podrobněji u DEVKIT C.
 	\item IO14 – jeden z pinů ADC2. ADC2 je využíván Wi-Fi. Jinak není použit.
 	\item IO12 – je nutno odstranit pull-up (na součástce převodníku). IO12 volí paměť,
 	ze které se bootuje a jestli do té správné jde nahrát program. Jinak není interně použit.
-	\item Všechny čtyři piny jsou jinak vyvedeny i ve variantě 3.3V.
+	\item Všechny čtyři piny jsou jinak vyvedeny i ve variantě 3,3~V.
 	\item Převodník napěťových úrovní převádí logickou 1 pomocí pull-upů, tím pádem periferie pomocí převodníku spojené musí mít vstup s vysokým odporem, protože pokud by piny těchto periferií neměly velký odpor, tak by výsledek po dělení děliče vzniklého z pull-upu a periferie, která signál měří, mohl být pod rozlišovací schopností dané periferie.
 	
-	\subsection*{JP1, 3, 7:}
-	vývody zpětivoltovaných pinu a jejich napájení
-	\item Napájení 5V nemusí být nutně 5V, tyto piny mají vlastní stabilizaci napájení (IM3), a tím pádem záleží na tom, jak je tato stabilizace nastavená. Deska je primárně navržená pro dva způsoby stabilizace: 
-	step-Down a stabilizátor řady 7805
-	\item \item Step-Down má výhodu většího proudu, a hlavně nastavitelného napětí na výstupu. Naopak nevýhoda je nutnost nastavit požadované napětí a konkrétně u mnou používaného exempláře poměrně velký rozkmit výstupního napětí při změně odběru proudu.
-	\item \item 7805 má výhodu napěťové stability naopak nevýhodu maximálního možného odebíraného proudu který závisí na vstupním napětí. Co se regulace napětí týče, v mnou použitém zapojení se napětí regulovat nedá.
+	\section{Ostatní součástky na desce}
 	
-	\subsection*{R5:}
+	\paragraph{D2}
+	Dioda sloužící k zamezení napájení 5V větve z USB.
+	Ochrana před přetížením napájení z USB.
+	
+	\paragraph{RN3A, B, C, D}
+	rezistorová síť, odpory k LED
+	
+	\paragraph*{RN2A, B, C, D}
+	rezistorová síť, ochranné odpory ke tlačítkům, aby 
+	byl procesor chráněn při případné chybě 
+	v programu.
+	
+	\paragraph*{SW0, 1, 2, 3}
+	uživatelská tlačítka
+	
+	\paragraph*{C3, 4, 5, 8}
+	kondenzátory pro vyhlazení signálu z tlačítka při stisknutí
+	
+	\paragraph*{JP4, 9}
+	Vyvedení tlačítek a LED ven z desky pro možnost	
+	vyvedení dál od desky, např. deska muže být v útrobách robota, ale tlačítka a ledky mohou být 
+	pořád pohodlně dostupné, protože jsou vyvedené	
+	někam na povrch stroje.
+	
+	\paragraph*{LED0, 1, 2}
+	LED pro možnost signalizace různých stavů programu
+	
+	\paragraph*{Led3}
+	powerLED -- signalizace, zda je deska zapnutá nebo vypnutá
+	
+	\paragraph*{JP6, 12}
+	konektor pro připojení motoru s encoderem
+	\item Vnější piny – napájení motoru
+	\item Piny vedle vnějších pinů – napájení encoderu
+	\item Vnitřní piny – signály encoderu
+	\item Konektor je primárně určen pro inkrementální magnetické encodery, s~nimi i počítají programové knihovny
+	
+	\paragraph*{JP5}
+	vyvod 3,3~V napájení
+	
+	\paragraph*{JP8, 11}
+	Vyvedení některých pinů ESP, každý pin je vyveden alespoň dvakrát pro možnost připojení osciloskopu pro příjemnější hledání chyb programu.
+	
+
+	
+	\paragraph*{JP1, 3, 7}
+	vývody zpětivoltovaných pinu a jejich napájení
+	\item \label{RB3202-5V} Napájení 5~V nemusí být nutně 5~V, tyto piny mají vlastní stabilizaci napájení (IM3), a tím pádem záleží na tom, jak je tato stabilizace nastavená. Deska je primárně navržená pro dva způsoby stabilizace: 
+	step-Down a stabilizátor řady 7805:
+	\begin{itemize}
+		\item Step-Down má výhodu většího proudu, a hlavně nastavitelného napětí na výstupu. Naopak nevýhoda je nutnost nastavit požadované napětí a konkrétně u mnou používaného exempláře poměrně velký rozkmit výstupního napětí při změně odběru proudu.
+		
+		\item 7805 má výhodu napěťové stability naopak nevýhodu maximálního možného odebíraného proudu který závisí na vstupním napětí. Co se regulace napětí týče, v mnou použitém zapojení se napětí regulovat nedá.
+	\end{itemize}
+	
+
+	
+	\paragraph*{R5}
 	Trimr sloužící jako dělič napětí baterie pro možnost měření jejího napětí. 
 	\textbf{Před použitím nutno nastavit na vhodnou dělící hodnotu vzhledem k použitým bateriím!} Na výstupu z děliče nesmí být při plně nabité baterii víc než 3,6V. Pokud se při daném použití desky nemá měnit maximální napětí na baterii (počet článků baterie nebo jejich druh), doporučuji nastavit trimr jednou a následně jej zalepit, aby se například vibracemi nemohl rozladit.
 	
-	\subsection*{JP2:}
+	\paragraph*{JP2}
 	jumper pro možnost odpojení měření baterie za účelem uvolnění analogového pinu IO34. Zároveň se dá použít na měření výstupu z děliče před jeho zapojením k ESP.
 	
-	\chapter{Silová část}
-	
-	[\label{RB3202s}]
+	\chapter{Silová část}\label{RB3202s}
 
-	\subsection{Power manager:}
+	\section{Power manager}
 	
-	\paragraph*{X4:}
+	\paragraph*{X4}
 	Svorkovnice pro připojení zdroje s napětím 7-11V. X4-1 je záporný pól a X4-2 je pól kladný.
 	\paragraph*{Q5}
 	MOSFET tranzistor typu P na ochranu proti přepólování
@@ -599,7 +639,7 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	
 	\paragraph*{JP6}
 	Konektor, pro možnost vyvedení vypínaní, zapínání, resetu 
-	a kontrolní powerledky na externí ovládání.
+	a~kontrolní powerledky na externí ovládání.
 	
 	\paragraph*{Obvod jako celek}
 	Po připojení zdroje s napětím mezi 7 až 11V se při špatné polaritě napětí nedostane skrz tranzistor Q5. Deska sice nejede, protože nemá napájení, ale je chráněna před zničením opačnou polaritou. Při správném připojení zdroje, napětí projde skrz Q5 a tím pádem je na drahách BAT~POL+, START~GATE1 a ON napětí zdroje, na VCC se napětí nedostane, protože tranzistor Q2 je zavřen. Při stisku tlačítka SW4 se na dráhu ON dostane zem, tím pádem se kondenzátor C1 nabije a při nabíjení krátkodobě otevře tranzistor Q2. V době, kdy je tranzistor Q2 otevřen, skrz kondenzátor C1, se pomocí stabilizátoru osazeném na DEVKITu-C vytvoří napětí 3.3V. Skrz pul-up R2 se dostanou 3.3V na dráhu OFF a tím pádem na Gate tranzistoru Q6, který se v tu chvíli otevře a trvale přivede zem na dráhu START~GATE1. V tuto chvíle je tranzistor Q2 trvale otevřen, až do doby, kdy se na dráhu OFF nepřivede zem, v tu chvíli se zavře tranzistor Q6 protože má na Gate stejné napětí jako na Source (oba piny je připojené k zem). Pokud je Q6 zavřený zbývá jen možnost připojení země odjinud, pokud uvažujeme tento obvod bez poškození nebo jakéhokoli doplnění. Skrz rezistor R3 je dráha START~GATE1 připojena na zdrojové napětí, tím pádem je tato dráha tahána ke kladnému pólu a na k pólu zápornému, což by bylo potřeba pro otevření tranzistoru Q2, tímto způsobem se tedy Q2 určitě neotevře.
@@ -608,7 +648,9 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	k tomu že R4 má desetkrát větší odpor než R3, který spojuje dráhu START~GATE s bateriovým napětím, na Gate tranzistoru Q2 pořád nebude dostatečně malé napětí, aby se Q2 otevřel. C1 propustí proud jen po dobu jeho nabíjeni a tím pádem se skrz nej nedá deska udržet trvale otevřená, dá se jím jen zapnout. To znamená že pokud procesor napíše na pin připojený na dráhu OFF, IO13, logickou nulu, deska se vypne, bez ohledu na to, jaké tlačítko člověk drží. Vypínání ne nutně platí pro 3.3V větev která je napájena jak z baterie tak z micro-USB na DEVKITu-C, takže pokud je procesor připojen k počítači pravděpodobně za účelem programování procesor a vše co je napájené z 3.3V je nadále funkční. Pokud USB není zapojeno, pak se při stisku SW5 nebo zápisu logické 0
 	na pin IO13 deska jednoduše kompletně vypne.
 	
-	\subsubsection*{IM10}
+	\section{Ostatní součástky na desce}
+	
+	\paragraph*{IM10}
 	Motorový driver, DRV8833, na řízení dvou stejnosměrných motorů v napěťovém rozsahu 2,7 až 11V a maximálním proudem 1,5A. 
 	Driver je také schopný místo dvou stejnosměrných motorů řídit jeden krokový motor.
 	DRV8833 má pět vstupních řídících pinů: čtyři IN piny (dva pro každý motor) a sleep pin.  Podle IN pinů se řídí výstup - viz tabulka.
@@ -629,25 +671,25 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 		\caption{}
 	\end{table}
 	\newpage
-	\subsubsection*{X1, X2}
+	\paragraph*{X1, X2}
 	Svorkovnice na silové vývody k motorům.
 	
-	\subsubsection*{IM3}
+	\paragraph*{IM3}
 	Step-down/stabilizátor pro 5V větev
 	\item 5V napájí ESP, tím pádem i celou 3.3V větev skrz DEVKIT C
 	\item Napětí, které je, zde je zároveň i napětí, na kterém komunikují 5V piny, proto doporučuji sem dát stabilizátor 7805, u kterého nemusíte hlídat napětí.
 	
-	\subsubsection*{IM4}
+	\paragraph*{IM4}
 	Step-down/stabilizátor pro napájení 5V pinů na 5V piništi.
 	
-	\subsubsection*{JP42, 47, 48}
+	\paragraph*{JP42, 47, 48}
 	Konektory pro připojení inteligentních serv.
 	\item Navrženo pro serva LX-16A a LX-15D
 	
-	\subsubsection*{C6}
+	\paragraph*{C6}
 	Velký elektrolytický kondenzátor jako zásobárna proudu při náhlé změně odběru.
 		
-	\subsubsection*{D3}
+	\paragraph*{D3}
 	Zpětná dioda pro případ napěťové špičky, která by krátkodobě převrátila polaritu. V takovém případě se dioda otevře a proud propustí skrz sebe místo, aby protekl jinudy a přitom něco zničil.
 	
 	\end{itemize}
@@ -656,9 +698,16 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 
 \begin{figure}[h]
 	\centering
+	\includegraphics[width=1.0\textwidth]{img/SchoolBot.png}
+	\caption{render 3D modelu SchoolBota}
+\end{figure}
+
+
+\begin{figure}[h] 
+	\centering
 	\includegraphics[width=1.5\textwidth, angle = 90]{img/logika.png}
 	\caption{schéma logické části desky}
-\end{figure}
+\end{figure} \label{RB3202sch}
 
 \begin{figure}[h]
 	\centering
@@ -666,9 +715,18 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 	\caption{schéma výkonové části}
 \end{figure}
 
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{img/RB3202.JPG}
+	\caption{deska SchoolBoard \label{RB3202_obr}}
+\end{figure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\printbibliography[title=Literatura]
+\renewcommand{\refname}{Literatura}
+\printbibliography
 
 \addcontentsline{toc}{section}{Literatura}
 
@@ -681,95 +739,92 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 
 
 
-\begin{thebibliography}{1}
+\begin{thebibliography}{12}
 	
 	\subsection*{LEGO Mindstorm}	
-	\label{LEGO}
-	\bibitem{LEGO Mindstorm}
-	\textit{porovnání cen LEGa} [online] www.heureka.cz [cit. 2020-02-22] Dostupné z: \\ 
+	\bibitem{lego_cena}
+	\textit{porovnání cen LEGa} [online] www.heureka.cz [cit. 2020-02-22] Dostupné z: 
 	\url{https://lego.heureka.cz/lego-mindstorms-31313-ev3/#o=2}
 	
-	\bibitem{LEGO Mindstorm}
+	\bibitem{lego_obr}
 	\textit{porovnání cen LEGa} [online] https://www.google.com/ [cit. 2020-02-22] Dostupné z: \\ 
 	\url{https://www.google.com/search?q=lego+mindstorms+ev3&sxsrf=ALeKk03Lud9t3UtEURVvSxEM4KXsQ1MuoA:1582604901663&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiW0e7X7uvnAhWEiVwKHUKQDZsQ_AUoAXoECA0QAw&biw=1920&bih=947#imgrc=2DWaZ4m8jvdEGM:}
 	
+	\bibitem{lego}
+	\textit{LEGO Mindstorms} [online] https://www.lego.com [cit. 2020-02-22] Dostupné z: \url{https://www.lego.com/en-us/themes/mindstorms/downloads}
+	
 	\subsection*{Mbot}	
-	\label{Mbot}
+	
 	\bibitem{Mbot} 
 	\textit{Mbot} [online] https://www.makeblock.com/mbot [cit. 2020-02-22] Dostupné z: \url{https://www.makeblock.com/mbot}
 	
-	\label{Mbot}
-	\bibitem{Mbot} 
+	\bibitem{Mbot_obr} 
 	\textit{Mbot} [online] https://www.google.com [cit. 2020-02-22] Dostupné z: \url{https://www.google.com/search?biw=1920&bih=898&tbm=isch&sxsrf=ALeKk00t2ZCEa8I8sw4qB8LQrmWkCIeiFg%3A1582604904288&sa=1&ei=aKJUXu2PEc61kwWlwqSoCw&q=Mbot&oq=Mbot&gs_l=img.3..35i39l2j0i30l8.626107.627102..627373...0.0..0.135.496.3j2......0....1..gws-wiz-img.......0i67j0j0i7i30j0i131.YHxDaq30Lm0&ved=0ahUKEwjt447Z7uvnAhXO2qQKHSUhCbUQ4dUDCAc&uact=5#imgrc=T_kYRX2lTihlMM:}
 	
 	
 	\subsection*{Edison V2.0}
-	\label{Edison}
-	\bibitem{Edison V2.0} 
+	\bibitem{Edison1} 
 	\textit{Meet Edison. Wiltronics | Science and Technology product specialists} [online] https://www.wiltronics.com [cit. 2020-02-22] Dostupné z: \url{https://www.wiltronics.com.au/MeetEdison/}
 	
-	\bibitem{Edison V2.0}
+	\bibitem{Edison2}
 	\textit{Introducing Edison V2.0 - the newest version of the Edison robot. Edison Programmable Robot - Ideal for school classroom education} [online] https://meetedison.com [cit. 2020-02-22] Dostupné z:
 	\url{https://meetedison.com/meet-edison-v2-0/}
 	
-	\bibitem{Edison V2.0}
+	\bibitem{Edison_cena}
 	\textit{příklad ceny} [online] https://www.robotshop.com [cit. 2020-02-22] Dostupné z: \\ 
 	\url{https://www.robotshop.com/ca/en/edison-programmable-v20-robot.html?gclid=Cj0KCQiA4sjyBRC5ARIsAEHsELHtKqVNJOl95kMUC8iBngIkgc3gCZU9KOTwuXWEo4hU4Qs1B-2wASkaAh9CEALw_wcB}
 	
-	\bibitem{Edison V2.0}
+	\bibitem{Edison_obr}
 	\textit{příklad ceny} [online] https://www.google.com [cit. 2020-02-22] Dostupné z: \\ 
 	\url{https://www.google.com/search?biw=1920&bih=898&tbm=isch&sxsrf=ALeKk00iii4_F6l8P2g7D--qym9RZ5Rj4A%3A1582605532874&sa=1&ei=3KRUXreANY7xkwWXubO4Ag&q=Edison+V2.0&oq=Edison+V2.0&gs_l=img.3..0i19j0i30i19.167383.169312..169560...0.0..0.110.259.2j1......0....2j1..gws-wiz-img.......35i39j0i7i30j0i30.6sdKNYrmvz8&ved=0ahUKEwi33uyE8evnAhWO-KQKHZfcDCcQ4dUDCAc&uact=5#imgrc=4Tg222jxKK-WvM:}
 	
 	\subsection*{OZOBOT}
-	\label{OZOBOT}
-	\bibitem{OZOBOT} 
+	\bibitem{OZOBOT1} 
 	\textit{OZOBOT} [online] https://www.youtube.com [cit. 2020-02-22] Dostupné z:
 	\url{https://www.youtube.com/watch?v=lqR3zDWAQ1o}
 	
-	\bibitem{OZOBOT}
+	\bibitem{OZOBOT2}
 	\textit{OZOBOT} [online] https://www.youtube.com [cit. 2020-02-22] Dostupné z:
 	\url{https://www.youtube.com/watch?v=Cw30OdlczRo}
 	
-	\bibitem{OZOBOT}
+	\bibitem{OZOBOT_obr}
 	\textit{OZOBOT} [online] https://www.google.com [cit. 2020-02-22] Dostupné z:
 	\url{https://www.google.com/search?biw=1920&bih=898&tbm=isch&sxsrf=ALeKk029ry7yYsprObTuxw-D68iyq49Qaw%3A1582605808514&sa=1&ei=8KVUXp76Hu_isAfK_LHYDA&q=OZOBOT+2&oq=OZOBOT+2&gs_l=img.3..0i19j0i8i30i19.55321.56590..56902...0.0..0.156.417.2j2......0....1..gws-wiz-img.......35i39j0j0i67.QPcd6EEdVS8&ved=0ahUKEwiesqSI8uvnAhVvMewKHUp-DMsQ4dUDCAc&uact=5#imgrc=Vg-KZHt1GMu-1M:}
 	
 	\subsection*{Asuro}
-	\label{Asuro}
-	\bibitem{Asuro} 
+	\bibitem{Asuro_navod} 
 	\textit{Asuro} [online] http://www.arexx.com [cit. 2020-02-22] Dostupné z:
 	\url{ http://www.arexx.com/downloads/asuro/asuro_manual_en.pdf}
 	
-	\bibitem{Asuro}
+	\bibitem{Asuro_cena}
 	\textit{Programovatelný robot ASURO ARX-3 USB - Vyhledávání na Heureka.cz. Heureka.cz - Porovnání cen a srovnání produktů z internetových obchodů } [online] https://www.heureka.cz [cit. 2020-02-22] Dostupné z:
 	\url{https://www.heureka.cz/?h[fraze]=Programovateln%C3%BD+robot+ASURO+ARX-3+USB}
 		
-	\bibitem{Asuro}
-	\textit{2012 Kurz zakladni robotiky - robot ASURO - talentovaní.cz. Talentovaní.cz - talentovaní.cz} [online] https://vtp.talentovani.cz [cit. 2020-02-22] Dostupné z:
-	\url{https://vtp.talentovani.cz//2012 kurz-zakladni-robotiky-robot-asuro}
+%	\bibitem{Asuro_kurz}
+%	\textit{2012 Kurz zakladni robotiky - robot ASURO - talentovaní.cz. Talentovaní.cz - talentovaní.cz} [online] https://vtp.talentovani.cz [cit. 2020-02-22] Dostupné z:
+%	\url{https://vtp.talentovani.cz//2012 kurz-zakladni-robotiky-robot-asuro}
 	
-	\bibitem{Asuro}
+	\bibitem{Asuro_obr}
 	\textit{2012 Kurz zakladni robotiky - robot ASURO - talentovaní.cz. Talentovaní.cz - talentovaní.cz} [online] https://www.google.com [cit. 2020-02-22] Dostupné z:
 	\url{https://www.google.com/search?biw=1920&bih=898&tbm=isch&sxsrf=ALeKk00J9MrVOgPUrcycwO3n6HWFHzblqA%3A1582605974864&sa=1&ei=lqZUXpioNJKysAeZ9YPwBA&q=microbit&oq=microbit&gs_l=img.3..35i39l2j0l3j0i10i30j0i30l4.49522.51183..51422...0.0..0.142.763.7j2......0....1..gws-wiz-img.......0i7i30j0i5i30j0i131.wdNXNaVPeJI&ved=0ahUKEwiYy83X8uvnAhUSGewKHZn6AE4Q4dUDCAc&uact=5#imgrc=EgPkaWkDHCSCTM:}
 		
 	\subsection*{Microbit}
-	\label{Microbit}
-	\bibitem{Microbit} 
+	\bibitem{Microbit1} 
 	\textit{Micro:bit Educational Foundation | micro:bit. Micro:bit Educational Foundation | micro:bit} [online] https://microbit.org/ [cit. 2020-02-22] Dostupné z:
 	\url{https://microbit.org/}
 		
-	\bibitem{Microbit}
+	\bibitem{Microbit2}
 	\textit{Cutebot - Micro:bit chytré auto - HW Kitchen. Ochutnejte s námi bastlení! | HWKitchen.cz} [online] https://www.heureka.cz [cit. 2020-02-22] Dostupné z:
 	\url{https://www.heureka.cz/?h[fraze]=Programovateln%C3%BD+robot+ASURO+ARX-3+USB}
 	
-	\bibitem{Microbit}
+	\bibitem{Microbit3}
 	\textit{BBC micro:bit} [online] https://www.hwkitchen.cz [cit. 2020-02-24] Dostupné z:
 	\url{https://www.hwkitchen.cz/bbc-microbit-mikropocitac-pro-vyuku-programovani/?gclid=CjwKCAiAhc7yBRAdEiwAplGxX1iGHQsQk-kVNGx9CbLFWDupyX8vAFWp6fAUcyxjx1f7uPbmkF48MRoCehMQAvD_BwE}
 			
-	\bibitem{Microbit}
+	\bibitem{Microbit_obr1}
 	\textit{BBC micro:bit} [online] https://www.google.com [cit. 2020-02-24] Dostupné z:
 	\url{https://www.google.com/search?biw=1920&bih=898&tbm=isch&sxsrf=ALeKk00J9MrVOgPUrcycwO3n6HWFHzblqA%3A1582605974864&sa=1&ei=lqZUXpioNJKysAeZ9YPwBA&q=microbit&oq=microbit&gs_l=img.3..35i39l2j0l3j0i10i30j0i30l4.49522.51183..51422...0.0..0.142.763.7j2......0....1..gws-wiz-img.......0i7i30j0i5i30j0i131.wdNXNaVPeJI&ved=0ahUKEwiYy83X8uvnAhUSGewKHZn6AE4Q4dUDCAc&uact=5#imgrc=EgPkaWkDHCSCTM:}
-	\bibitem{Microbit}
+	\bibitem{Microbit_obr2}
 	\textit{BBC micro:bit} [online] https://www.google.com [cit. 2020-02-24] Dostupné z:
 	\url{https://www.google.com/search?biw=1920&bih=898&tbm=isch&sxsrf=ALeKk02ykWHq3iwxHfNC5K2OSX4PttT9fA%3A1582606268980&sa=1&ei=vKdUXrvCO4b9kwXcxoyQBw&q=Microbit+voz%C3%ADtko&oq=Microbit+voz%C3%ADtko&gs_l=img.3...3943.4582..4940...0.0..0.87.313.4......0....1..gws-wiz-img.......35i39.zL--Z1Dztjs&ved=0ahUKEwi7kO3j8-vnAhWG_qQKHVwjA3IQ4dUDCAc&uact=5#imgrc=GswzKppDFNOmdM:}
 			
@@ -791,7 +846,7 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 			\textit{datasheet ESP32} [online] https://cdn.sparkfun.com [cit. 2020-02-22] Dostupné z:
 			\url{https://cdn.sparkfun.com/datasheets/IoT/esp32_datasheet_en.pdf}
 			
-			\bibitem{ESP32_II} %todo proč dva datasheety? (v obou jsou jiné informace [myšleno o jiné věci ne že by si protiřečili proste se zameřijí na jiné periferie a jsou oba dosti krátké {60 stran je proste strašně málo, v porovnání třeba s datashitema atmeg ktaré má víc jak 600 stran} klidne mužem jeden umazat])
+			\bibitem{ESP32_II} 
 			\textit{datasheet ESP32} [online] https://pdf1.alldatasheet.com [cit. 2020-02-22] Dostupné z:
 			\url{https://pdf1.alldatasheet.com/datasheet-pdf/view/1148023/ESPRESSIF/ESP32.html}
 			
@@ -833,9 +888,15 @@ Jejich výsledky ze soutěže bohužel zatím nemám k dispozici protože soutě
 			
 			\subsection*{inteligentní servo LX15D}
 			
-			\bibitem{inteligentni_serva_LX15D}
-			\textit{inteligentní serva LX15D} [online] http://www.lewansoul.com [cit. 2020-02-22] Dostupné z:
-			\url{http://www.lewansoul.com/product/detail-7.html}
+			\bibitem{inteligentni_servo_LX15D}
+			\textit{inteligentní serva LX15D} [online] https://www.google.com [cit. 2020-02-22] Dostupné z:
+			\url{https://www.google.com/search?q=LX-15D&tbm=isch&ved=2ahUKEwiKxrf2-OznAhUM4hoKHfgyB8YQ2-cCegQIABAA&oq=LX-15D&gs_l=img.3..35i39.2197.2197..2378...0.0..0.105.105.0j1......0....1..gws-wiz-img.jm-ypRJ7CoM&ei=WTNVXsq1NIzEa_jlnLAM&client=firefox-b-d#imgrc=_8rbZ5K5_Q1KGM}
+			
+			\subsection*{Robotický den}
+			
+			\bibitem{RD2020}
+			\textit{Robotický den} [online] http://robotickyden.cz/ [cit. 2020-02-22] Dostupné z:
+			\url{http://robotickyden.cz/}
 			
 		\end{thebibliography}
 
