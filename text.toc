@@ -15,15 +15,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.4}Mbot}{12}{subsection.1.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.5}Edison V2.0}{12}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.5}OZOBOT}{12}{subsection.1.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.6}OZOBOT}{13}{subsection.1.1.6}%
+\contentsline {subsection}{\numberline {1.1.6}Asuro}{13}{subsection.1.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.7}Asuro}{13}{subsection.1.1.7}%
+\contentsline {subsection}{\numberline {1.1.7}Microbit}{13}{subsection.1.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.8}Microbit}{13}{subsection.1.1.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.9}Shrnutí}{14}{subsection.1.1.9}%
+\contentsline {subsection}{\numberline {1.1.8}Shrnutí}{14}{subsection.1.1.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}SchoolBot}{15}{chapter.2}%
 \defcounter {refsection}{0}\relax 
@@ -31,15 +29,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Elektronika}{16}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{battery pack}{16}{section*.14}%
+\contentsline {subsubsection}{battery pack}{17}{section*.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{motory s enkodéry}{17}{section*.15}%
+\contentsline {subsubsection}{motory s enkodéry}{17}{section*.16}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.2}Mechanika}{18}{subsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Uložení kol a motoru}{18}{section*.16}%
+\contentsline {subsubsection}{Uložení kol a motoru}{18}{section*.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Klepeta}{19}{section*.18}%
+\contentsline {subsubsection}{Klepeta}{19}{section*.19}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}SchoolBoard}{20}{chapter.3}%
 \defcounter {refsection}{0}\relax 
@@ -47,15 +45,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}Možné periferie}{22}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Příklady možných senzoru}{22}{section*.20}%
+\contentsline {subsubsection}{Příklady možných senzoru}{22}{section*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Příklady jiných periferii}{23}{section*.21}%
+\contentsline {subsubsection}{Příklady jiných periferii}{23}{section*.22}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Vývoj}{24}{section.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Kde se deska používá}{24}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Přílohy}{25}{chapter*.22}%
+\contentsline {chapter}{Přílohy}{25}{chapter*.23}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Řídící část}{26}{appendix.A}%
 \defcounter {refsection}{0}\relax 
@@ -69,12 +67,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {B.0.1}Power manager:}{32}{subsection.B.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{R2}{33}{section*.41}%
+\contentsline {paragraph}{R2}{33}{section*.42}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {C}Obrazová příloha}{37}{appendix.C}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literatura}{40}{figure.caption.58}%
+\contentsline {section}{Literatura}{40}{figure.caption.59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam obrázků}{40}{appendix*.59}%
+\contentsline {section}{Seznam obrázků}{40}{appendix*.60}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Seznam tabulek}{41}{appendix*.60}%
+\contentsline {section}{Seznam tabulek}{41}{appendix*.61}%

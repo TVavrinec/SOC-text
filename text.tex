@@ -122,8 +122,7 @@ Ideálně by si takového robota učastníci kroužku měli být schopni postavi
 Proč vlastně vytvářet vlastní elektroniku i mechaniku, když je na trhu tolik různých robotu a vozítek? Konkurenční roboti, kteří se běžně prodávají, jsou totiž většinou velmi drazí a často nemají ani moc možností. Například známé LEGO Mindstorms, u kterého se cena základní sady pohybuje nad sedmi tisíci korunami [], %todo
  je vzhledem ke svým možnostem ohromně předražené.
  
-Při vytváření pokročilejších aplikací potřebuje tvůrce znalost technických specifikací robota a jeho vnitřního fungování. U většiny komerčních robotů však není kompletní technická dokumentace volně dostupná.
-
+%zmizela poznámka o dokumentaci (nebyla tak pravdivá jak bych chtěl abych jí zde nechal [ splnoval by to asi jen Asuro a možná OZOBOT s Edisnem])
 
 \section{Konkurence} \label{konkurence}
 
@@ -155,11 +154,7 @@ Všechny senzory má Edison uvnitř sebe a nedají se proto dovést na místo, k
 
 
 \subsection{Mbot}
-Mbot je oproti legu daleko levnější (cena se pohybuje kolem osmnácti set korun za kus) ale trpí stejným, nebo i větším, nedostatkem sensoru. Co se konstrukce týče, problémy s pevností u Mbota není ale zase se nedá snadno upravit. Konstrukce je totiž hliníková, což je v pořádku, pokud není potřeba konstrukci výrazně upravovat. Robota je ale většinou třeba přizpůsobit konkrétnímu užití, ze zkušenosti se nejvíce osvědčilo dřevo, které se dá jednoduše upravovat bez větší námahy a zároveň není problém z něj udělat dostatečně tuhou konstrukci. Hliník se však tak lehce ručně upravovat nedá. Mbot je založen na procesoru ATmega328 což je stejný procesor jaký se používá i u velice známého arduina. To znamená že některé programy, které jsou napsané pro arduino je možné spustit i zde.
-
-\subsection{Edison V2.0}
-Edison je velmi podobný legu a mí i podobné problémy. Opět nedisponuje velkým počtem senzoru ale oproti legu je daleko levnější. Stejně jako lego má i Edison vlastní grafické programovací prostředí, bohužel jsem jej nikdy nepoužíval, ale vypadá velmi podobně jako prostředí lega. Myslím si proto, že stejně jako prostředí lega bude i toto velice dobré na malé prográmky pro děti, ale nevhodné pro obsáhlé programy. Všechny senzory má Edison uvnitř sebe a nedají se proto dovést na místo kde je uživatel nejvíc potřebuje. Uživatel se proto musí přizpůsobit rozložení senzoru na řídící jednotce, stejně tak se nedá vyvést ani nic jiného. Jediné, co se dá, je vyměňovat kola (například za nějaké ozubení) a pomocí toho si pak dovést náhon z motoru na potřebné místo.
-
+Mbot je oproti legu daleko levnější (cena se pohybuje kolem osmnácti set korun za kus) ale trpí stejným, nebo i větším, nedostatkem sensoru. Co se konstrukce týče, problémy s pevností u Mbota není ale zase se nedá snadno upravit. Konstrukce je totiž hliníková, což je v pořádku, pokud není potřeba konstrukci výrazně upravovat. Robota je ale většinou třeba přizpůsobit konkrétnímu užití, ze zkušenosti se nejvíce osvědčilo dřevo, které se dá jednoduše upravovat bez větší námahy a zároveň není problém z něj udělat dostatečně tuhou konstrukci. Hliník se však tak lehce ručně upravovat nedá. Mbot je založen na procesoru ATmega328 což je stejný procesor jaký používá i velice známé arduino. To znamená že některé programy, které jsou napsané pro arduino je možné spustit i zde.
 
 \subsection{OZOBOT}
 Ozobot je mini robot, z toho vyplývají jeho největší výhody i nevýhody. Například pochopitelně není dělaný na to, aby cokoli vozil nebo jakkoliv stěhoval. Téměř se nedá upravovat, na to ale opět není dělaný. Jeho účel je především jezdit po čáře a vykonávat příkazy na ní zapsané pomocí barevných vzorů. Přes to že se novější verze dají i programovat, jejich funkce jsou pořád mířené do velké míry právě na čáru a barevné příkazy na ní.
@@ -169,13 +164,15 @@ Asuro je robot postavený kolem základní desky. Jedná se o stavebnici, ale p�
 
 
 \subsection{Microbit}
-Microbit je především řídící deska se senzory a výstupními ledkami. Není to primárně vozítko, přestože existují konstrukce, které jsou určené právě pro řízení microbitem. Taková konstrukce však muže využívat pouze serva, nebo musí mít vlastní řízení motoru. Microbit totiž motory řídit nedokáže sám, dokáže řídit jen serva, která si řízení řeší sama. Toto však není velký problém, protože existuje více různých konstrukcí, které právě toto řeší. 
+Microbit je především řídící deska se senzory a výstupními ledkami. Není to primárně vozítko, přestože existují konstrukce, které jsou určené právě pro řízení microbitem. Taková konstrukce však muže využívat pouze serva, nebo musí mít vlastní řízení motoru. Microbit totiž motory řídit nedokáže sám, dokáže řídit jen serva, která si silové řízení řeší sama. Toto však není velký problém, protože existuje více různých konstrukcí, které právě toto řeší. 
 
 Microbit má překvapivě docela dost senzorů přímo na základní destičce. Podle mých informací kompas, který je přímo na desce téměř nefunguje, ale vzhledem k tomu, co všechno na sobě malá destička Microbit má, to není až taková tragédie. Kompas je stejně často potřebné dostat co nejdál od zbytku robota, kvůli všemožnému rušení, takže by se i tak dost možná používal jako externí součástka.
 
-Microbit má zároveň matici ledek, na které si uživatel muže zobrazova,t co se mu zlíbí a zároveň se jimi dá i měřit světelnost okolí. Používání led diod jako fotodiod sice není tak přesné, nicméně to jde a je to zajímavé řešení.
+Microbit má zároveň matici ledek, na které si uživatel muže zobrazovat, co se mu zlíbí a zároveň se jimi dá i měřit světelnost okolí. Používání led diod jako fotodiod sice není tak přesné, nicméně to jde a je to zajímavé řešení.
 
-%todo nevýhody microbitu? 
+Microbit ale nemá zrovna velké množství pinu které by se dali použít, a především je opět drahý. Cena čisté desky, bez jakéhokoli příslušenství, se pohybuje kolem 500 Kč a za tutu cenu jsem já schopen vyrobit desku které je schopna operovat i se silovímy výstupi (a ještě mi něco zbude).
+
+%todo nevýhody microbitu?  (třeba takhle [poslední odstaveček])
 
 \subsection{Shrnutí}
 Komerční systémy jsou většinou velmi drahé, mívají nedostatek senzorů, mívají měkkou nebo obtížně upravitelnou konstrukci a také nemají moc velký výkon ani přesnost pohonu.
@@ -217,6 +214,12 @@ Možná si říkáte, proč mi záleží na tom aby robot pro začátečníky m�
 SchoolBot je komplet, skládající se ze řady jednotlivých dílků, které nebudu popisovat samostatně pro začátek systém rozdělím na elektroniky a mechaniku.
 
 
+
+
+\subsection{Elektronika}
+
+Elektronika je především řídící deska SchoolBoard kterou shrnuji v samostatné kapitole a detailně rozebírám v přílohách. Krom desky obsahuje SchoolBot battery pack, motory s enkodéry a inteligentní serva LX15D[viz zdroje] které uvádí do provozu klepeta, nástroj pro možnost manipulace s objekty při soutěžích především herními prvky.
+
 \begin{figure}[h]
 	
 	\centering
@@ -225,14 +228,18 @@ SchoolBot je komplet, skládající se ze řady jednotlivých dílků, které ne
 	
 \end{figure}
 
-\subsection{Elektronika}
-
-Elektronika je především řídící deska SchoolBoard kterou shrnuji v samostatné kapitole a detailně rozebírám v přílohách. Krom desky obsahuje SchoolBot battery pack, motory s enkodéry a inteligentní serva LX15D[viz zdroje] které uvádí do provozu klepeta, nástroj pro možnost manipulace s objekty při soutěžích především herními prvky.
+\newpage
 
 \subsubsection{battery pack}
 
 Battery pack je sestaven ze dvou li-on baterii 18650 které jsou pomocí DPS spojeny v jeden celek. Připojení do robota je pak zajištováno pomocí dutinek a to každý článek zvlášť, serializují se až po vložení do robota. Důvodem pro vyvádění obou článku zvlášť je nabíjení, to je totiž realizováno pomocí lineárních nabíjecích modulu, které se napájejí z USB a každý článek se nabíjí zvlášť.
 Aby se battery pack nedal omylem připojit s opačnou polaritou je vyřešen tak že se dá při připojení otočit dvěma způsoby a oba mají správnou polaritu, dokonce i stejné pořadí článků.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{img/battery_pack_v3.png}
+	\caption{render 3D modelu battery packu}
+\end{figure}
 
 \subsubsection{motory s enkodéry}
 
@@ -252,7 +259,7 @@ Celí motor i s kolem je pak z části držen podporou kola ale především je 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.893\textwidth]{img/ulozeni_motoru.png}
-	\caption{render 3D modelu SchoolBota}
+	\caption{render 3D modelu motorového lože}
 \end{figure}
 
 \newpage
@@ -349,6 +356,7 @@ SchoolBota tak letos využil jen jeden ze sedmi týmů.
 
 \section{Kde se deska používá}
 Deska se používá ve dvou volnočasových kurzech robotiky a při výuce elektrotechniky a automatizace.
+
 
 \newpage
 
@@ -588,49 +596,53 @@ Deska se používá ve dvou volnočasových kurzech robotiky a při výuce elekt
 	
 	\subsection*{Edison V2.0}
 	\bibitem{Edison V2.0} 
-	\textit{Meet Edison. Wiltronics | Science and Technology product specialists} [online] [cit. 2020-02-22] Dostupné z: \url{https://www.wiltronics.com.au/MeetEdison/}
+	\textit{Meet Edison. Wiltronics | Science and Technology product specialists} [online] https://www.wiltronics.com [cit. 2020-02-22] Dostupné z: \url{https://www.wiltronics.com.au/MeetEdison/}
 	
 	\bibitem{Edison V2.0}
-	\textit{Introducing Edison V2.0 - the newest version of the Edison robot. Edison Programmable Robot - Ideal for school classroom education} [online] [cit. 2020-02-22] Dostupné z:
+	\textit{Introducing Edison V2.0 - the newest version of the Edison robot. Edison Programmable Robot - Ideal for school classroom education} [online] https://meetedison.com [cit. 2020-02-22] Dostupné z:
 	\url{https://meetedison.com/meet-edison-v2-0/}
 	
 	\bibitem{Edison V2.0}
-	\textit{příklad ceny} [online] [cit. 2020-02-22] Dostupné z: \\ 
+	\textit{příklad ceny} [online] https://www.robotshop.com [cit. 2020-02-22] Dostupné z: \\ 
 	\url{https://www.robotshop.com/ca/en/edison-programmable-v20-robot.html?gclid=Cj0KCQiA4sjyBRC5ARIsAEHsELHtKqVNJOl95kMUC8iBngIkgc3gCZU9KOTwuXWEo4hU4Qs1B-2wASkaAh9CEALw_wcB}
 	
 	\subsection*{OZOBOT}
 	
 	\bibitem{OZOBOT} 
-	\textit{OZOBOT} [online] [cit. 2020-02-22] Dostupné z:
+	\textit{OZOBOT} [online] https://www.youtube.com [cit. 2020-02-22] Dostupné z:
 	\url{https://www.youtube.com/watch?v=lqR3zDWAQ1o}
 	
 	\bibitem{OZOBOT}
-	\textit{OZOBOT} [online] [cit. 2020-02-22] Dostupné z:
+	\textit{OZOBOT} [online] https://www.youtube.com [cit. 2020-02-22] Dostupné z:
 	\url{https://www.youtube.com/watch?v=Cw30OdlczRo}
 	
 	\subsection*{Asuro}
 	
 	\bibitem{Asuro} 
-	\textit{Asuro} [online] [cit. 2020-02-22] Dostupné z:
+	\textit{Asuro} [online] http://www.arexx.com [cit. 2020-02-22] Dostupné z:
 	\url{ http://www.arexx.com/downloads/asuro/asuro_manual_en.pdf}
 	
 	\bibitem{Asuro}
-	\textit{Programovatelný robot ASURO ARX-3 USB - Vyhledávání na Heureka.cz. Heureka.cz - Porovnání cen a srovnání produktů z internetových obchodů } [online] [cit. 2020-02-22] Dostupné z:
+	\textit{Programovatelný robot ASURO ARX-3 USB - Vyhledávání na Heureka.cz. Heureka.cz - Porovnání cen a srovnání produktů z internetových obchodů } [online] https://www.heureka.cz [cit. 2020-02-22] Dostupné z:
 	\url{https://www.heureka.cz/?h[fraze]=Programovateln%C3%BD+robot+ASURO+ARX-3+USB}
 		
-		\bibitem{Asuro}
-		\textit{2012 Kurz zakladni robotiky - robot ASURO - talentovaní.cz. Talentovaní.cz - talentovaní.cz} [online] [cit. 2020-02-22] Dostupné z:
-		\url{https://vtp.talentovani.cz//2012 kurz-zakladni-robotiky-robot-asuro}
+	\bibitem{Asuro}
+	\textit{2012 Kurz zakladni robotiky - robot ASURO - talentovaní.cz. Talentovaní.cz - talentovaní.cz} [online] https://vtp.talentovani.cz [cit. 2020-02-22] Dostupné z:
+	\url{https://vtp.talentovani.cz//2012 kurz-zakladni-robotiky-robot-asuro}
 		
-		\subsection*{Microbit}
+	\subsection*{Microbit}
 		
-		\bibitem{Microbit} 
-		\textit{Micro:bit Educational Foundation | micro:bit. Micro:bit Educational Foundation | micro:bit} [online] [cit. 2020-02-22] Dostupné z:
-		\url{https://microbit.org/}
+	\bibitem{Microbit} 
+	\textit{Micro:bit Educational Foundation | micro:bit. Micro:bit Educational Foundation | micro:bit} [online] https://microbit.org/ [cit. 2020-02-22] Dostupné z:
+	\url{https://microbit.org/}
 		
-		\bibitem{Microbit}
-		\textit{Cutebot - Micro:bit chytré auto - HW Kitchen. Ochutnejte s námi bastlení! | HWKitchen.cz} [online] [cit. 2020-02-22] Dostupné z:
-		\url{https://www.heureka.cz/?h[fraze]=Programovateln%C3%BD+robot+ASURO+ARX-3+USB}
+	\bibitem{Microbit}
+	\textit{Cutebot - Micro:bit chytré auto - HW Kitchen. Ochutnejte s námi bastlení! | HWKitchen.cz} [online] https://www.heureka.cz [cit. 2020-02-22] Dostupné z:
+	\url{https://www.heureka.cz/?h[fraze]=Programovateln%C3%BD+robot+ASURO+ARX-3+USB}
+	
+	\bibitem{Microbit}
+	\textit{BBC micro:bit} [online] https://www.hwkitchen.cz [cit. 2020-02-22] Dostupné z:
+	\url{https://www.hwkitchen.cz/bbc-microbit-mikropocitac-pro-vyuku-programovani/?gclid=CjwKCAiAhc7yBRAdEiwAplGxX1iGHQsQk-kVNGx9CbLFWDupyX8vAFWp6fAUcyxjx1f7uPbmkF48MRoCehMQAvD_BwE}
 			
 			%\subsection*{použité součástky}
 			
@@ -639,57 +651,57 @@ Deska se používá ve dvou volnočasových kurzech robotiky a při výuce elekt
 			%\paragraph*{ESP32}
 			
 			\bibitem{WROOM}
-			\textit{Espressif Systems - Wi-Fi and Bluetooth chipsets and solutions } [online] [cit. 2020-02-22] Dostupné z:
+			\textit{Espressif Systems - Wi-Fi and Bluetooth chipsets and solutions } [online] https://www.espressif.com [cit. 2020-02-22] Dostupné z:
 			\url{https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf}
 			
 			\bibitem{ESP32}
-			\textit{datasheet ESP32} [online] [cit. 2020-02-22] Dostupné z:
+			\textit{datasheet ESP32} [online] https://cdn.sparkfun.com [cit. 2020-02-22] Dostupné z:
 			\url{https://cdn.sparkfun.com/datasheets/IoT/esp32_datasheet_en.pdf}
 			
 			\bibitem{ESP32_II} %todo proč dva datasheety? 
-			\textit{datasheet ESP32} [online] [cit. 2020-02-22] Dostupné z:
+			\textit{datasheet ESP32} [online] https://pdf1.alldatasheet.com [cit. 2020-02-22] Dostupné z:
 			\url{https://pdf1.alldatasheet.com/datasheet-pdf/view/1148023/ESPRESSIF/ESP32.html}
 			
 			%\paragraph*{DRV8833 (motorový driver)}
 			
 			\bibitem{DRV8833}
-			\textit{datasheet DRV8833} [online] [cit. 2020-02-22] Dostupné z:
+			\textit{datasheet DRV8833} [online] http://www.ti.com [cit. 2020-02-22] Dostupné z:
 			\url{http://www.ti.com/lit/ds/symlink/drv8833.pdf}
 			
 			%\paragraph*{IRF4905}
 			
 			\bibitem{IRF4905}
-			\textit{datasheet IRF4905} [online] [cit. 2020-02-22] Dostupné z:
+			\textit{datasheet IRF4905} [online] https://www.infineon.com [cit. 2020-02-22] Dostupné z:
 			\url{https://www.infineon.com/dgdl/irf4905pbf.pdf?fileId=5546d462533600a4015355e329b1197e}
 			
 			%\paragraph*{BS170}
 			
 			\bibitem{BS170}
-			\textit{datasheet BS170} [online] [cit. 2020-02-22] Dostupné z:
+			\textit{datasheet BS170} [online] https://www.onsemi.com [cit. 2020-02-22] Dostupné z:
 			\url{https://www.onsemi.com/pub/Collateral/BS170-D.PDF}
 			
 			%\paragraph*{7805}
 			
 			\bibitem{7805}
-			\textit{datasheet 7805} [online] [cit. 2020-02-22] Dostupné z:
+			\textit{datasheet 7805} [online] https://www.st.com [cit. 2020-02-22] Dostupné z:
 			\url{https://www.st.com/resource/en/datasheet/l78.pdf}
 			
 			%\paragraph*{Step-down}
 			
 			\bibitem{Step-down}
-			\textit{datasheet Step-down} [online] [cit. 2020-02-22] Dostupné z:
+			\textit{datasheet Step-down} [online] https://arduino-shop.cz [cit. 2020-02-22] Dostupné z:
 			\url{https://arduino-shop.cz/docs/produkty/0/698/1502185417.pdf}
 			
 			%\paragraph*{Mikrospínač}
 			
 			\bibitem{mikrospinac}
-			\textit{datasheet -- mikrospínač} [online] [cit. 2020-02-22] Dostupné z:
+			\textit{datasheet -- mikrospínač} [online] https://www.gme.cz [cit. 2020-02-22] Dostupné z:
 			\url{https://www.gme.cz/data/attachments/dsh.630-019.1.pdf}
 			
 			\subsection*{inteligentní servo LX15D}
 			
 			\bibitem{inteligentni_serva_LX15D}
-			\textit{inteligentní serva LX15D} [online] [cit. 2020-02-22] Dostupné z:
+			\textit{inteligentní serva LX15D} [online] http://www.lewansoul.com [cit. 2020-02-22] Dostupné z:
 			\url{http://www.lewansoul.com/product/detail-7.html}
 			
 		\end{thebibliography}
